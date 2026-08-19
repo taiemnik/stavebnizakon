@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nový stavební zákon — stav k srpnu 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#193A5F;--blue:#3EA3DC;--sky:#D4EDFC;--green:#4DB05B;--red:#D94F4F;--amber:#E6A823;
+  --bg:#f5f8fb;--card:#fff;--text:#1a2533;--muted:#5a6b80;--border:#cdd8e3;
+  --ff:'Source Sans 3',system-ui,sans-serif;--r:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff);color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+.topbar{position:sticky;top:0;z-index:100;background:var(--navy);color:#fff;padding:12px 24px;display:flex;align-items:center;gap:16px;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.topbar h1{font-size:18px;font-weight:700;flex:1}
+.topbar a{color:rgba(255,255,255,.7);text-decoration:none;font-size:14px;font-weight:600}
+.topbar a:hover{color:#fff}
+
+/* HERO */
+.hero{background:linear-gradient(152deg,#122a45,#193A5F 40%,#1f4a72 65%,#18385c);color:#fff;padding:80px 24px 64px;text-align:center}
+.hero h2{font-size:clamp(32px,6vw,56px);font-weight:900;line-height:1.1;margin-bottom:16px}
+.hero p{font-size:clamp(16px,2.5vw,22px);font-weight:300;color:rgba(255,255,255,.7);max-width:700px;margin:0 auto 24px}
+.hero .badge{display:inline-block;background:var(--red);color:#fff;font-size:14px;font-weight:700;padding:6px 16px;border-radius:20px;text-transform:uppercase;letter-spacing:.08em}
+
+/* SECTION */
+.section{max-width:960px;margin:0 auto;padding:48px 24px}
+.section h3{font-size:28px;font-weight:700;color:var(--navy);margin-bottom:8px;border-bottom:3px solid var(--sky);padding-bottom:8px}
+.section .sub{color:var(--muted);font-size:15px;margin-bottom:24px}
+
+/* TIMELINE */
+.tl{list-style:none;position:relative;padding-left:28px}
+.tl::before{content:'';position:absolute;left:8px;top:4px;bottom:4px;width:3px;background:var(--sky);border-radius:2px}
+.tl li{position:relative;margin-bottom:18px;padding-left:20px}
+.tl li::before{content:'';position:absolute;left:-24px;top:7px;width:14px;height:14px;border-radius:50%;border:3px solid var(--blue);background:var(--card)}
+.tl li.done::before{background:var(--green);border-color:var(--green)}
+.tl li.now::before{background:var(--red);border-color:var(--red);box-shadow:0 0 0 4px rgba(217,79,79,.25)}
+.tl .date{font-weight:700;color:var(--navy);font-size:15px}
+.tl .desc{color:var(--muted);font-size:15px}
+
+/* STAT GRID */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:32px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px;text-align:center}
+.stat .num{font-size:42px;font-weight:900;color:var(--navy);line-height:1}
+.stat .label{font-size:14px;color:var(--muted);margin-top:6px}
+.stat .ctx{font-size:12px;color:var(--blue);margin-top:4px}
+
+/* TABLE */
+.rtable{width:100%;border-collapse:collapse;margin-bottom:24px;font-size:14px}
+.rtable th{background:var(--navy);color:#fff;padding:10px 14px;text-align:left;font-weight:600}
+.rtable td{padding:10px 14px;border-bottom:1px solid var(--border)}
+.rtable tr:nth-child(even) td{background:rgba(212,237,252,.15)}
+.v-bad{color:var(--red);font-weight:700}
+.v-warn{color:var(--amber);font-weight:700}
+.v-ok{color:var(--green);font-weight:700}
+.v-gray{color:var(--muted);font-weight:600}
+
+/* QUOTE */
+.quote{background:var(--sky);border-left:5px solid var(--blue);padding:20px 24px;border-radius:0 var(--r) var(--r) 0;margin:24px 0;font-style:italic;font-size:16px;color:var(--navy)}
+.quote cite{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:8px}
+
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px;border-top:4px solid var(--blue)}
+.card h4{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted);line-height:1.5}
+.card.red{border-top-color:var(--red)}
+.card.green{border-top-color:var(--green)}
+.card.amber{border-top-color:var(--amber)}
+
+/* STAKEHOLDERS */
+.stake{margin-bottom:20px;padding:16px 20px;background:var(--card);border:1px solid var(--border);border-radius:var(--r)}
+.stake h4{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.stake p{font-size:14px;color:var(--muted)}
+
+/* FOOTER */
+.footer{background:var(--navy);color:rgba(255,255,255,.5);padding:24px;text-align:center;font-size:13px;margin-top:48px}
+
+/* UTILS */
+.mb{margin-bottom:24px}
+ul.bl{list-style:disc;padding-left:20px;font-size:15px;color:var(--text);margin-bottom:16px}
+ul.bl li{margin-bottom:6px}
+.tag{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 10px;border-radius:10px;margin-right:6px}
+.tag-red{background:rgba(217,79,79,.12);color:var(--red)}
+.tag-green{background:rgba(77,176,91,.12);color:var(--green)}
+.tag-amber{background:rgba(230,168,35,.12);color:var(--amber)}
+.tag-gray{background:rgba(90,107,128,.1);color:var(--muted)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>Nový stavební zákon</h1>
+  <a href="#timeline">Timeline</a>
+  <a href="#dopady">Dopady</a>
+  <a href="#data">Data</a>
+  <a href="#obavy">20 obav</a>
+  <a href="#hlasy">Hlasy</a>
+</div>
+
+<div class="hero">
+  <span class="badge">Senát hlasuje 19.–22. 8. 2026</span>
+  <h2>Nový stavební zákon</h2>
+  <p>Co přináší novela stavebního zákona schválená Sněmovnou 10.&nbsp;7.&nbsp;2026 a proč čtyři senátní výbory doporučují zamítnutí.</p>
+</div>
+
+<!-- TIMELINE -->
+<div class="section" id="timeline">
+  <h3>Legislativní timeline</h3>
+  <p class="sub">Cesta zákona od 2. čtení po Senát — a co bude dál</p>
+  <ul class="tl">
+    <li class="done"><span class="date">11. 6. 2026</span><span class="desc"> — 2. čtení Sněmovnou</span></li>
+    <li class="done"><span class="date">18. 6. 2026</span><span class="desc"> — Tisk 67/12: zpracované pozměňovací návrhy</span></li>
+    <li class="done"><span class="date">30. 6. 2026</span><span class="desc"> — Tisk 67/13: stanovisko garančního výboru</span></li>
+    <li class="done"><span class="date">10. 7. 2026</span><span class="desc"> — <strong>3. čtení, schválení Sněmovnou</strong> (hlasování č.&nbsp;117)</span></li>
+    <li class="done"><span class="date">23. 7. 2026</span><span class="desc"> — Postoupení Senátu jako senátní tisk 272</span></li>
+    <li class="done"><span class="date">12.–18. 8.</span><span class="desc"> — <strong>4 senátní výbory doporučují zamítnutí</strong></span></li>
+    <li class="now"><span class="date">19.–22. 8. 2026</span><span class="desc"> — Plénum Senátu hlasuje</span></li>
+    <li><span class="date">Pokud Senát zamítne</span><span class="desc"> — zákon se vrací do Sněmovny. Koalice má hlasy na přehlasování.</span></li>
+  </ul>
+</div>
+
+<!-- HARMONOGRAM IMPLEMENTACE -->
+<div class="section" id="dopady">
+  <h3>Harmonogram implementace</h3>
+  <p class="sub">Co kdy nastane, pokud zákon projde</p>
+  <table class="rtable">
+    <thead><tr><th>Termín</th><th>Co nastává</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1. 1. 2027</strong></td><td>Účinnost zákona. Vznik ÚRÚ ČR (centrální úřad).</td></tr>
+      <tr><td>1. 1. – 31. 1. 2027</td><td>30denní lhůta — zaměstnanci se musí rozhodnout o přechodu.</td></tr>
+      <tr><td>Do 30. 6. 2027</td><td>Obce odešlou ÚAP novému Úřadu.</td></tr>
+      <tr><td><strong>1. 1. 2028</strong></td><td>Krajské úřady rozvoje a územní pracoviště přebírají agendu. Obecní SÚ zanikají. Spisová rozluka.</td></tr>
+      <tr><td>2030</td><td>Testování DSŘ 2.0 (digitální stavební řízení).</td></tr>
+      <tr><td><strong>2. pol. 2031</strong></td><td>Výhradní provoz DSŘ 2.0.</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:14px;color:var(--muted)">Plošná digitalizace archivů stavebních úřadů se neplánuje.</p>
+</div>
+
+<!-- DATA KOPRIVNICE -->
+<div class="section" id="data">
+  <h3>Kopřivnice v číslech</h3>
+  <p class="sub">Benchmark stavebního úřadu Kopřivnice — data BVS 2025 (74 ORP měst)</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="num">6,3</div>
+      <div class="label">FTE stavební úřad</div>
+      <div class="ctx">Medián: 12,8 · 8. nejnižší ze 74</div>
+    </div>
+    <div class="stat">
+      <div class="num">413</div>
+      <div class="label">Rozhodnutí za rok</div>
+      <div class="ctx">65,6 rozhodnutí / FTE (medián 59)</div>
+    </div>
+    <div class="stat">
+      <div class="num">~14</div>
+      <div class="label">FTE celkem k převodu</div>
+      <div class="ctx">SÚ + ÚP + památky + SSÚ + voda + les</div>
+    </div>
+    <div class="stat">
+      <div class="num">74,4 %</div>
+      <div class="label">Krytí přenesené správy</div>
+      <div class="ctx">Schodek −23,9 mil. Kč</div>
+    </div>
+  </div>
+
+  <div class="quote">
+    Kopřivnice provozuje stavební úřad na polovinu obvyklého stavu a nad mediánem výkonu. Osmé nejnižší obsazení ze 74 měst, a přitom 65 rozhodnutí na úvazek — medián je 59.
+    <cite>Datová karta SÚ, benchmark BVS 2025</cite>
+  </div>
+
+  <h4 style="margin-bottom:12px">Navazující agendy dotčené přechodem</h4>
+  <table class="rtable">
+    <thead><tr><th>Agenda</th><th>FTE</th><th>Výkon</th></tr></thead>
+    <tbody>
+      <tr><td>Územní plánování</td><td>2,5</td><td>8 ÚPD, 15 ZS, 57 vyjádření</td></tr>
+      <tr><td>Památky</td><td>1,0</td><td>86 rozhodnutí (medián 71)</td></tr>
+      <tr><td>Silniční správní úřad</td><td>1,0</td><td>177 rozhodnutí, 340 úkonů</td></tr>
+      <tr><td>Vodoprávní úřad</td><td>2,8</td><td>67 rozhodnutí</td></tr>
+      <tr><td>Lesní hospodářství</td><td>0,4</td><td>14 rozhodnutí</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 20 OBAV -->
+<div class="section" id="obavy">
+  <h3>20 obav — revize květen vs. srpen 2026</h3>
+  <p class="sub">V květnu 2026 jsme identifikovali 20 témat obav. V srpnu jsme je prověřili proti aktuálnímu stavu.</p>
+
+  <div class="stats" style="margin-bottom:16px">
+    <div class="stat"><div class="num" style="color:var(--red)">10</div><div class="label">Potvrzeno</div></div>
+    <div class="stat"><div class="num" style="color:var(--red)">5</div><div class="label">Zhoršeno</div></div>
+    <div class="stat"><div class="num" style="color:var(--green)">2</div><div class="label">Částečně / vyřešeno</div></div>
+    <div class="stat"><div class="num" style="color:var(--muted)">1</div><div class="label">Padlo</div></div>
+    <div class="stat"><div class="num" style="color:var(--amber)">2</div><div class="label">Nejasné</div></div>
+  </div>
+
+  <table class="rtable">
+    <thead><tr><th>#</th><th>Téma</th><th>Verdikt</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Role koordinátorů MMR</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>2</td><td>Legislativní proces a termíny</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>3</td><td>30denní lhůta pro odmítnutí přechodu</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>4</td><td>Převažující činnost</td><td class="v-bad">ZHORŠENO</td></tr>
+      <tr><td>5</td><td>Personální stabilita</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>6</td><td>Vznik ÚRÚ bez kapacit</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>7</td><td>Centralizace rozhodování</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>8</td><td>10denní lhůty pro námitky</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>9</td><td>Digitalizace a hybridní provoz</td><td class="v-bad">ZHORŠENO</td></tr>
+      <tr><td>10</td><td>Archivace a spisovna</td><td class="v-ok">ČÁSTEČNĚ VYŘEŠENO</td></tr>
+      <tr><td>11</td><td>IT vybavení a flotila</td><td class="v-warn">NEJASNÉ</td></tr>
+      <tr><td>12</td><td>Mzdová motivace a příplatky</td><td class="v-gray">PADLO</td></tr>
+      <tr><td>13</td><td>Degradace DO stanovisek</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>14</td><td>Statistická argumentace rychlosti</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>15</td><td>ÚP a informovanost veřejnosti</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>16</td><td>Odpovědnost projektantů</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>17</td><td>Backlogy a kvalita řízení</td><td class="v-warn">NEJASNÉ</td></tr>
+      <tr><td>18</td><td>Lokální kapacity a tým</td><td class="v-bad">POTVRZENO</td></tr>
+      <tr><td>19</td><td>Neucelený legislativní text</td><td class="v-ok">VYŘEŠENO</td></tr>
+      <tr><td>20</td><td>Férovost město–ministerstvo</td><td class="v-bad">ZHORŠENO</td></tr>
+    </tbody>
+  </table>
+
+  <div class="quote">
+    V květnu se mluvilo o obavách. V srpnu už u velké části z nich nejsme ve fázi obav, ale ve fázi doložených rizik.
+  </div>
+
+  <h4 style="margin:24px 0 12px">Hlavní rizikové oblasti</h4>
+  <div class="cards">
+    <div class="card red">
+      <h4>Časový nesoulad přechodu</h4>
+      <p>Zaměstnanci se musí rozhodnout do 31.&nbsp;1.&nbsp;2027, ale reálný přechod nastává až 1.&nbsp;1.&nbsp;2028. Rok nejistoty bez jasných podmínek.</p>
+    </div>
+    <div class="card red">
+      <h4>Kapacitní minimum</h4>
+      <p>Kopřivnice má 6,3 FTE — polovinu mediánu. Ztráta 1–2 klíčových lidí může paralyzovat úřad ještě před přechodem.</p>
+    </div>
+    <div class="card red">
+      <h4>Digitalizace do 2031</h4>
+      <p>DSŘ 2.0 výhradně až ve 2.&nbsp;pol.&nbsp;2031. Do té doby hybridní provoz papír + nedokončené IT. SMS ČR odhaduje +50&nbsp;% práce navíc.</p>
+    </div>
+    <div class="card amber">
+      <h4>Odpovědnost obce za rozluku</h4>
+      <p>Odpovědnost za neprovedenou spisovou rozluku nese obecní úřad a jeho vedení. Systém, do kterého se rozluka provede, ještě není vysoutěžený.</p>
+    </div>
+  </div>
+</div>
+
+<!-- STAKEHOLDERS -->
+<div class="section" id="hlasy">
+  <h3>Kdo co říká</h3>
+  <p class="sub">Přehled veřejných stanovisek klíčových aktérů k srpnu 2026</p>
+
+  <div class="stake">
+    <h4>🏛 SMS ČR — Sdružení místních samospráv</h4>
+    <p>Požaduje zásadní přepracování a návrat do standardního legislativního procesu. Upozorňuje na provozní náklady 13–15 mld. Kč/rok, jednorázově přes 3 mld. Kč. Průzkum: <strong>90 % obcí reformu nepodporuje</strong>.</p>
+  </div>
+
+  <div class="stake">
+    <h4>🏗 ČKAIT + ČKA — profesní komory</h4>
+    <p>Společné memorandum: novela zvyšuje odpovědnost projektantů, ale nevytváří podmínky pro její naplnění. Požadují řádné připomínkové řízení. Průzkumy ČKAIT „zcela vyvracejí" jednoduchou zkratku o pomalosti povolování.</p>
+  </div>
+
+  <div class="stake">
+    <h4>⚖️ Ombudsman</h4>
+    <p>„Považuji za nepřijatelné, že tak zásadní změny jsou připravovány kvapně a bez dostatečné odborné diskuze." Varuje před oslabením práv účastníků řízení a fikcemi souhlasu.</p>
+  </div>
+
+  <div class="stake">
+    <h4>🏛 Senátní výbory (272/1–4)</h4>
+    <p>Všechny 4 výbory doporučují zamítnutí. Garanční výbor přijal doprovodné usnesení — vláda by měla předložit novelu řádnou cestou s RIA a mezirezortním připomínkováním.</p>
+  </div>
+
+  <div class="stake">
+    <h4>🏢 MMR — Ministerstvo pro místní rozvoj</h4>
+    <p>Staví na narativu zrychlení, sjednocení odpovědnosti a postupné digitalizace. Princip nepohoršení pro zaměstnance. Koordinátoři v terénu pro komunikaci přechodu.</p>
+  </div>
+</div>
+
+<!-- CO DAL -->
+<div class="section">
+  <h3>Co z toho plyne pro obce</h3>
+  <ul class="bl">
+    <li><strong>Sledovat výsledek Senátu</strong> (19.–22. 8. 2026) — pokud zamítne, sledovat termín přehlasování Sněmovnou.</li>
+    <li><strong>Připravit kapacitní audit</strong> prostor, archivů a personálu pro spisovou rozluku.</li>
+    <li><strong>Koordinovat dotazník MMR</strong> — sběr dat o personálu, prostorách, IT, smlouvách.</li>
+    <li><strong>Aktualizovat krizový plán personální stability</strong> — identifikovat klíčové osoby a rizika odchodu.</li>
+    <li><strong>Komunikovat se zaměstnanci</strong> otevřeně o stavu, časové ose a jejich možnostech.</li>
+  </ul>
+</div>
+
+<div class="footer">
+  Stav k 19. 8. 2026 · MÚ Kopřivnice · Zpracováno z parlamentních podkladů, benchmarku BVS 2025 a veřejných stanovisek
+</div>
+
+</body>
+</html>
