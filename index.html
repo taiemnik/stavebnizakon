@@ -91,6 +91,29 @@ ul.bl li{margin-bottom:6px}
 .tag-green{background:rgba(77,176,91,.12);color:var(--green)}
 .tag-amber{background:rgba(230,168,35,.12);color:var(--amber)}
 .tag-gray{background:rgba(90,107,128,.1);color:var(--muted)}
+
+/* ACCORDION */
+.acc{border:1px solid var(--border);border-radius:var(--r);margin-bottom:8px;overflow:hidden;background:var(--card)}
+.acc summary{display:flex;align-items:center;gap:10px;padding:14px 18px;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);list-style:none;user-select:none;transition:background .15s}
+.acc summary:hover{background:rgba(212,237,252,.2)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::before{content:'▸';font-size:13px;color:var(--blue);transition:transform .2s;flex-shrink:0}
+.acc[open] summary::before{transform:rotate(90deg)}
+.acc .acc-num{min-width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:12px;font-weight:700;color:#fff;flex-shrink:0}
+.acc .acc-title{flex:1}
+.acc .acc-verdict{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 10px;border-radius:10px;flex-shrink:0}
+.vd-bad{background:rgba(217,79,79,.12);color:var(--red)}
+.vd-warn{background:rgba(230,168,35,.12);color:var(--amber)}
+.vd-ok{background:rgba(77,176,91,.12);color:var(--green)}
+.vd-gray{background:rgba(90,107,128,.1);color:var(--muted)}
+.bg-bad{background:var(--red)}.bg-warn{background:var(--amber)}.bg-ok{background:var(--green)}.bg-gray{background:var(--muted)}
+.acc-body{padding:0 18px 18px;font-size:14px;line-height:1.65;color:var(--text)}
+.acc-body h5{font-size:14px;font-weight:700;color:var(--navy);margin:12px 0 4px;text-transform:uppercase;letter-spacing:.04em}
+.acc-body h5:first-child{margin-top:0}
+.acc-body p{margin-bottom:8px}
+.acc-body blockquote{border-left:3px solid var(--blue);padding:8px 14px;margin:8px 0;background:rgba(212,237,252,.15);font-style:italic;font-size:13px;color:var(--navy);border-radius:0 6px 6px 0}
+.acc-body .src{font-size:12px;color:var(--muted);margin-top:6px}
+.acc-body .src span{display:block}
 </style>
 </head>
 <body>
@@ -203,31 +226,260 @@ ul.bl li{margin-bottom:6px}
     <div class="stat"><div class="num" style="color:var(--amber)">2</div><div class="label">Nejasné</div></div>
   </div>
 
-  <table class="rtable">
-    <thead><tr><th>#</th><th>Téma</th><th>Verdikt</th></tr></thead>
-    <tbody>
-      <tr><td>1</td><td>Role koordinátorů MMR</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>2</td><td>Legislativní proces a termíny</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>3</td><td>30denní lhůta pro odmítnutí přechodu</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>4</td><td>Převažující činnost</td><td class="v-bad">ZHORŠENO</td></tr>
-      <tr><td>5</td><td>Personální stabilita</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>6</td><td>Vznik ÚRÚ bez kapacit</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>7</td><td>Centralizace rozhodování</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>8</td><td>10denní lhůty pro námitky</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>9</td><td>Digitalizace a hybridní provoz</td><td class="v-bad">ZHORŠENO</td></tr>
-      <tr><td>10</td><td>Archivace a spisovna</td><td class="v-ok">ČÁSTEČNĚ VYŘEŠENO</td></tr>
-      <tr><td>11</td><td>IT vybavení a flotila</td><td class="v-warn">NEJASNÉ</td></tr>
-      <tr><td>12</td><td>Mzdová motivace a příplatky</td><td class="v-gray">PADLO</td></tr>
-      <tr><td>13</td><td>Degradace DO stanovisek</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>14</td><td>Statistická argumentace rychlosti</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>15</td><td>ÚP a informovanost veřejnosti</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>16</td><td>Odpovědnost projektantů</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>17</td><td>Backlogy a kvalita řízení</td><td class="v-warn">NEJASNÉ</td></tr>
-      <tr><td>18</td><td>Lokální kapacity a tým</td><td class="v-bad">POTVRZENO</td></tr>
-      <tr><td>19</td><td>Neucelený legislativní text</td><td class="v-ok">VYŘEŠENO</td></tr>
-      <tr><td>20</td><td>Férovost město–ministerstvo</td><td class="v-bad">ZHORŠENO</td></tr>
-    </tbody>
-  </table>
+  <!-- ACCORDION -->
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">1</span><span class="acc-title">Role koordinátorů MMR</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Koordinátoři sbírají data, ale neumějí dát závazné odpovědi k personálním a právním otázkám.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR popsalo koordinátory jako terénní komunikační vrstvu, nikoli autority pro závazný výklad. V srpnu 2026 stále pokračuje sběr dat přes dotazník, řešení prostor a setkávání v územích. Systém závazných odpovědí zůstává omezený.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„6 koordinátorů v terénu… Role: sběr dat, mapování, komunikace — ne náhrada odborníků stavebního práva."</blockquote>
+      <div class="src"><span>Setkání MMR 18. 6. 2026</span><span>novystavebnizakon.gov.cz, newsletter #4 (4. 8. 2026)</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">2</span><span class="acc-title">Legislativní proces a termíny</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Harmonogram je nerealistický, právo i implementace se ženou pod tlakem.</p>
+      <h5>Co se změnilo</h5>
+      <p>Návrh prošel dál v poslaneckém režimu, proti němuž se vymezily SMS ČR, ČKAIT/ČKA i ombudsman. V srpnu všechny čtyři senátní výbory doporučují zamítnutí. Problém rychlosti a nepřehlednosti procesu nebyl odstraněn.</p>
+      <h5>Další zdroje</h5>
+      <blockquote>„Řádné připomínkové řízení je nezastupitelným nástrojem…" — společné memorandum ČKAIT + ČKA</blockquote>
+      <blockquote>„Považuji za nepřijatelné, že tak zásadní změny jsou připravovány kvapně a bez dostatečné odborné diskuze." — ombudsman, 19. 1. 2026</blockquote>
+      <div class="src"><span>Senátní výbory 272/1–4: zamítavá usnesení 12.–18. 8. 2026</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">3</span><span class="acc-title">30denní lhůta pro odmítnutí přechodu</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Zaměstnanci budou nuceni rozhodovat o přechodu dřív, než budou znát budoucí realitu.</p>
+      <h5>Co se změnilo</h5>
+      <p>Zákon nabývá účinnosti 1. 1. 2027, 30denní lhůta běží hned. Reálný přechod nastává až 1. 1. 2028. Mezi rozhodnutím zaměstnance a přechodem je rok — přesně jádro květnové obavy.</p>
+      <div class="src"><span>Přechodná ustanovení senátního tisku 272/0</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">4</span><span class="acc-title">Převažující činnost</span><span class="acc-verdict vd-bad">Zhoršeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Není jasné, podle čeho se pozná, kdo má „převažující" agendu a tedy přechází.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR dál používá princip převažující agendy, ale veřejně známá metodika stále nedává jednoduché pravidlo typu 51 %. Dotazník MMR sám sbírá data o kombinovaných rolích a překryvech agend — stát fakticky potvrzuje složitost problému, aniž ji normativně řeší.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„Automatický přechod zaměstnanců s převažující stavební nebo ÚP agendou…"</blockquote>
+      <div class="src"><span>Setkání MMR 18. 6. 2026</span><span>Dotazník MMR: položky 25–35 zjišťují překryvy agend</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">5</span><span class="acc-title">Personální stabilita</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Reforma vyvolá odchody a zhorší už tak křehkou personální stabilitu.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR samo v FAQ přiznává systémovou křehkost.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„Nejméně čtvrtina stavebních úřadů není dlouhodobě personálně stabilizována a více než třetina úředníků je v předdůchodovém nebo důchodovém věku." — FAQ MMR, otázka 2</blockquote>
+      <div class="src"><span>Květnový odhad: 30–60 % rizikových odchodů</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">6</span><span class="acc-title">Vznik ÚRÚ bez kapacit</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Nový úřad vznikne dřív, než bude mít hotové kapacity, rozpočet a provoz.</p>
+      <h5>Co se změnilo</h5>
+      <p>V červnu MMR mluvilo o rozpočtu, systemizaci a organizačním rozběhu jako o věcech před sebou. V srpnu newsletter #4 stále řeší dotazník, prostory a ICT zázemí.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„Rozpočet URU… ladění červenec–srpen… po schválení zákona systemizace do 30 dnů."</blockquote>
+      <div class="src"><span>Setkání MMR 18. 6. 2026</span><span>Newsletter #4: „dotazník, prostory, stav přípravy ICT zázemí"</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">7</span><span class="acc-title">Centralizace rozhodování</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Rozhodování se odtrhne od místní reality a obce ztratí vliv.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR tuto obavu slovně odmítá, ale architektura systému ji fakticky nevylučuje: Úřad rozvoje území, 14 krajských úřadů, 205 územních pracovišť, případně detašovaná pracoviště „podle potřeby". Centralizovaný model se sekundární snahou zachovat územní dostupnost.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„V žádném případě… Úředníci mají i nadále působit v daném území." — FAQ MMR, otázka 14</blockquote>
+      <div class="src"><span>Politická odpověď existuje, ale systémové riziko nezmizelo — jen se přebaluje argumentem o detašovaných pracovištích.</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">8</span><span class="acc-title">10denní lhůty pro námitky</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Krátké lhůty budou prakticky nevyužitelné pro obce i veřejnost.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR zdůrazňuje procesní ekonomii a omezení obstrukcí. Ombudsman naopak varuje před omezením práv účastníků.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>Námitky sousedů musí být založené na porušení zákona a nemají zdržovat. — FAQ MMR, otázka 42</blockquote>
+      <h5>Další zdroje</h5>
+      <blockquote>Novela je „nevstřícná k právům osob na spravedlivý správní proces a na soudní ochranu práv". — ombudsman</blockquote>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">9</span><span class="acc-title">Digitalizace a hybridní provoz</span><span class="acc-verdict vd-bad">Zhoršeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Čekají 2–3 roky nefunkčního hybridu papír + nedokončené IT.</p>
+      <h5>Co se změnilo</h5>
+      <p>Nejde o 2–3 roky, ale o horizont do roku <strong>2031</strong>. Testování DSŘ 2.0 v roce 2030, paralelní provoz v 1. pol. 2031, výhradní provoz ve 2. pol. 2031. Přechodné období IS prodlouženo do 31. 12. 2030.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„V roce 2030 má probíhat testování DSŘ 2.0, v první polovině roku 2031 paralelní provoz a ve druhé polovině roku 2031 výhradní provoz DSŘ 2.0."</blockquote>
+      <blockquote>„Systémy nejsou dosud plně funkční." — FAQ MMR</blockquote>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-ok">10</span><span class="acc-title">Archivace a spisovna</span><span class="acc-verdict vd-ok">Částečně vyřešeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Spisy, archivy a fyzické oddělení provozů budou velký provozní problém pro město.</p>
+      <h5>Co se změnilo</h5>
+      <p>ÚRÚ má po dobu 5 let hradit obvyklý nájem a služby za ponechané prostory. To část finanční nejistoty řeší. Zůstává ale tvrdá odpovědnost obce za řádně provedenou rozluku a kvalitu evidence dokumentů.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>ÚRÚ hradí obvyklý nájem + služby za ponechané prostory po 5 let.</blockquote>
+      <div class="src"><span>FAQ ke spisové rozluce, seminář 4. 6. 2026</span><span>Metodika detailního režimu převzetí analogových evidencí teprve vzniká.</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-warn">11</span><span class="acc-title">IT vybavení a flotila</span><span class="acc-verdict vd-warn">Nejasné</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Režim sdílení majetku, IT a flotily bude nejasný a drahý.</p>
+      <h5>Co se změnilo</h5>
+      <p>Srpen 2026 stále mluví o ICT zázemí jako o připravované vrstvě implementace. Pevný, veřejně srozumitelný model majetkového a IT režimu pro jednotlivé obce z veřejných zdrojů zatím nevystupuje.</p>
+      <div class="src"><span>Newsletter #4: „stav přípravy ICT zázemí"</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-gray">12</span><span class="acc-title">Mzdová motivace a příplatky</span><span class="acc-verdict vd-gray">Padlo</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Slíbené navýšení +10 % nebude jasné, motivace se rozpadne.</p>
+      <h5>Co se změnilo</h5>
+      <p>Původní představa o +10 % se rozpadla. MMR už veřejně nemluví o procentním navýšení, ale o principu nepohoršení, garanci tarifu a omezené logice osobního příplatku. Původní obava mířená na konkrétní „desetiprocentní balíček" padla.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„Princip nepohoršení — garance výše platového tarifu…"<br>„Odměny a benefity — nenárokové, zákon neřeší."</blockquote>
+      <div class="src"><span>Setkání MMR 18. 6. 2026</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">13</span><span class="acc-title">Degradace DO stanovisek</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Závazná stanoviska budou oslabena a odpovědnost se rozplyne.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR říká, že integrační logika má zvýšit přehlednost. Ombudsman a komory ale vidí problém: dotčené orgány mají používat „nejmírnější prostředky", nastupuje fikce souhlasu.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„Odpovědnost nese stavební úřad jako celek." — FAQ MMR, otázka 12</blockquote>
+      <h5>Další zdroje</h5>
+      <blockquote>„Stanoviska mohou být nahrazena fikcí souhlasu… ochrana veřejných zájmů tak zůstane jen formální." — ombudsman</blockquote>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">14</span><span class="acc-title">Statistická argumentace rychlosti</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Reforma je opřená o zjednodušenou nebo metodicky vadnou diagnózu problému.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR dál prodává reformu přes dlouhé povolovací lhůty. Proti tomu stojí opakovaná námitka, že data nejsou dostatečně transparentní a argumentace míchá různé druhy řízení. Robustní RIA nebyla zveřejněna.</p>
+      <h5>Další zdroje</h5>
+      <blockquote>SMS ČR: chybějící RIA a nevyčíslené dopady.</blockquote>
+      <blockquote>ČKAIT: průzkumy o délce povolování staveb „zcela vyvrací" jednoduchou zkratku o pomalosti.</blockquote>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">15</span><span class="acc-title">ÚP a informovanost veřejnosti</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Veřejnost a obce nebudou mít dost prostoru a času zachytit klíčové zásahy ve fázi územního plánování.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR argumentuje, že těžiště účasti je v územním plánování, ne ve stavebním řízení. To ale neřeší problém informovanosti — naopak potvrzuje přesun významu do fáze, kterou občané často nestíhají.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„Veřejnost má klíčový prostor v územním plánování…" — FAQ MMR, otázka 13</blockquote>
+      <div class="src"><span>SMS ČR: obavy o rozpracované územní plány a zásahy do autonomie obcí</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">16</span><span class="acc-title">Odpovědnost projektantů</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Odpovědnost se přesune na projektanty bez adekvátních podmínek a pojistek.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR říká, že projektant odpovídá za správnost a úřad nemá být „spoluprojektantem". ČKAIT/ČKA ostře oponují.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>„Za správnost a splnění technických požadavků v projektové dokumentaci odpovídá projektant." — FAQ MMR, otázka 43</blockquote>
+      <h5>Další zdroje</h5>
+      <blockquote>„Novela sice zásadně zvyšuje odpovědnost autorizovaných osob…, avšak nevytváří podmínky pro řádné naplnění této odpovědnosti." — společné memorandum ČKAIT + ČKA</blockquote>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-warn">17</span><span class="acc-title">Backlogy a kvalita řízení</span><span class="acc-verdict vd-warn">Nejasné</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Přesun systému backlog sám neodstraní a může ho jen přelévat jinam.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR tvrdí, že sjednocení a odstranění duplicit backlog omezí. Kritici naopak upozorňují, že bez kapacit a funkčního IT může dojít jen k přesunu problému. Nový model ještě neběží — empirický důkaz neexistuje.</p>
+      <div class="src"><span>FAQ MMR, otázky 5 a 30</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">18</span><span class="acc-title">Lokální kapacity a tým</span><span class="acc-verdict vd-bad">Potvrzeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Kopřivnice má málo lidí a ztráta klíčových osob může tým rozbít.</p>
+      <h5>Co se změnilo</h5>
+      <p>Nově máme tvrdá data z benchmarku. Kopřivnice jede na <strong>6,3 FTE</strong> proti mediánu <strong>12,835</strong> a je 8. nejnižší ze 74 měst. Lokální kapacitní polštář je kriticky nízký.</p>
+      <div class="src"><span>Datová karta SÚ, benchmark BVS 2025</span></div>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-ok">19</span><span class="acc-title">Neucelený legislativní text</span><span class="acc-verdict vd-ok">Vyřešeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Bez konsolidovaného textu se nedá odpovědně plánovat.</p>
+      <h5>Co se změnilo</h5>
+      <p>Od 23. 7. 2026 existuje senátní tisk 272/0 jako konsolidované znění schválené Sněmovnou. To neřeší kvalitu novely, ale řeší původní informační deficit „nemáme z čeho číst".</p>
+    </div>
+  </details>
+
+  <details class="acc">
+    <summary><span class="acc-num bg-bad">20</span><span class="acc-title">Férovost město–ministerstvo</span><span class="acc-verdict vd-bad">Zhoršeno</span></summary>
+    <div class="acc-body">
+      <h5>Obava (květen 2026)</h5>
+      <p>Město ponese značnou část rizik a nákladů, zatímco stát si nechává rozhodovací převahu.</p>
+      <h5>Co se změnilo</h5>
+      <p>MMR nabízí nájemní kompenzaci a metodické ujišťování. Na druhé straně se v srpnu stále sbírají data o majetku, personálu a ICT, digitalizace je odsunutá do roku 2031 a odpovědnost za rozluku zůstává na obci.</p>
+      <h5>Reakce MMR</h5>
+      <blockquote>Stát zdůrazňuje dostatek času a pečlivou přípravu, ale implementační agenda zjevně není uzavřená.</blockquote>
+      <div class="src"><span>„Odpovědnost za neprovedenou rozluku nese obecní úřad a jeho představení."</span></div>
+    </div>
+  </details>
 
   <div class="quote">
     V květnu se mluvilo o obavách. V srpnu už u velké části z nich nejsme ve fázi obav, ale ve fázi doložených rizik.
