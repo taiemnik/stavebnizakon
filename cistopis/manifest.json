@@ -1,0 +1,729 @@
+{
+  "generated": "2026-09-03",
+  "source": "senátní tisk 272/0",
+  "laws": [
+    {
+      "id": "283-2021",
+      "zakon": "283/2021",
+      "file": "283-2021.md",
+      "title": "Zákon č. 283/2021 Sb., stavební zákon",
+      "mode": "full",
+      "clanky": [
+        "I",
+        "II"
+      ],
+      "sections": null,
+      "ops": 735
+    },
+    {
+      "id": "2-1969",
+      "zakon": "2/1969",
+      "file": "2-1969.md",
+      "title": "Zákon České národní rady č. 2/1969 Sb., o zřízení ministerstev a jiných ústředních orgánů státní správy České socialistické republiky",
+      "mode": "partial",
+      "clanky": [
+        "III"
+      ],
+      "sections": 4,
+      "ops": 4
+    },
+    {
+      "id": "133-1985",
+      "zakon": "133/1985",
+      "file": "133-1985.md",
+      "title": "Zákon České národní rady č. 133/1985 Sb., o požární ochraně",
+      "mode": "partial",
+      "clanky": [
+        "V"
+      ],
+      "sections": 6,
+      "ops": 12
+    },
+    {
+      "id": "20-1987",
+      "zakon": "20/1987",
+      "file": "20-1987.md",
+      "title": "Zákon České národní rady č. 20/1987 Sb., o státní památkové péči",
+      "mode": "partial",
+      "clanky": [
+        "VII",
+        "VIII"
+      ],
+      "sections": 18,
+      "ops": 39
+    },
+    {
+      "id": "44-1988",
+      "zakon": "44/1988",
+      "file": "44-1988.md",
+      "title": "Zákon č. 44/1988 Sb., o ochraně a využití nerostného bohatství (horní zákon)",
+      "mode": "partial",
+      "clanky": [
+        "IX",
+        "X"
+      ],
+      "sections": 8,
+      "ops": 10
+    },
+    {
+      "id": "61-1988",
+      "zakon": "61/1988",
+      "file": "61-1988.md",
+      "title": "Zákon České národní rady č. 61/1988 Sb., o hornické činnosti, výbušninách a o státní báňské správě",
+      "mode": "partial",
+      "clanky": [
+        "XI",
+        "XII"
+      ],
+      "sections": 6,
+      "ops": 5
+    },
+    {
+      "id": "62-1988",
+      "zakon": "62/1988",
+      "file": "62-1988.md",
+      "title": "Zákon České národní rady č. 62/1988 Sb., o geologických pracích",
+      "mode": "partial",
+      "clanky": [
+        "XIII"
+      ],
+      "sections": 1,
+      "ops": 2
+    },
+    {
+      "id": "114-1992",
+      "zakon": "114/1992",
+      "file": "114-1992.md",
+      "title": "Zákon České národní rady č. 114/1992 Sb., o ochraně přírody a krajiny",
+      "mode": "partial",
+      "clanky": [
+        "XIV",
+        "XV"
+      ],
+      "sections": 65,
+      "ops": 230
+    },
+    {
+      "id": "334-1992",
+      "zakon": "334/1992",
+      "file": "334-1992.md",
+      "title": "Zákon České národní rady č. 334/1992 Sb., o ochraně zemědělského půdního fondu",
+      "mode": "partial",
+      "clanky": [
+        "XVI",
+        "XVII"
+      ],
+      "sections": 18,
+      "ops": 37
+    },
+    {
+      "id": "338-1992",
+      "zakon": "338/1992",
+      "file": "338-1992.md",
+      "title": "Zákon České národní rady č. 338/1992 Sb., o dani z nemovitých věcí",
+      "mode": "partial",
+      "clanky": [
+        "XVIII",
+        "XIX"
+      ],
+      "sections": 2,
+      "ops": 3
+    },
+    {
+      "id": "360-1992",
+      "zakon": "360/1992",
+      "file": "360-1992.md",
+      "title": "Zákon České národní rady č. 360/1992 Sb., o výkonu povolání autorizovaných architektů a o výkonu povolání autorizovaných inženýrů a techniků činných ve výstavbě (autorizační zákon) (autorizační zákon)",
+      "mode": "partial",
+      "clanky": [
+        "XX"
+      ],
+      "sections": 2,
+      "ops": 2
+    },
+    {
+      "id": "200-1994",
+      "zakon": "200/1994",
+      "file": "200-1994.md",
+      "title": "Zákon č. 200/1994 Sb., o zeměměřictví a o změně a doplnění některých zákonů souvisejících s jeho zavedením",
+      "mode": "partial",
+      "clanky": [
+        "XXI",
+        "XXII"
+      ],
+      "sections": 1,
+      "ops": 2
+    },
+    {
+      "id": "266-1994",
+      "zakon": "266/1994",
+      "file": "266-1994.md",
+      "title": "Zákon č. 266/1994 Sb., o dráhách",
+      "mode": "partial",
+      "clanky": [
+        "XXIII"
+      ],
+      "sections": 1,
+      "ops": 1
+    },
+    {
+      "id": "114-1995",
+      "zakon": "114/1995",
+      "file": "114-1995.md",
+      "title": "Zákon č. 114/1995 Sb., o vnitrozemské plavbě",
+      "mode": "partial",
+      "clanky": [
+        "XXIV"
+      ],
+      "sections": 1,
+      "ops": 1
+    },
+    {
+      "id": "289-1995",
+      "zakon": "289/1995",
+      "file": "289-1995.md",
+      "title": "Zákon č. 289/1995 Sb., o lesích a o změně a doplnění některých zákonů (lesní zákon)",
+      "mode": "partial",
+      "clanky": [
+        "XXV",
+        "XXVI"
+      ],
+      "sections": 7,
+      "ops": 16
+    },
+    {
+      "id": "13-1997",
+      "zakon": "13/1997",
+      "file": "13-1997.md",
+      "title": "Zákon č. 13/1997 Sb., o pozemních komunikacích",
+      "mode": "partial",
+      "clanky": [
+        "XXVII"
+      ],
+      "sections": 13,
+      "ops": 8
+    },
+    {
+      "id": "49-1997",
+      "zakon": "49/1997",
+      "file": "49-1997.md",
+      "title": "Zákon č. 49/1997 Sb., o civilním letectví",
+      "mode": "partial",
+      "clanky": [
+        "XXVIII"
+      ],
+      "sections": 4,
+      "ops": 4
+    },
+    {
+      "id": "82-1998",
+      "zakon": "82/1998",
+      "file": "82-1998.md",
+      "title": "Zákon č. 82/1998 Sb., o odpovědnosti za škodu způsobenou při výkonu veřejné moci rozhodnutím nebo nesprávným úředním postupem a o změně zákona České národní rady č. 358/1992 Sb., o notářích a jejich činnosti (notářský řád)",
+      "mode": "partial",
+      "clanky": [
+        "XXIX"
+      ],
+      "sections": 0,
+      "ops": 1
+    },
+    {
+      "id": "166-1999",
+      "zakon": "166/1999",
+      "file": "166-1999.md",
+      "title": "Zákon č. 166/1999 Sb., o veterinární péči a o změně některých souvisejících zákonů (veterinární zákon)",
+      "mode": "partial",
+      "clanky": [
+        "XXX",
+        "XXXI"
+      ],
+      "sections": 3,
+      "ops": 7
+    },
+    {
+      "id": "222-1999",
+      "zakon": "222/1999",
+      "file": "222-1999.md",
+      "title": "Zákon č. 222/1999 Sb., o zajišťování obrany České republiky",
+      "mode": "partial",
+      "clanky": [
+        "XXXII"
+      ],
+      "sections": 4,
+      "ops": 4
+    },
+    {
+      "id": "128-2000",
+      "zakon": "128/2000",
+      "file": "128-2000.md",
+      "title": "Zákon č. 128/2000 Sb., o obcích (obecní zřízení)",
+      "mode": "partial",
+      "clanky": [
+        "XXXIV"
+      ],
+      "sections": 1,
+      "ops": 1
+    },
+    {
+      "id": "129-2000",
+      "zakon": "129/2000",
+      "file": "129-2000.md",
+      "title": "Zákon č. 129/2000 Sb., o krajích (krajské zřízení)",
+      "mode": "partial",
+      "clanky": [
+        "XXXV"
+      ],
+      "sections": 1,
+      "ops": 1
+    },
+    {
+      "id": "131-2000",
+      "zakon": "131/2000",
+      "file": "131-2000.md",
+      "title": "Zákon č. 131/2000 Sb., o hlavním městě Praze",
+      "mode": "partial",
+      "clanky": [
+        "XXXVI"
+      ],
+      "sections": 2,
+      "ops": 2
+    },
+    {
+      "id": "219-2000",
+      "zakon": "219/2000",
+      "file": "219-2000.md",
+      "title": "Zákon č. 219/2000 Sb., o majetku České republiky a jejím vystupování v právních vztazích",
+      "mode": "partial",
+      "clanky": [
+        "XXXVII"
+      ],
+      "sections": 1,
+      "ops": 2
+    },
+    {
+      "id": "239-2000",
+      "zakon": "239/2000",
+      "file": "239-2000.md",
+      "title": "Zákon č. 239/2000 Sb., o integrovaném záchranném systému a o změně některých zákonů",
+      "mode": "partial",
+      "clanky": [
+        "XXXVIII",
+        "XXXIX"
+      ],
+      "sections": 5,
+      "ops": 7
+    },
+    {
+      "id": "258-2000",
+      "zakon": "258/2000",
+      "file": "258-2000.md",
+      "title": "Zákon č. 258/2000 Sb., o ochraně veřejného zdraví a o změně některých souvisejících zákonů",
+      "mode": "partial",
+      "clanky": [
+        "XL",
+        "XLI"
+      ],
+      "sections": 7,
+      "ops": 15
+    },
+    {
+      "id": "406-2000",
+      "zakon": "406/2000",
+      "file": "406-2000.md",
+      "title": "Zákon č. 406/2000 Sb., o hospodaření energií",
+      "mode": "partial",
+      "clanky": [
+        "XLII"
+      ],
+      "sections": 0,
+      "ops": 1
+    },
+    {
+      "id": "458-2000",
+      "zakon": "458/2000",
+      "file": "458-2000.md",
+      "title": "Zákon č. 458/2000 Sb., o podmínkách podnikání a o výkonu státní správy v energetických odvětvích a o změně některých zákonů (energetický zákon)",
+      "mode": "partial",
+      "clanky": [
+        "XLIII",
+        "XLIV"
+      ],
+      "sections": 27,
+      "ops": 59
+    },
+    {
+      "id": "100-2001",
+      "zakon": "100/2001",
+      "file": "100-2001.md",
+      "title": "Zákon č. 100/2001 Sb., o posuzování vlivů na životní prostředí a o změně některých souvisejících zákonů (zákon o posuzování vlivů na životní prostředí)",
+      "mode": "partial",
+      "clanky": [
+        "XLV",
+        "XLVI"
+      ],
+      "sections": 14,
+      "ops": 88
+    },
+    {
+      "id": "254-2001",
+      "zakon": "254/2001",
+      "file": "254-2001.md",
+      "title": "Zákon č. 254/2001 Sb., o vodách a o změně některých zákonů (vodní zákon)",
+      "mode": "partial",
+      "clanky": [
+        "XLVII",
+        "XLVIII"
+      ],
+      "sections": 37,
+      "ops": 66
+    },
+    {
+      "id": "256-2001",
+      "zakon": "256/2001",
+      "file": "256-2001.md",
+      "title": "Zákon č. 256/2001 Sb., o pohřebnictví a o změně některých zákonů",
+      "mode": "partial",
+      "clanky": [
+        "XLIX",
+        "L"
+      ],
+      "sections": 2,
+      "ops": 4
+    },
+    {
+      "id": "274-2001",
+      "zakon": "274/2001",
+      "file": "274-2001.md",
+      "title": "Zákon č. 274/2001 Sb., o vodovodech a kanalizacích pro veřejnou potřebu a o změně některých zákonů (zákon o vodovodech a kanalizacích)",
+      "mode": "partial",
+      "clanky": [
+        "LI"
+      ],
+      "sections": 5,
+      "ops": 3
+    },
+    {
+      "id": "139-2002",
+      "zakon": "139/2002",
+      "file": "139-2002.md",
+      "title": "Zákon č. 139/2002 Sb., o pozemkových úpravách a pozemkových úřadech a o změně zákona č. 229/1991 Sb., o úpravě vlastnických vztahů k půdě a jinému zemědělskému majetku, ve znění pozdějších předpisů",
+      "mode": "partial",
+      "clanky": [
+        "LII"
+      ],
+      "sections": 3,
+      "ops": 4
+    },
+    {
+      "id": "150-2002",
+      "zakon": "150/2002",
+      "file": "150-2002.md",
+      "title": "Zákon č. 150/2002 Sb., soudní řád správní",
+      "mode": "partial",
+      "clanky": [
+        "LIII"
+      ],
+      "sections": 5,
+      "ops": 5
+    },
+    {
+      "id": "235-2004",
+      "zakon": "235/2004",
+      "file": "235-2004.md",
+      "title": "Zákon č. 235/2004 Sb., o dani z přidané hodnoty",
+      "mode": "partial",
+      "clanky": [
+        "LIV"
+      ],
+      "sections": 1,
+      "ops": 1
+    },
+    {
+      "id": "326-2004",
+      "zakon": "326/2004",
+      "file": "326-2004.md",
+      "title": "Zákon č. 326/2004 Sb., o rostlinolékařské péči a o změně některých souvisejících zákonů",
+      "mode": "partial",
+      "clanky": [
+        "LV"
+      ],
+      "sections": 2,
+      "ops": 1
+    },
+    {
+      "id": "499-2004",
+      "zakon": "499/2004",
+      "file": "499-2004.md",
+      "title": "Zákon č. 499/2004 Sb., o archivnictví a spisové službě a o změně některých zákonů",
+      "mode": "partial",
+      "clanky": [
+        "LVI"
+      ],
+      "sections": 1,
+      "ops": 2
+    },
+    {
+      "id": "217-2005",
+      "zakon": "217/2005",
+      "file": "217-2005.md",
+      "title": "Zákon č. 217/2005 Sb., kterým se mění zákon č. 353/2003 Sb., o spotřebních daních, ve znění pozdějších předpisů, zákon č. 265/1991 Sb., o působnosti orgánů České republiky v oblasti cen, ve znění pozdějších předpisů, a některé další zákony",
+      "mode": "partial",
+      "clanky": [
+        "LVII"
+      ],
+      "sections": 0,
+      "ops": 8
+    },
+    {
+      "id": "634-2004",
+      "zakon": "634/2004",
+      "file": "634-2004.md",
+      "title": "Zákon č. 634/2004 Sb., o správních poplatcích",
+      "mode": "partial",
+      "clanky": [
+        "LVIII"
+      ],
+      "sections": 0,
+      "ops": 1
+    },
+    {
+      "id": "110-2007",
+      "zakon": "110/2007",
+      "file": "110-2007.md",
+      "title": "Zákon č. 110/2007 Sb., o některých opatřeních v soustavě ústředních orgánů státní správy, souvisejících se zrušením Ministerstva informatiky a o změně některých zákonů",
+      "mode": "partial",
+      "clanky": [
+        "LIX"
+      ],
+      "sections": 1,
+      "ops": 1
+    },
+    {
+      "id": "184-2006",
+      "zakon": "184/2006",
+      "file": "184-2006.md",
+      "title": "Zákon č. 184/2006 Sb., o odnětí nebo omezení vlastnického práva k pozemku nebo ke stavbě (zákon o vyvlastnění)",
+      "mode": "partial",
+      "clanky": [
+        "LX",
+        "LXI"
+      ],
+      "sections": 3,
+      "ops": 4
+    },
+    {
+      "id": "261-2007",
+      "zakon": "261/2007",
+      "file": "261-2007.md",
+      "title": "Zákon č. 261/2007 Sb., o stabilizaci veřejných rozpočtů",
+      "mode": "partial",
+      "clanky": [
+        "LXII",
+        "LXIII"
+      ],
+      "sections": 71,
+      "ops": 13
+    },
+    {
+      "id": "416-2009",
+      "zakon": "416/2009",
+      "file": "416-2009.md",
+      "title": "Zákon č. 416/2009 Sb., o urychlení výstavby strategicky významné infrastruktury",
+      "mode": "partial",
+      "clanky": [
+        "LXIV",
+        "LXV"
+      ],
+      "sections": 16,
+      "ops": 52
+    },
+    {
+      "id": "165-2012",
+      "zakon": "165/2012",
+      "file": "165-2012.md",
+      "title": "Zákon č. 165/2012 Sb., o podporovaných zdrojích energie a o změně některých zákonů",
+      "mode": "partial",
+      "clanky": [
+        "LXVI",
+        "LXVII"
+      ],
+      "sections": 13,
+      "ops": 34
+    },
+    {
+      "id": "201-2012",
+      "zakon": "201/2012",
+      "file": "201-2012.md",
+      "title": "Zákon č. 201/2012 Sb., o ochraně ovzduší",
+      "mode": "partial",
+      "clanky": [
+        "LXVIII",
+        "LXIX"
+      ],
+      "sections": 11,
+      "ops": 27
+    },
+    {
+      "id": "503-2012",
+      "zakon": "503/2012",
+      "file": "503-2012.md",
+      "title": "Zákon č. 503/2012 Sb., o Státním pozemkovém úřadu a o změně některých souvisejících zákonů",
+      "mode": "partial",
+      "clanky": [
+        "LXX"
+      ],
+      "sections": 10,
+      "ops": 15
+    },
+    {
+      "id": "224-2015",
+      "zakon": "224/2015",
+      "file": "224-2015.md",
+      "title": "Zákon č. 224/2015 Sb., o prevenci závažných havárií způsobených vybranými nebezpečnými chemickými látkami nebo chemickými směsmi a o změně zákona č. 634/2004 Sb., o správních poplatcích, ve znění pozdějších předpisů, (zákon o prevenci závažných havárií)",
+      "mode": "partial",
+      "clanky": [
+        "LXXI",
+        "LXXII"
+      ],
+      "sections": 7,
+      "ops": 16
+    },
+    {
+      "id": "134-2016",
+      "zakon": "134/2016",
+      "file": "134-2016.md",
+      "title": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek",
+      "mode": "partial",
+      "clanky": [
+        "LXXIII"
+      ],
+      "sections": 3,
+      "ops": 4
+    },
+    {
+      "id": "263-2016",
+      "zakon": "263/2016",
+      "file": "263-2016.md",
+      "title": "Zákon č. 263/2016 Sb., atomový zákon",
+      "mode": "partial",
+      "clanky": [
+        "LXXIV"
+      ],
+      "sections": 1,
+      "ops": 1
+    },
+    {
+      "id": "541-2020",
+      "zakon": "541/2020",
+      "file": "541-2020.md",
+      "title": "Zákon č. 541/2020 Sb., o odpadech",
+      "mode": "partial",
+      "clanky": [
+        "LXXV",
+        "LXXVI"
+      ],
+      "sections": 5,
+      "ops": 13
+    },
+    {
+      "id": "197-2022",
+      "zakon": "197/2022",
+      "file": "197-2022.md",
+      "title": "Zákon č. 197/2022 Sb., o zvláštních postupech v oblasti územního plánování a stavebního řádu v souvislosti s ozbrojeným konfliktem na území Ukrajiny vyvolaným invazí vojsk Ruské federace",
+      "mode": "partial",
+      "clanky": [
+        "LXXVII"
+      ],
+      "sections": 1,
+      "ops": 1
+    },
+    {
+      "id": "149-2023",
+      "zakon": "149/2023",
+      "file": "149-2023.md",
+      "title": "Zákon č. 149/2023 Sb., kterým se mění některé zákony v souvislosti s přijetím zákona o jednotném environmentálním stanovisku",
+      "mode": "partial",
+      "clanky": [
+        "LXXVIII"
+      ],
+      "sections": 2,
+      "ops": 2
+    },
+    {
+      "id": "465-2023",
+      "zakon": "465/2023",
+      "file": "465-2023.md",
+      "title": "Zákon č. 465/2023 Sb., kterým se mění zákon č. 416/2009 Sb., o urychlení výstavby dopravní, vodní a energetické infrastruktury a infrastruktury elektronických komunikací (liniový zákon), ve znění pozdějších předpisů, a další související zákony",
+      "mode": "partial",
+      "clanky": [
+        "LXXIX"
+      ],
+      "sections": 3,
+      "ops": 2
+    },
+    {
+      "id": "182-2024",
+      "zakon": "182/2024",
+      "file": "182-2024.md",
+      "title": "Zákon č. 182/2024 Sb., kterým se mění zákon č. 254/2001 Sb., o vodách a o změně některých zákonů (vodní zákon), ve znění pozdějších předpisů, zákon č. 114/1992 Sb., o ochraně přírody a krajiny, ve znění pozdějších předpisů, a zákon č. 465/2023 Sb., kterým se mění zákon č. 416/2009 Sb., o urychlení výstavby dopravní, vodní a energetické infrastruktury a infrastruktury elektronických komunikací (liniový zákon), ve znění pozdějších předpisů, a další související zákony",
+      "mode": "partial",
+      "clanky": [
+        "LXXX"
+      ],
+      "sections": 0,
+      "ops": 1
+    },
+    {
+      "id": "249-2025",
+      "zakon": "249/2025",
+      "file": "249-2025.md",
+      "title": "Zákon č. 249/2025 Sb., o urychlení využívání některých obnovitelných zdrojů energie a o změně souvisejících zákonů (zákon o urychlení využívání obnovitelných zdrojů energie)",
+      "mode": "partial",
+      "clanky": [
+        "LXXXI",
+        "LXXXII"
+      ],
+      "sections": 27,
+      "ops": 40
+    },
+    {
+      "id": "330-2025",
+      "zakon": "330/2025",
+      "file": "330-2025.md",
+      "title": "Zákon č. 330/2025 Sb., o správě informací o stavbě a vystavěném prostředí a o změně některých dalších zákonů",
+      "mode": "partial",
+      "clanky": [
+        "LXXXIII"
+      ],
+      "sections": 8,
+      "ops": 3
+    },
+    {
+      "id": "148-2023",
+      "zakon": "148/2023",
+      "file": "148-2023.md",
+      "title": "Zákon č. 148/2023 Sb., o jednotném environmentálním stanovisku",
+      "mode": "partial",
+      "clanky": [
+        "LXXXIV"
+      ],
+      "sections": 0,
+      "ops": 1
+    },
+    {
+      "id": "_bez-cisla",
+      "zakon": "",
+      "file": "_bez-cisla.md",
+      "title": "Články bez čísla zákona",
+      "mode": "partial",
+      "clanky": [
+        "IV",
+        "VI",
+        "XXXIII",
+        "LXXXV"
+      ],
+      "sections": 0,
+      "ops": 4
+    }
+  ]
+}
