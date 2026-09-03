@@ -106,15 +106,24 @@
         return;
       }
       status.textContent = "Načítám " + meta.file + "…";
-      const res = await fetch(BASE + meta.file);
+      let res = await fetch(BASE + meta.file);
+      if(!res.ok && meta.file.endsWith(".md")){
+        res = await fetch(BASE + meta.file.replace(/\.md$/, ".html"));
+      }
       if(!res.ok){
         view.innerHTML = "<p class='empty'>Soubor se nepodařilo načíst.</p>";
         status.textContent = "";
         return;
       }
-      let md = await res.text();
-      md = md.replace(/^---[\s\S]*?---\s*/, "");
-      view.innerHTML = marked.parse(md);
+      let body = await res.text();
+      if(/<!DOCTYPE html>/i.test(body)){
+        const parsed = new DOMParser().parseFromString(body, "text/html");
+        const inner = parsed.querySelector(".markdown-body") || parsed.querySelector("article");
+        view.innerHTML = inner ? inner.innerHTML : parsed.body.innerHTML;
+      } else {
+        body = body.replace(/^---[\s\S]*?---\s*/, "");
+        view.innerHTML = marked.parse(body);
+      }
       const modeLabel = meta.mode === "full" ? "plný zákon" : "jen dotčené paragrafy";
       const cl = (meta.clanky && meta.clanky.length) ? " · Čl. " + meta.clanky.join(", ") : "";
       status.textContent = modeLabel + cl + (meta.sections != null ? " · " + meta.sections + " § ve výstupu" : "");
