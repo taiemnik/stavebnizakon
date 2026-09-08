@@ -21,10 +21,13 @@
     .topbar a{color:rgba(255,255,255,.72);text-decoration:none;font-size:13px;font-weight:600}
     .topbar a:hover{color:#fff}
     .layout{display:grid;grid-template-columns:240px minmax(0,1fr) 220px;flex:1;min-height:0}
-    @media(max-width:1100px){.layout{grid-template-columns:220px minmax(0,1fr)} .toc-pane{display:none} .toc-pane.open{display:flex}}
-    @media(max-width:760px){.layout{grid-template-columns:1fr} .sidebar{display:none} .sidebar.open{display:block;position:fixed;inset:52px 0 0 0;z-index:90;border-right:0}}
     .sidebar{background:var(--card);border-right:1px solid var(--border);overflow:auto;padding:14px 0}
     .sidebar h2,.toc-pane h2{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:6px 16px}
+    .toc-head,.side-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-right:8px}
+    .toc-head h2,.side-head h2{flex:1}
+    .drawer-close{display:none;border:0;background:transparent;color:var(--navy);font:inherit;font-size:22px;line-height:1;padding:4px 10px;cursor:pointer}
+    .scrim{display:none;position:fixed;inset:0;background:rgba(25,58,95,.35);z-index:85;border:0;padding:0;cursor:pointer}
+    .scrim.on{display:block}
     .sidebar input,.toolbar input{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:8px;font:inherit;background:#fff}
     .sidebar .filt{padding:0 16px 10px}
     .law-btn{display:block;width:100%;text-align:left;border:0;background:transparent;padding:9px 16px;cursor:pointer;font:inherit;color:var(--text);border-left:3px solid transparent}
@@ -77,8 +80,32 @@
     .toc-link.l4{padding-left:30px;font-size:12px}
     .toc-empty{padding:8px 16px;font-size:13px;color:var(--muted)}
     .fab-row{display:none;gap:8px;position:fixed;bottom:16px;right:16px;z-index:80}
-    @media(max-width:1100px){.fab-row{display:flex}}
-    .fab-row .icon-btn{box-shadow:0 4px 16px rgba(25,58,95,.18)}
+    .fab-row .icon-btn{box-shadow:0 4px 16px rgba(25,58,95,.18);background:var(--navy);color:#fff;border-color:var(--navy)}
+
+    /* Tablet / mobil: osnova jen jako vysouvací panel zprava */
+    @media(max-width:1100px){
+      .layout{grid-template-columns:220px minmax(0,1fr)}
+      .fab-row{display:flex}
+      .drawer-close{display:block}
+      .toc-pane{
+        position:fixed;top:0;right:0;bottom:0;width:min(320px,88vw);z-index:95;
+        border-left:1px solid var(--border);box-shadow:-8px 0 28px rgba(25,58,95,.18);
+        transform:translateX(105%);transition:transform .22s ease;padding-top:8px;
+      }
+      .toc-pane.open{transform:translateX(0)}
+    }
+    @media(max-width:760px){
+      .layout{grid-template-columns:1fr}
+      .sidebar{
+        display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;
+        width:min(320px,88vw);z-index:95;border-right:1px solid var(--border);
+        box-shadow:8px 0 28px rgba(25,58,95,.18);
+        transform:translateX(-105%);transition:transform .22s ease;padding-top:8px;
+      }
+      .sidebar.open{transform:translateX(0)}
+      .main{padding:20px 16px 100px}
+      .toolbar{padding:8px 10px}
+    }
   </style>
 </head>
 <body>
@@ -89,7 +116,10 @@
   </header>
   <div class="layout">
     <aside class="sidebar" id="sidebar">
-      <h2>Zákony</h2>
+      <div class="side-head">
+        <h2>Zákony</h2>
+        <button type="button" class="drawer-close" id="closeLaws" aria-label="Zavřít">×</button>
+      </div>
       <div class="filt"><input id="qLaws" type="search" placeholder="Filtrovat zákony…" autocomplete="off"></div>
       <nav id="nav"></nav>
     </aside>
@@ -113,11 +143,15 @@
         </article>
       </main>
     </div>
-    <aside class="toc-pane" id="tocPane">
-      <h2>Osnova</h2>
+    <aside class="toc-pane" id="tocPane" aria-hidden="true">
+      <div class="toc-head">
+        <h2>Osnova</h2>
+        <button type="button" class="drawer-close" id="closeToc" aria-label="Zavřít osnovu">×</button>
+      </div>
       <nav id="toc"><p class="toc-empty">Po výběru zákona se tu objeví nadpisy.</p></nav>
     </aside>
   </div>
+  <button type="button" class="scrim" id="scrim" aria-label="Zavřít panel"></button>
   <div class="fab-row">
     <button type="button" class="icon-btn" id="fabLaws" title="Zákony">Zákony</button>
     <button type="button" class="icon-btn" id="fabToc" title="Osnova">Osnova</button>
@@ -131,6 +165,25 @@
     let rawMd = "";
 
     marked.setOptions({ gfm: true, breaks: false });
+
+    function closeDrawers(){
+      document.getElementById("sidebar").classList.remove("open");
+      document.getElementById("tocPane").classList.remove("open");
+      document.getElementById("scrim").classList.remove("on");
+      document.getElementById("tocPane").setAttribute("aria-hidden", "true");
+    }
+    function openLaws(){
+      document.getElementById("tocPane").classList.remove("open");
+      document.getElementById("tocPane").setAttribute("aria-hidden", "true");
+      document.getElementById("sidebar").classList.add("open");
+      document.getElementById("scrim").classList.add("on");
+    }
+    function openToc(){
+      document.getElementById("sidebar").classList.remove("open");
+      document.getElementById("tocPane").classList.add("open");
+      document.getElementById("tocPane").setAttribute("aria-hidden", "false");
+      document.getElementById("scrim").classList.add("on");
+    }
 
     function esc(s){
       return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
@@ -307,6 +360,7 @@
         a.onclick = () => {
           const el = document.getElementById(h.id);
           if(el) el.scrollIntoView({ block: "start", behavior: "smooth" });
+          closeDrawers();
         };
         toc.appendChild(a);
       });
@@ -417,21 +471,23 @@
         document.getElementById("view").classList.toggle("hide-del", e.target.checked);
       });
       document.getElementById("fabLaws").onclick = () => {
-        document.getElementById("sidebar").classList.toggle("open");
-        document.getElementById("tocPane").classList.remove("open");
+        if(document.getElementById("sidebar").classList.contains("open")) closeDrawers();
+        else openLaws();
       };
       document.getElementById("fabToc").onclick = () => {
-        document.getElementById("tocPane").classList.toggle("open");
-        document.getElementById("sidebar").classList.remove("open");
+        if(document.getElementById("tocPane").classList.contains("open")) closeDrawers();
+        else openToc();
       };
+      document.getElementById("closeLaws").onclick = closeDrawers;
+      document.getElementById("closeToc").onclick = closeDrawers;
+      document.getElementById("scrim").onclick = closeDrawers;
       document.addEventListener("keydown", e => {
         if(e.key === "/" && !e.ctrlKey && !e.metaKey && document.activeElement.tagName !== "INPUT"){
           e.preventDefault();
           document.getElementById("qText").focus();
         }
         if(e.key === "Escape"){
-          document.getElementById("sidebar").classList.remove("open");
-          document.getElementById("tocPane").classList.remove("open");
+          closeDrawers();
           if(document.activeElement === document.getElementById("qText")){
             document.getElementById("qText").value = "";
             clearHighlights();
