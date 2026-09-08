@@ -1,6 +1,7 @@
 {
-  "generated": "2026-09-03",
+  "generated": "2026-09-08",
   "source": "senátní tisk 272/0",
+  "engine": "v2",
   "laws": [
     {
       "id": "283-2021",
@@ -49,7 +50,7 @@
         "VII",
         "VIII"
       ],
-      "sections": 18,
+      "sections": 22,
       "ops": 39
     },
     {
@@ -62,7 +63,7 @@
         "IX",
         "X"
       ],
-      "sections": 8,
+      "sections": 26,
       "ops": 10
     },
     {
@@ -75,7 +76,7 @@
         "XI",
         "XII"
       ],
-      "sections": 6,
+      "sections": 8,
       "ops": 5
     },
     {
@@ -87,7 +88,7 @@
       "clanky": [
         "XIII"
       ],
-      "sections": 1,
+      "sections": 2,
       "ops": 2
     },
     {
@@ -100,7 +101,7 @@
         "XIV",
         "XV"
       ],
-      "sections": 65,
+      "sections": 79,
       "ops": 230
     },
     {
@@ -113,7 +114,7 @@
         "XVI",
         "XVII"
       ],
-      "sections": 18,
+      "sections": 19,
       "ops": 37
     },
     {
@@ -188,7 +189,7 @@
         "XXV",
         "XXVI"
       ],
-      "sections": 7,
+      "sections": 10,
       "ops": 16
     },
     {
@@ -200,7 +201,7 @@
       "clanky": [
         "XXVII"
       ],
-      "sections": 13,
+      "sections": 11,
       "ops": 8
     },
     {
@@ -224,7 +225,7 @@
       "clanky": [
         "XXIX"
       ],
-      "sections": 0,
+      "sections": 1,
       "ops": 1
     },
     {
@@ -237,7 +238,7 @@
         "XXX",
         "XXXI"
       ],
-      "sections": 3,
+      "sections": 4,
       "ops": 7
     },
     {
@@ -323,7 +324,7 @@
         "XL",
         "XLI"
       ],
-      "sections": 7,
+      "sections": 9,
       "ops": 15
     },
     {
@@ -335,7 +336,7 @@
       "clanky": [
         "XLII"
       ],
-      "sections": 0,
+      "sections": 1,
       "ops": 1
     },
     {
@@ -348,7 +349,7 @@
         "XLIII",
         "XLIV"
       ],
-      "sections": 27,
+      "sections": 29,
       "ops": 59
     },
     {
@@ -361,7 +362,7 @@
         "XLV",
         "XLVI"
       ],
-      "sections": 14,
+      "sections": 19,
       "ops": 88
     },
     {
@@ -399,7 +400,7 @@
       "clanky": [
         "LI"
       ],
-      "sections": 5,
+      "sections": 3,
       "ops": 3
     },
     {
@@ -411,7 +412,7 @@
       "clanky": [
         "LII"
       ],
-      "sections": 3,
+      "sections": 4,
       "ops": 4
     },
     {
@@ -447,7 +448,7 @@
       "clanky": [
         "LV"
       ],
-      "sections": 2,
+      "sections": 1,
       "ops": 1
     },
     {
@@ -463,39 +464,28 @@
       "ops": 2
     },
     {
-      "id": "217-2005",
-      "zakon": "217/2005",
-      "file": "217-2005.md",
-      "title": "Zákon č. 217/2005 Sb., kterým se mění zákon č. 353/2003 Sb., o spotřebních daních, ve znění pozdějších předpisů, zákon č. 265/1991 Sb., o působnosti orgánů České republiky v oblasti cen, ve znění pozdějších předpisů, a některé další zákony",
-      "mode": "partial",
-      "clanky": [
-        "LVII"
-      ],
-      "sections": 0,
-      "ops": 8
-    },
-    {
       "id": "634-2004",
       "zakon": "634/2004",
       "file": "634-2004.md",
       "title": "Zákon č. 634/2004 Sb., o správních poplatcích",
       "mode": "partial",
       "clanky": [
+        "LVII",
         "LVIII"
       ],
       "sections": 0,
-      "ops": 1
+      "ops": 9
     },
     {
-      "id": "110-2007",
-      "zakon": "110/2007",
-      "file": "110-2007.md",
-      "title": "Zákon č. 110/2007 Sb., o některých opatřeních v soustavě ústředních orgánů státní správy, souvisejících se zrušením Ministerstva informatiky a o změně některých zákonů",
+      "id": "179-2006",
+      "zakon": "179/2006",
+      "file": "179-2006.md",
+      "title": "Zákon č. 179/2006 Sb., o ověřování a uznávání výsledků dalšího vzdělávání a o změně některých zákonů (zákon o uznávání výsledků dalšího vzdělávání)",
       "mode": "partial",
       "clanky": [
         "LIX"
       ],
-      "sections": 1,
+      "sections": 0,
       "ops": 1
     },
     {
@@ -508,7 +498,7 @@
         "LX",
         "LXI"
       ],
-      "sections": 3,
+      "sections": 5,
       "ops": 4
     },
     {
@@ -521,7 +511,7 @@
         "LXII",
         "LXIII"
       ],
-      "sections": 71,
+      "sections": 9,
       "ops": 13
     },
     {
@@ -534,7 +524,7 @@
         "LXIV",
         "LXV"
       ],
-      "sections": 16,
+      "sections": 24,
       "ops": 52
     },
     {
@@ -560,7 +550,7 @@
         "LXVIII",
         "LXIX"
       ],
-      "sections": 11,
+      "sections": 13,
       "ops": 27
     },
     {
@@ -572,7 +562,7 @@
       "clanky": [
         "LXX"
       ],
-      "sections": 10,
+      "sections": 6,
       "ops": 15
     },
     {
@@ -585,7 +575,7 @@
         "LXXI",
         "LXXII"
       ],
-      "sections": 7,
+      "sections": 8,
       "ops": 16
     },
     {
@@ -609,7 +599,7 @@
       "clanky": [
         "LXXIV"
       ],
-      "sections": 1,
+      "sections": 8,
       "ops": 1
     },
     {
@@ -622,7 +612,7 @@
         "LXXV",
         "LXXVI"
       ],
-      "sections": 5,
+      "sections": 12,
       "ops": 13
     },
     {
@@ -646,7 +636,7 @@
       "clanky": [
         "LXXVIII"
       ],
-      "sections": 2,
+      "sections": 0,
       "ops": 2
     },
     {
@@ -658,7 +648,7 @@
       "clanky": [
         "LXXIX"
       ],
-      "sections": 3,
+      "sections": 0,
       "ops": 2
     },
     {
@@ -683,7 +673,7 @@
         "LXXXI",
         "LXXXII"
       ],
-      "sections": 27,
+      "sections": 15,
       "ops": 40
     },
     {
@@ -695,7 +685,7 @@
       "clanky": [
         "LXXXIII"
       ],
-      "sections": 8,
+      "sections": 3,
       "ops": 3
     },
     {
@@ -714,15 +704,10 @@
       "id": "_bez-cisla",
       "zakon": "",
       "file": "_bez-cisla.md",
-      "title": "Články bez čísla zákona",
+      "title": "Přechodná a účinnostní ustanovení bez vazby na zákon",
       "mode": "partial",
-      "clanky": [
-        "IV",
-        "VI",
-        "XXXIII",
-        "LXXXV"
-      ],
-      "sections": 0,
+      "clanky": [],
+      "sections": null,
       "ops": 4
     }
   ]
