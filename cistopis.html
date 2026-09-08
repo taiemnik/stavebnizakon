@@ -9,53 +9,76 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     :root{
-      --navy:#193A5F;--blue:#3EA3DC;--sky:#D4EDFC;--green:#4DB05B;--red:#D94F4F;--amber:#E6A823;
+      --navy:#193A5F;--blue:#3EA3DC;--sky:#D4EDFC;--green:#4DB05B;--amber:#E6A823;
       --bg:#f5f8fb;--card:#fff;--text:#1a2533;--muted:#5a6b80;--border:#cdd8e3;
-      --ff:'Source Sans 3',system-ui,sans-serif;--r:14px;
+      --ff:'Source Sans 3',system-ui,sans-serif;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{height:100%}
     body{font-family:var(--ff);color:var(--text);background:var(--bg);line-height:1.6;height:100%;display:flex;flex-direction:column}
-    .topbar{position:sticky;top:0;z-index:100;background:var(--navy);color:#fff;padding:12px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 2px 12px rgba(0,0,0,.15)}
-    .topbar h1{font-size:18px;font-weight:700;flex:1;min-width:180px}
-    .topbar a{color:rgba(255,255,255,.7);text-decoration:none;font-size:14px;font-weight:600}
+    .topbar{position:sticky;top:0;z-index:100;background:var(--navy);color:#fff;padding:10px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+    .topbar h1{font-size:17px;font-weight:700;flex:1;min-width:160px}
+    .topbar a{color:rgba(255,255,255,.72);text-decoration:none;font-size:13px;font-weight:600}
     .topbar a:hover{color:#fff}
-    .layout{display:grid;grid-template-columns:280px 1fr;flex:1;min-height:0}
-    @media(max-width:860px){.layout{grid-template-columns:1fr}}
-    .sidebar{background:var(--card);border-right:1px solid var(--border);overflow:auto;padding:16px 0}
-    .sidebar h2{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:8px 18px}
-    .sidebar input{width:calc(100% - 36px);margin:0 18px 12px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;font:inherit}
-    .law-btn{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px 18px;cursor:pointer;font:inherit;color:var(--text);border-left:3px solid transparent}
+    .layout{display:grid;grid-template-columns:240px minmax(0,1fr) 220px;flex:1;min-height:0}
+    @media(max-width:1100px){.layout{grid-template-columns:220px minmax(0,1fr)} .toc-pane{display:none} .toc-pane.open{display:flex}}
+    @media(max-width:760px){.layout{grid-template-columns:1fr} .sidebar{display:none} .sidebar.open{display:block;position:fixed;inset:52px 0 0 0;z-index:90;border-right:0}}
+    .sidebar{background:var(--card);border-right:1px solid var(--border);overflow:auto;padding:14px 0}
+    .sidebar h2,.toc-pane h2{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:6px 16px}
+    .sidebar input,.toolbar input{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:8px;font:inherit;background:#fff}
+    .sidebar .filt{padding:0 16px 10px}
+    .law-btn{display:block;width:100%;text-align:left;border:0;background:transparent;padding:9px 16px;cursor:pointer;font:inherit;color:var(--text);border-left:3px solid transparent}
     .law-btn:hover{background:rgba(212,237,252,.4)}
     .law-btn.active{background:var(--sky);border-left-color:var(--blue);font-weight:600}
-    .law-btn small{display:block;color:var(--muted);font-size:12px;font-weight:400}
-    .badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
+    .law-btn small{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:2px}
+    .badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-left:4px;vertical-align:middle}
     .badge.full{background:var(--green);color:#fff}
     .badge.partial{background:var(--amber);color:#1a2533}
-    .main{overflow:auto;padding:32px 28px 80px}
+    .center{display:flex;flex-direction:column;min-width:0;min-height:0}
+    .toolbar{flex-shrink:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--border)}
+    .toolbar .grow{flex:1;min-width:160px;max-width:360px}
+    .toolbar .par-jump{width:88px}
+    .toolbar button,.icon-btn{font:inherit;font-size:13px;font-weight:600;padding:7px 11px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--navy);cursor:pointer}
+    .toolbar button:hover,.icon-btn:hover{background:var(--sky);border-color:var(--blue)}
+    .toolbar button:disabled{opacity:.4;cursor:default}
+    .toolbar .hit-meta{font-size:12px;color:var(--muted);min-width:4.5em}
+    .toolbar label.chk{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+    .main{overflow:auto;padding:24px 28px 96px;flex:1;min-height:0;scroll-behavior:smooth}
+    .status{font-size:13px;color:var(--muted);margin-bottom:12px}
     .article{max-width:820px;margin:0 auto;font-family:'Source Serif 4',Georgia,serif;font-size:18px}
-    .article h1{font-family:var(--ff);font-size:clamp(26px,4vw,36px);font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:12px}
-    .article h2,.article h3,.article h4,.article h5{font-family:var(--ff);color:var(--navy);margin:28px 0 10px}
+    .article h1{font-family:var(--ff);font-size:clamp(24px,3.6vw,34px);font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:12px}
+    .article h2,.article h3,.article h4,.article h5{font-family:var(--ff);color:var(--navy);margin:28px 0 10px;scroll-margin-top:12px}
     .article h4{font-size:20px;font-weight:700;border-bottom:2px solid var(--sky);padding-bottom:4px}
     .article p{margin:0 0 10px}
     .article blockquote{border-left:4px solid var(--blue);background:rgba(212,237,252,.35);padding:12px 16px;margin:16px 0;color:var(--muted);font-family:var(--ff);font-size:15px}
     .article hr{border:0;border-top:1px solid var(--border);margin:24px 0}
     .article del,.article s{background:#fde8e8;color:#7a1f1f;text-decoration:line-through;padding:0 2px}
-    /* Tučné = nový text (track-changes); nadpis poznámek a čísla pod čarou nebarvit */
     .article strong{background:#e7f6ea;color:#1a4a22;font-weight:700;padding:0 2px}
     .article .fn-title,.article .fn-num,.article .footnotes .fn-title{background:none;color:var(--navy);padding:0}
     .article code{font-family:ui-monospace,Consolas,monospace;font-size:13px;background:var(--sky);padding:1px 6px;border-radius:4px}
-    /* Inline odkaz na poznámku (lidí⁶⁸⁾) — e-Sbírka lepí číslo bez <sup> */
     .article sup.fn-ref{font-family:var(--ff);font-size:.72em;font-weight:600;line-height:0;color:var(--navy);margin-left:1px}
-    /* Blok poznámek: ne <ol> (marked by přečísloval díry 3→5 na 4) */
-    .footnotes{margin-top:36px;padding-top:20px;border-top:2px solid var(--sky);font-family:var(--ff);font-size:14.5px;line-height:1.55;color:var(--text)}
+    .article mark.search-hit{background:#ffe566;color:inherit;padding:0 1px;border-radius:2px}
+    .article mark.search-hit.active{background:#ff9f1a;outline:2px solid #e07a00}
+    .article.hide-del del,.article.hide-del s{display:none}
+    .footnotes{margin-top:36px;padding-top:20px;border-top:2px solid var(--sky);font-family:var(--ff);font-size:14.5px;line-height:1.55}
     .footnotes .fn-title{display:block;font-size:15px;font-weight:700;margin-bottom:12px;color:var(--navy)}
     .footnotes .fn{display:grid;grid-template-columns:3.2em 1fr;gap:6px 10px;margin:0 0 8px;align-items:start}
     .footnotes .fn-num{font-weight:700;color:var(--navy);text-align:right}
     .footnotes .fn.fn-del .fn-num,.footnotes .fn.fn-del .fn-body{background:#fde8e8;color:#7a1f1f;text-decoration:line-through}
     .footnotes .fn.fn-new .fn-body{background:#e7f6ea;color:#1a4a22;font-weight:600;padding:0 2px}
-    .empty{color:var(--muted);padding:48px 24px;text-align:center}
-    .status{font-family:var(--ff);font-size:13px;color:var(--muted);margin-bottom:16px}
+    .empty{color:var(--muted);padding:48px 24px;text-align:center;font-family:var(--ff)}
+    .toc-pane{background:var(--card);border-left:1px solid var(--border);overflow:auto;padding:14px 0;display:flex;flex-direction:column;min-height:0}
+    .toc-pane nav{flex:1;overflow:auto;padding:0 8px 24px 0}
+    .toc-link{display:block;width:100%;text-align:left;border:0;background:transparent;padding:5px 12px 5px 14px;cursor:pointer;font:inherit;font-size:12.5px;line-height:1.35;color:var(--muted);border-left:2px solid transparent;text-decoration:none}
+    .toc-link:hover{color:var(--navy);background:rgba(212,237,252,.35)}
+    .toc-link.active{color:var(--navy);font-weight:600;border-left-color:var(--blue);background:var(--sky)}
+    .toc-link.l2{padding-left:14px}
+    .toc-link.l3{padding-left:22px;font-size:12px}
+    .toc-link.l4{padding-left:30px;font-size:12px}
+    .toc-empty{padding:8px 16px;font-size:13px;color:var(--muted)}
+    .fab-row{display:none;gap:8px;position:fixed;bottom:16px;right:16px;z-index:80}
+    @media(max-width:1100px){.fab-row{display:flex}}
+    .fab-row .icon-btn{box-shadow:0 4px 16px rgba(25,58,95,.18)}
   </style>
 </head>
 <body>
@@ -65,29 +88,54 @@
     <a href="https://github.com/taiemnik/stavebnizakon">GitHub</a>
   </header>
   <div class="layout">
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
       <h2>Zákony</h2>
-      <input id="q" type="search" placeholder="Filtrovat…" autocomplete="off">
+      <div class="filt"><input id="qLaws" type="search" placeholder="Filtrovat zákony…" autocomplete="off"></div>
       <nav id="nav"></nav>
     </aside>
-    <main class="main">
-      <div id="meta" class="status"></div>
-      <article id="view" class="article">
-        <p class="empty">Vyber zákon vlevo. 283/2021 je plný čistopis #4; ostatní zatím jen paragrafy, které 272 mění.</p>
-      </article>
-    </main>
+    <div class="center">
+      <div class="toolbar" id="toolbar">
+        <div class="grow">
+          <input id="qText" type="search" placeholder="Hledat v textu…  (/)" autocomplete="off" disabled>
+        </div>
+        <span class="hit-meta" id="hitMeta"></span>
+        <button type="button" id="hitPrev" disabled title="Předchozí">↑</button>
+        <button type="button" id="hitNext" disabled title="Další">↓</button>
+        <input class="par-jump" id="qPar" type="search" placeholder="§ …" inputmode="numeric" autocomplete="off" disabled title="Skočit na paragraf">
+        <button type="button" id="btnPar" disabled>Jít</button>
+        <label class="chk"><input type="checkbox" id="hideDel"> Skrýt škrtnuté</label>
+        <button type="button" id="btnTop" disabled title="Nahoru">↑ Nahoru</button>
+      </div>
+      <main class="main" id="main">
+        <div id="meta" class="status"></div>
+        <article id="view" class="article">
+          <p class="empty">Vyber zákon vlevo. 283/2021 je plný čistopis #4; ostatní zatím jen paragrafy, které 272 mění.</p>
+        </article>
+      </main>
+    </div>
+    <aside class="toc-pane" id="tocPane">
+      <h2>Osnova</h2>
+      <nav id="toc"><p class="toc-empty">Po výběru zákona se tu objeví nadpisy.</p></nav>
+    </aside>
+  </div>
+  <div class="fab-row">
+    <button type="button" class="icon-btn" id="fabLaws" title="Zákony">Zákony</button>
+    <button type="button" class="icon-btn" id="fabToc" title="Osnova">Osnova</button>
   </div>
   <script>
     const BASE = "cistopis/";
     let laws = [];
+    let hits = [];
+    let hitIdx = -1;
+    let tocObserver = null;
+    let rawMd = "";
 
     marked.setOptions({ gfm: true, breaks: false });
 
     function esc(s){
-      return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+      return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
     }
 
-    /** Převod bloku „Poznámky pod čarou“ mimo marked <ol> (díry v číslování). */
     function renderFootBlock(body){
       const items = [];
       for(const raw of body.split(/\n+/)){
@@ -108,26 +156,173 @@
         );
       }
       return (
-        '\n\n<div class="footnotes"><span class="fn-title">Poznámky pod čarou</span>\n' +
+        '\n\n<div class="footnotes" id="poznamky"><span class="fn-title">Poznámky pod čarou</span>\n' +
         items.join("\n") + "\n</div>\n\n"
       );
     }
 
-    /** Před marked: poznámky + horní index u „slovo68)“. */
     function preprocessMd(md){
       md = md.replace(
         /\*\*Poznámky pod čarou:\*\*\s*\n+([\s\S]*?)(?=\n#{1,3}\s|\n---\s*$|$)/,
         (_, body) => renderFootBlock(body.trim())
       );
-      // Inline: písmeno/číslo těsně před N) — ne (1) odstavec, ne a) na začátku řádku
       md = md.replace(/([A-Za-zÁČĎÉĚÍŇÓŘŠŤÚŮÝŽáčďéěíňóřšťúůýž])(\d{1,3}[a-z]?\))/g,
         '$1<sup class="fn-ref">$2</sup>');
       return md;
     }
 
     function badge(mode){
-      if(mode === "full") return '<span class="badge full">plný</span>';
-      return '<span class="badge partial">jen změny</span>';
+      return mode === "full"
+        ? '<span class="badge full">plný</span>'
+        : '<span class="badge partial">jen změny</span>';
+    }
+
+    function slugify(text, i){
+      const base = text.toLowerCase()
+        .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+        .replace(/§/g,"par")
+        .replace(/[^a-z0-9]+/g,"-")
+        .replace(/^-|-$/g,"")
+        .slice(0, 60);
+      return (base || "h") + "-" + i;
+    }
+
+    function setToolsEnabled(on){
+      ["qText","qPar","btnPar","btnTop","hitPrev","hitNext"].forEach(id => {
+        document.getElementById(id).disabled = !on;
+      });
+      if(!on){
+        document.getElementById("qText").value = "";
+        document.getElementById("qPar").value = "";
+        document.getElementById("hitMeta").textContent = "";
+        hits = []; hitIdx = -1;
+      }
+    }
+
+    function clearHighlights(){
+      const view = document.getElementById("view");
+      view.querySelectorAll("mark.search-hit").forEach(m => {
+        const t = document.createTextNode(m.textContent);
+        m.parentNode.replaceChild(t, m);
+      });
+      view.normalize();
+      hits = [];
+      hitIdx = -1;
+      document.getElementById("hitMeta").textContent = "";
+    }
+
+    function runSearch(){
+      const view = document.getElementById("view");
+      const q = document.getElementById("qText").value.trim();
+      clearHighlights();
+      if(!q || q.length < 2){
+        document.getElementById("hitMeta").textContent = q ? "min. 2 znaky" : "";
+        return;
+      }
+      const re = new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"), "gi");
+      const walker = document.createTreeWalker(view, NodeFilter.SHOW_TEXT, {
+        acceptNode(node){
+          if(!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+          if(node.parentElement && node.parentElement.closest("script,style")) return NodeFilter.FILTER_REJECT;
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      });
+      const nodes = [];
+      while(walker.nextNode()) nodes.push(walker.currentNode);
+      nodes.forEach(node => {
+        const text = node.nodeValue;
+        re.lastIndex = 0;
+        if(!re.test(text)) return;
+        re.lastIndex = 0;
+        const frag = document.createDocumentFragment();
+        let last = 0, m;
+        while((m = re.exec(text))){
+          if(m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+          const mark = document.createElement("mark");
+          mark.className = "search-hit";
+          mark.textContent = m[0];
+          frag.appendChild(mark);
+          last = m.index + m[0].length;
+        }
+        if(last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+        node.parentNode.replaceChild(frag, node);
+      });
+      hits = [...view.querySelectorAll("mark.search-hit")];
+      document.getElementById("hitMeta").textContent = hits.length
+        ? "1 / " + hits.length
+        : "0";
+      if(hits.length){ hitIdx = 0; goHit(0); }
+    }
+
+    function goHit(delta){
+      if(!hits.length) return;
+      hits.forEach(h => h.classList.remove("active"));
+      hitIdx = (hitIdx + delta + hits.length) % hits.length;
+      const el = hits[hitIdx];
+      el.classList.add("active");
+      el.scrollIntoView({ block: "center", behavior: "smooth" });
+      document.getElementById("hitMeta").textContent = (hitIdx + 1) + " / " + hits.length;
+    }
+
+    function jumpPar(){
+      const raw = document.getElementById("qPar").value.trim().replace(/^§\s*/,"");
+      if(!raw) return;
+      const view = document.getElementById("view");
+      const heads = [...view.querySelectorAll("h1,h2,h3,h4,h5")];
+      const re = new RegExp("§\\s*" + raw.replace(/[.*+?^${}()|[\]\\]/g,"\\$&") + "\\b", "i");
+      const hit = heads.find(h => re.test(h.textContent));
+      if(hit){
+        hit.scrollIntoView({ block: "start", behavior: "smooth" });
+        hit.style.outline = "2px solid var(--blue)";
+        setTimeout(() => { hit.style.outline = ""; }, 1200);
+      } else {
+        document.getElementById("hitMeta").textContent = "§ nenalezen";
+      }
+    }
+
+    function buildToc(){
+      const view = document.getElementById("view");
+      const toc = document.getElementById("toc");
+      const heads = [...view.querySelectorAll("h2,h3,h4")];
+      if(tocObserver){ tocObserver.disconnect(); tocObserver = null; }
+      if(!heads.length){
+        toc.innerHTML = '<p class="toc-empty">V tomto zákoně nejsou nadpisy.</p>';
+        return;
+      }
+      // U plného SZ je moc § — v osnově nech části/hlavy + §, ale zkrácené
+      const max = 400;
+      const list = heads.length > max
+        ? heads.filter(h => h.tagName !== "H4" || /^§/.test(h.textContent.trim())).slice(0, max)
+        : heads;
+      toc.innerHTML = "";
+      list.forEach((h, i) => {
+        if(!h.id) h.id = slugify(h.textContent, i);
+        const a = document.createElement("button");
+        a.type = "button";
+        a.className = "toc-link l" + h.tagName.charAt(1);
+        a.dataset.target = h.id;
+        let label = h.textContent.replace(/\s+/g," ").trim();
+        if(label.length > 72) label = label.slice(0, 70) + "…";
+        a.textContent = label;
+        a.onclick = () => {
+          const el = document.getElementById(h.id);
+          if(el) el.scrollIntoView({ block: "start", behavior: "smooth" });
+        };
+        toc.appendChild(a);
+      });
+      const main = document.getElementById("main");
+      const links = [...toc.querySelectorAll(".toc-link")];
+      tocObserver = new IntersectionObserver((entries) => {
+        const visible = entries.filter(e => e.isIntersecting).sort((a,b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if(!visible.length) return;
+        const id = visible[0].target.id;
+        links.forEach(l => {
+          const on = l.dataset.target === id;
+          l.classList.toggle("active", on);
+          if(on) l.scrollIntoView({ block: "nearest" });
+        });
+      }, { root: main, rootMargin: "-10% 0px -70% 0px", threshold: 0 });
+      list.forEach(h => tocObserver.observe(h));
     }
 
     function renderNav(filter){
@@ -142,7 +337,10 @@
         b.className = "law-btn" + (location.hash.slice(1) === l.id ? " active" : "");
         b.innerHTML = (l.zakon || l.id) + " " + badge(l.mode) +
           "<small>" + (l.title || "").replace(/^Zákon[^,]*,?\s*/,"") + "</small>";
-        b.onclick = () => { location.hash = l.id; };
+        b.onclick = () => {
+          location.hash = l.id;
+          document.getElementById("sidebar").classList.remove("open");
+        };
         nav.appendChild(b);
       });
     }
@@ -154,6 +352,9 @@
       document.querySelectorAll(".law-btn").forEach(el => {
         el.classList.toggle("active", el.textContent.startsWith((meta && meta.zakon) || id));
       });
+      clearHighlights();
+      setToolsEnabled(false);
+      document.getElementById("toc").innerHTML = '<p class="toc-empty">Načítám…</p>';
       if(!meta){
         view.innerHTML = "<p class='empty'>Zákon v manifestu není.</p>";
         return;
@@ -173,26 +374,80 @@
         const parsed = new DOMParser().parseFromString(body, "text/html");
         const inner = parsed.querySelector(".markdown-body") || parsed.querySelector("article");
         view.innerHTML = inner ? inner.innerHTML : parsed.body.innerHTML;
+        rawMd = "";
       } else {
         body = body.replace(/^---[\s\S]*?---\s*/, "");
+        rawMd = body;
         view.innerHTML = marked.parse(preprocessMd(body));
       }
+      view.classList.toggle("hide-del", document.getElementById("hideDel").checked);
       const modeLabel = meta.mode === "full" ? "plný zákon" : "jen dotčené paragrafy";
       const cl = (meta.clanky && meta.clanky.length) ? " · Čl. " + meta.clanky.join(", ") : "";
       status.textContent = modeLabel + cl + (meta.sections != null ? " · " + meta.sections + " § ve výstupu" : "");
-      renderNav(document.getElementById("q").value);
+      setToolsEnabled(true);
+      buildToc();
+      renderNav(document.getElementById("qLaws").value);
+      document.getElementById("main").scrollTop = 0;
     }
 
     async function boot(){
       const res = await fetch(BASE + "manifest.json");
       const data = await res.json();
       laws = data.laws || [];
-      document.getElementById("q").addEventListener("input", e => renderNav(e.target.value));
+      document.getElementById("qLaws").addEventListener("input", e => renderNav(e.target.value));
+      document.getElementById("qText").addEventListener("keydown", e => {
+        if(e.key === "Enter"){ e.preventDefault(); if(e.shiftKey) goHit(-1); else if(hits.length) goHit(1); else runSearch(); }
+      });
+      document.getElementById("qText").addEventListener("change", runSearch);
+      let searchTimer = null;
+      document.getElementById("qText").addEventListener("input", () => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(runSearch, 280);
+      });
+      document.getElementById("hitPrev").onclick = () => goHit(-1);
+      document.getElementById("hitNext").onclick = () => goHit(1);
+      document.getElementById("btnPar").onclick = jumpPar;
+      document.getElementById("qPar").addEventListener("keydown", e => {
+        if(e.key === "Enter"){ e.preventDefault(); jumpPar(); }
+      });
+      document.getElementById("btnTop").onclick = () => {
+        document.getElementById("main").scrollTo({ top: 0, behavior: "smooth" });
+      };
+      document.getElementById("hideDel").addEventListener("change", e => {
+        document.getElementById("view").classList.toggle("hide-del", e.target.checked);
+      });
+      document.getElementById("fabLaws").onclick = () => {
+        document.getElementById("sidebar").classList.toggle("open");
+        document.getElementById("tocPane").classList.remove("open");
+      };
+      document.getElementById("fabToc").onclick = () => {
+        document.getElementById("tocPane").classList.toggle("open");
+        document.getElementById("sidebar").classList.remove("open");
+      };
+      document.addEventListener("keydown", e => {
+        if(e.key === "/" && !e.ctrlKey && !e.metaKey && document.activeElement.tagName !== "INPUT"){
+          e.preventDefault();
+          document.getElementById("qText").focus();
+        }
+        if(e.key === "Escape"){
+          document.getElementById("sidebar").classList.remove("open");
+          document.getElementById("tocPane").classList.remove("open");
+          if(document.activeElement === document.getElementById("qText")){
+            document.getElementById("qText").value = "";
+            clearHighlights();
+          }
+        }
+      });
       window.addEventListener("hashchange", () => openLaw(location.hash.slice(1)));
       renderNav("");
       if(location.hash) openLaw(location.hash.slice(1));
+      else {
+        // Výchozí: stavební zákon
+        const first = laws.find(l => l.id === "283-2021") || laws[0];
+        if(first) location.hash = first.id;
+      }
     }
-    boot().catch(err => {
+    boot().catch(() => {
       document.getElementById("view").innerHTML =
         "<p class='empty'>Nepodařilo se načíst manifest.json. Otevři stránku přes GitHub Pages (ne file://).</p>";
     });
