@@ -393,7 +393,7 @@
           "<small>" + (l.title || "").replace(/^Zákon[^,]*,?\s*/,"") + "</small>";
         b.onclick = () => {
           location.hash = l.id;
-          document.getElementById("sidebar").classList.remove("open");
+          closeDrawers();
         };
         nav.appendChild(b);
       });
