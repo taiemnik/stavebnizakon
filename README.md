@@ -15,6 +15,7 @@ zapracovaným senátním tiskem **272/0**, plus veřejné podklady k legislativn
 | `podklady/snemovni-tisky/` | Sněmovní tisk 67 a stanovisko vlády. |
 | `podklady/pozmenovaci-navrhy/` | Pozměňovací návrhy podané ve Sněmovně. |
 | `podklady/stenozaznamy/` | Stenozáznamy z rozpravy PSP a Senátu. |
+| `cistopisy/272/_ucinnost.md` | Účinnost (Čl. LXXXV) a přechodná ustanovení (Čl. II a další) — nejsou součástí textu zákona, ale určují, co se kdy použije. |
 | `zdroje/` | Přepisy veřejného podcastu MMR „Stavíme na faktech". |
 
 ## Účinnost — barevné rozlišení

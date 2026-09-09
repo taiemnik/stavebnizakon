@@ -17,6 +17,19 @@
       "ops": 735
     },
     {
+      "id": "_ucinnost",
+      "zakon": "Účinnost",
+      "file": "_ucinnost.md",
+      "title": "Účinnost a přechodná ustanovení (Čl. II a Čl. LXXXV)",
+      "mode": "full",
+      "clanky": [
+        "II",
+        "LXXXV"
+      ],
+      "sections": null,
+      "ops": 0
+    },
+    {
       "id": "2-1969",
       "zakon": "2/1969",
       "file": "2-1969.md",
