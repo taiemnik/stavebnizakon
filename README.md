@@ -30,6 +30,10 @@ filtrovat.
 | červená | **prvním dnem měsíce po vyhlášení** | Čl. LXXXV písm. a) |
 | zelená | **1. 1. 2028** | Čl. LXXXV písm. b) |
 
+Checkboxem **nedotčená ustanovení** se schová text, kterého se novela netýká —
+v kombinaci s barvami tak jde vyfiltrovat třeba jen to, co nabývá účinnosti
+1. 1. 2028 (ve stavebním zákoně je to jediný paragraf, § 36).
+
 Zařazení se odvozuje z čísla novelizačního bodu, které je u každého ustanovení
 uvedené v hranaté závorce (`[272 Čl.I/12]`). Ustanovení dotčené více body může
 mít víc kategorií najednou.

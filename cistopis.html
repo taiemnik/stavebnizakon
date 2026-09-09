@@ -82,6 +82,7 @@
     .ucfil>span{font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11px}
     .ucfil label{display:inline-flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap}
     .ucfil .sw{width:11px;height:11px;border-radius:3px;display:inline-block}
+    .ucfil label.sep{border-left:1px solid var(--border);padding-left:10px;margin-left:2px}
     .ucfil .sw-A{background:var(--uc-a)}.ucfil .sw-B{background:var(--uc-b)}.ucfil .sw-C{background:var(--uc-c)}
     .uc-hidden{display:none !important}
     .article sup.fn-ref{font-family:var(--ff);font-size:.72em;font-weight:600;line-height:0;color:var(--navy);margin-left:1px}
@@ -169,6 +170,8 @@
           <input type="checkbox" data-uc="B" checked><i class="sw sw-B"></i>po vyhlášení</label>
         <label title="Účinnost 1. 1. 2028 — Čl. LXXXV písm. b)">
           <input type="checkbox" data-uc="C" checked><i class="sw sw-C"></i>1. 1. 2028</label>
+        <label class="sep" title="Zobrazit i text, kterého se novela nedotýká">
+          <input type="checkbox" id="showUntouched" checked>nedotčená ustanovení</label>
         <span class="hit-meta" id="ucMeta"></span>
       </div>
       <main class="main" id="main">
@@ -301,22 +304,59 @@
 
     function filterUcinnost(){
       const on = new Set();
-      document.querySelectorAll("#ucFilter input[type=checkbox]").forEach(ch => {
+      document.querySelectorAll("#ucFilter input[data-uc]").forEach(ch => {
         if(ch.checked) on.add(ch.dataset.uc);
       });
+      const untouched = document.getElementById("showUntouched").checked;
       const view = document.getElementById("view");
-      let skryto = 0, celkem = 0;
-      view.querySelectorAll("[data-uc]").forEach(el => {
-        celkem++;
-        const vis = el.dataset.uc.split("").some(k => on.has(k));
-        el.classList.toggle("uc-hidden", !vis);
-        if(!vis) skryto++;
+      const blocks = view.querySelectorAll("p,li,h4,h5,blockquote,div.fn,ul,ol,div.footnotes");
+
+      let dotcenych = 0, videt = 0;
+      blocks.forEach(el => {
+        const uc = el.dataset.uc;
+        if(uc){
+          dotcenych++;
+          const vis = uc.split("").some(k => on.has(k));
+          el.classList.toggle("uc-hidden", !vis);
+          if(vis) videt++;
+        } else {
+          // text, kterého se novela nedotýká
+          el.classList.toggle("uc-hidden", !untouched);
+        }
       });
+
+      // Nadpis § nechat jen tehdy, když je pod ním něco vidět. Bez toho by
+      // po odfiltrování zůstaly osamocené hlavičky paragrafů.
+      if(!untouched){
+        const deti = [...view.children];
+        let head = null, videtVSekci = false;
+        const zavri = () => {
+          if(head && !videtVSekci) head.classList.add("uc-hidden");
+        };
+        for(const el of deti){
+          if(/^H[2-5]$/.test(el.tagName)){
+            zavri();
+            head = el;
+            videtVSekci = !!(el.dataset.uc &&
+              el.dataset.uc.split("").some(k => on.has(k)));
+            continue;
+          }
+          if(!el.classList.contains("uc-hidden") &&
+             el.textContent.trim() &&
+             !/^HR$/.test(el.tagName)){
+            videtVSekci = true;
+          }
+        }
+        zavri();
+      }
+
       const meta = document.getElementById("ucMeta");
       if(meta){
-        meta.textContent = skryto
-          ? ("skryto " + skryto + " z " + celkem + " dotčených míst")
-          : (celkem ? celkem + " dotčených míst" : "");
+        meta.textContent = dotcenych
+          ? (videt === dotcenych
+              ? dotcenych + " dotčených míst"
+              : "vidíš " + videt + " z " + dotcenych + " dotčených míst")
+          : "";
       }
     }
 
@@ -567,6 +607,7 @@
       document.querySelectorAll("#ucFilter input[type=checkbox]").forEach(ch => {
         ch.addEventListener("change", filterUcinnost);
       });
+      document.getElementById("showUntouched").addEventListener("change", filterUcinnost);
       document.getElementById("hideDel").addEventListener("change", e => {
         document.getElementById("view").classList.toggle("hide-del", e.target.checked);
       });
