@@ -59,6 +59,31 @@
     .article strong{background:#e7f6ea;color:#1a4a22;font-weight:700;padding:0 2px}
     .article .fn-title,.article .fn-num,.article .footnotes .fn-title{background:none;color:var(--navy);padding:0}
     .article code{font-family:ui-monospace,Consolas,monospace;font-size:13px;background:var(--sky);padding:1px 6px;border-radius:4px}
+
+    /* Účinnost — pruh u levého okraje a jemný podtón.
+       Červená a zelená uvnitř textu patří škrtům a novému textu,
+       proto se účinnost značí okrajem, ne barvou písma. */
+    :root{--uc-a:#E6A823;--uc-b:#D64545;--uc-c:#2E9E4F}
+    .article .uc{border-left:5px solid transparent;padding:2px 10px 2px 12px;border-radius:0 4px 4px 0;margin-left:-2px}
+    .article .uc-A{border-left-color:var(--uc-a);background:rgba(230,168,35,.10)}
+    .article .uc-B{border-left-color:var(--uc-b);background:rgba(214,69,69,.09)}
+    .article .uc-C{border-left-color:var(--uc-c);background:rgba(46,158,79,.11)}
+    .article .uc-AB{border-left-color:var(--uc-b);background:linear-gradient(90deg,rgba(230,168,35,.14),rgba(214,69,69,.07))}
+    .article .uc-AC{border-left-color:var(--uc-c);background:linear-gradient(90deg,rgba(230,168,35,.14),rgba(46,158,79,.08))}
+    .article .uc-BC,.article .uc-ABC{border-left-color:var(--uc-c);background:linear-gradient(90deg,rgba(214,69,69,.12),rgba(46,158,79,.09))}
+    .article h4.uc{border-radius:0;padding-bottom:4px}
+    .uc-badge{font-family:var(--ff);font-size:11px;font-weight:700;letter-spacing:.02em;
+      padding:1px 7px;border-radius:999px;margin-left:8px;vertical-align:middle;white-space:nowrap;
+      background:#eef2f7;color:var(--muted);border:1px solid var(--border)}
+    .uc-badge.b-A{background:rgba(230,168,35,.18);color:#7a5600;border-color:rgba(230,168,35,.5)}
+    .uc-badge.b-B{background:rgba(214,69,69,.15);color:#8a1f1f;border-color:rgba(214,69,69,.45)}
+    .uc-badge.b-C{background:rgba(46,158,79,.16);color:#14532d;border-color:rgba(46,158,79,.45)}
+    .ucfil{display:flex;align-items:center;gap:10px;font-family:var(--ff);font-size:12px;color:var(--muted);flex-wrap:wrap}
+    .ucfil>span{font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11px}
+    .ucfil label{display:inline-flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap}
+    .ucfil .sw{width:11px;height:11px;border-radius:3px;display:inline-block}
+    .ucfil .sw-A{background:var(--uc-a)}.ucfil .sw-B{background:var(--uc-b)}.ucfil .sw-C{background:var(--uc-c)}
+    .uc-hidden{display:none !important}
     .article sup.fn-ref{font-family:var(--ff);font-size:.72em;font-weight:600;line-height:0;color:var(--navy);margin-left:1px}
     .article mark.search-hit{background:#ffe566;color:inherit;padding:0 1px;border-radius:2px}
     .article mark.search-hit.active{background:#ff9f1a;outline:2px solid #e07a00}
@@ -135,6 +160,16 @@
         <button type="button" id="btnPar" disabled>Jít</button>
         <label class="chk"><input type="checkbox" id="hideDel"> Skrýt škrtnuté</label>
         <button type="button" id="btnTop" disabled title="Nahoru">↑ Nahoru</button>
+      </div>
+      <div class="toolbar ucfil" id="ucFilter">
+        <span>Účinnost</span>
+        <label title="Účinnost 1. 1. 2027 — obecné pravidlo Čl. LXXXV">
+          <input type="checkbox" data-uc="A" checked><i class="sw sw-A"></i>1. 1. 2027</label>
+        <label title="Účinnost prvním dnem kalendářního měsíce následujícího po vyhlášení — Čl. LXXXV písm. a)">
+          <input type="checkbox" data-uc="B" checked><i class="sw sw-B"></i>po vyhlášení</label>
+        <label title="Účinnost 1. 1. 2028 — Čl. LXXXV písm. b)">
+          <input type="checkbox" data-uc="C" checked><i class="sw sw-C"></i>1. 1. 2028</label>
+        <span class="hit-meta" id="ucMeta"></span>
       </div>
       <main class="main" id="main">
         <div id="meta" class="status"></div>
@@ -222,6 +257,67 @@
       md = md.replace(/([A-Za-zÁČĎÉĚÍŇÓŘŠŤÚŮÝŽáčďéěíňóřšťúůýž])(\d{1,3}[a-z]?\))/g,
         '$1<sup class="fn-ref">$2</sup>');
       return md;
+    }
+
+    /* ---- Účinnost (Čl. LXXXV tisku 272/0) ----
+       Generátor přidá na konec bloku značku {uc=A|B|C}; tady se z ní
+       udělá podbarvení, štítek s datem a bublina při najetí myší. */
+    const UC_INFO = {
+      A: { datum: "1. 1. 2027",
+           popis: "Účinnost 1. 1. 2027 (obecné pravidlo Čl. LXXXV)" },
+      B: { datum: "po vyhlášení",
+           popis: "Účinnost prvním dnem kalendářního měsíce následujícího po vyhlášení "
+                  + "(Čl. LXXXV písm. a)" },
+      C: { datum: "1. 1. 2028",
+           popis: "Účinnost 1. 1. 2028 (Čl. LXXXV písm. b)" }
+    };
+    const UC_RE = /\s*\{uc=([ABC]+)\}/;
+
+    function ucPopis(kody){
+      return kody.split("").map(k => UC_INFO[k] ? UC_INFO[k].popis : k).join("  ·  ");
+    }
+    function ucBadge(kody){
+      return kody.split("").map(k =>
+        '<span class="uc-badge b-' + k + '">' + (UC_INFO[k] ? UC_INFO[k].datum : k) + "</span>"
+      ).join("");
+    }
+
+    function applyUcinnost(){
+      const view = document.getElementById("view");
+      view.querySelectorAll("h4,h5,p,li,blockquote,div.fn").forEach(el => {
+        const m = el.textContent.match(UC_RE);
+        if(!m) return;
+        el.innerHTML = el.innerHTML.replace(UC_RE, "");
+        const kody = m[1];
+        el.classList.add("uc", "uc-" + kody);
+        el.dataset.uc = kody;
+        el.setAttribute("title", ucPopis(kody));
+        if(el.tagName === "H4" || el.tagName === "H5"){
+          el.insertAdjacentHTML("beforeend", ucBadge(kody));
+        }
+      });
+      filterUcinnost();
+    }
+
+    function filterUcinnost(){
+      const on = new Set();
+      document.querySelectorAll("#ucFilter input[type=checkbox]").forEach(ch => {
+        if(ch.checked) on.add(ch.dataset.uc);
+      });
+      const view = document.getElementById("view");
+      let skryto = 0, celkem = 0;
+      view.querySelectorAll("[data-uc]").forEach(el => {
+        celkem++;
+        const vis = el.dataset.uc.split("").some(k => on.has(k));
+        el.classList.toggle("uc-hidden", !vis);
+        if(!vis) skryto++;
+      });
+      const meta = document.getElementById("ucMeta");
+      if(meta){
+        meta.textContent = skryto
+          ? ("skryto " + skryto + " z " + celkem + " dotčených míst")
+          : (celkem ? celkem + " dotčených míst" : "");
+      }
     }
 
     function badge(mode){
@@ -435,6 +531,7 @@
         view.innerHTML = marked.parse(preprocessMd(body));
       }
       view.classList.toggle("hide-del", document.getElementById("hideDel").checked);
+      applyUcinnost();
       const modeLabel = meta.mode === "full" ? "plný zákon" : "jen dotčené paragrafy";
       const cl = (meta.clanky && meta.clanky.length) ? " · Čl. " + meta.clanky.join(", ") : "";
       status.textContent = modeLabel + cl + (meta.sections != null ? " · " + meta.sections + " § ve výstupu" : "");
@@ -467,6 +564,9 @@
       document.getElementById("btnTop").onclick = () => {
         document.getElementById("main").scrollTo({ top: 0, behavior: "smooth" });
       };
+      document.querySelectorAll("#ucFilter input[type=checkbox]").forEach(ch => {
+        ch.addEventListener("change", filterUcinnost);
+      });
       document.getElementById("hideDel").addEventListener("change", e => {
         document.getElementById("view").classList.toggle("hide-del", e.target.checked);
       });

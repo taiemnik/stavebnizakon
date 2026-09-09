@@ -1,5 +1,5 @@
 ---
-created: 2026-09-08
+created: 2026-09-09
 source: "[[ST_272.pdf]]"
 type: knowledge
 maturity: 2
