@@ -3,7 +3,13 @@
 Konsolidovaná („úplná") znění stavebního zákona a souvisejících předpisů se
 zapracovaným senátním tiskem **272/0**, plus veřejné podklady k legislativnímu procesu.
 
-**Prohlížeč:** https://taiemnik.github.io/stavebnizakon/cistopis.html
+**Prohlížeč:** https://taiemnik.github.io/stavebnizakon/
+
+| Stránka | Obsah |
+|---|---|
+| `index.html` | Příprava na podcast EP6 |
+| `cistopis.html` | Konsolidované znění po tisku 272 |
+| `roadmap.html` | Osa přípravy úřadu 2026–2028 |
 
 ## Co tu je
 
