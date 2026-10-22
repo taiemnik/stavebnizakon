@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Příprava úřadu na novelu stavebního zákona 2026–2028</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #193A5F;
+      --blue: #3EA3DC;
+      --sky: #D4EDFC;
+      --green: #4DB05B;
+      --text: #1a2533;
+      --muted: #5a6b80;
+      --white: #fff;
+      --border: #cdd8e3;
+      --bg: #eef4f9;
+      --vec: #3EA3DC;
+      --org: #193A5F;
+      --stav: #4DB05B;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100%; }
+    body {
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Horní deska = osa; pod ní kontrolní seznam — stránka se může odrolovat */
+    .board {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      grid-template-rows: auto minmax(52vh, 1fr) auto auto;
+      padding: 18px 28px 20px;
+      gap: 10px;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: clamp(24px, 2.4vw, 36px);
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.15;
+    }
+    header .lead {
+      font-size: clamp(16px, 1.15vw, 20px);
+      color: var(--muted);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+    .pills { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .pill {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: var(--sky);
+      color: var(--navy);
+    }
+    .pill.green { background: rgba(77,176,91,.18); color: #1e6b2a; }
+    .legend { display: flex; gap: 16px; font-size: 15px; color: var(--muted); font-weight: 600; }
+    .legend i {
+      display: inline-block;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      margin-right: 6px;
+      vertical-align: -1px;
+    }
+    .legend .l-vec { background: var(--vec); }
+    .legend .l-org { background: var(--org); }
+    .legend .l-stav { background: var(--stav); }
+
+    /* Osa: dvě kolejnice nahoře/dole od vodorovné čáry */
+    .axis-wrap {
+      position: relative;
+      min-height: 0;
+    }
+    .axis-line {
+      position: absolute;
+      left: 3%;
+      right: 3%;
+      top: 50%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--navy) 0%, var(--blue) 55%, var(--green) 100%);
+      border-radius: 4px;
+      transform: translateY(-50%);
+    }
+    /* Řez „věc nabíhá“ visí na bodu 1. 1. 2027 */
+    .stop.vec::before {
+      content: "věcná účinnost";
+      position: absolute;
+      left: 50%;
+      top: 6%;
+      bottom: 6%;
+      width: 0;
+      border-left: 2px dashed rgba(62,163,220,.7);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--blue);
+      padding-left: 8px;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .stops {
+      position: absolute;
+      inset: 0 3%;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+    .stop {
+      position: relative;
+      cursor: pointer;
+      background: none;
+      border: 0;
+      font: inherit;
+      color: inherit;
+      text-align: left;
+    }
+    .stop:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; border-radius: 12px; }
+
+    /* Bod na ose */
+    .dot {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 18px;
+      height: 18px;
+      margin: -9px 0 0 -9px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 3px solid var(--navy);
+      z-index: 2;
+      box-shadow: 0 0 0 4px rgba(25,58,95,.08);
+    }
+    .stop.vec .dot { border-color: var(--vec); }
+    .stop.stav .dot { border-color: var(--stav); background: var(--stav); }
+    .stop.is-on .dot {
+      transform: scale(1.15);
+      box-shadow: 0 0 0 6px rgba(62,163,220,.22);
+    }
+
+    /* Všechna data pod čarou, ať se nestřídají s bublinami */
+    .when {
+      position: absolute;
+      left: 50%;
+      top: calc(50% + 16px);
+      transform: translateX(-50%);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+      white-space: nowrap;
+      z-index: 2;
+    }
+    .stop.below .bubble { top: calc(50% + 42px); }
+
+    /* Bublina — CSS trojúhelník míří k bodu */
+    .bubble {
+      position: absolute;
+      left: 50%;
+      width: min(248px, 96%);
+      transform: translateX(-50%);
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 14px 13px;
+      box-shadow: 0 8px 24px rgba(25,58,95,.1);
+      z-index: 1;
+    }
+    .stop.above .bubble { bottom: calc(50% + 28px); }
+    .bubble::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      transform: translateX(-50%) rotate(45deg);
+    }
+    .stop.above .bubble::after {
+      bottom: -7px;
+      border-top: 0;
+      border-left: 0;
+    }
+    .stop.below .bubble::after {
+      top: -7px;
+      border-bottom: 0;
+      border-right: 0;
+    }
+    .stop.is-on .bubble {
+      border-color: var(--navy);
+      box-shadow: 0 12px 32px rgba(25,58,95,.16);
+      z-index: 3;
+    }
+    .stop.vec.is-on .bubble { border-color: var(--vec); }
+    .stop.stav.is-on .bubble { border-color: var(--stav); }
+
+    .bubble .who {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 4px;
+    }
+    .stop.vec .bubble .who { color: var(--vec); }
+    .stop.stav .bubble .who { color: #2d8a3a; }
+    .bubble h2 {
+      font-size: clamp(17px, 1.15vw, 20px);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .bubble p {
+      font-size: 15px;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+    .bubble .more {
+      display: none;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+      font-size: 15px;
+      line-height: 1.45;
+      color: var(--text);
+    }
+    .stop.is-on .bubble .more { display: block; }
+
+    footer.strip {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 6px;
+      border-top: 1px solid var(--border);
+      font-size: 15px;
+      color: var(--muted);
+    }
+    .principles { display: flex; gap: 8px; flex-wrap: wrap; }
+    .principles span {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .hint { font-size: 14px; }
+
+    .agenda {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px 16px;
+    }
+    .agenda h2 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .agenda h2 span {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px 12px;
+    }
+    .topic {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 12px 8px;
+      border-top: 3px solid var(--blue);
+      background: #fbfdff;
+    }
+    .topic h3 {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .topic ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .topic li {
+      position: relative;
+      padding: 0 0 4px 16px;
+      font-size: 13px;
+      line-height: 1.35;
+      color: var(--text);
+    }
+    .topic li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.45em;
+      width: 8px;
+      height: 8px;
+      border: 1.5px solid var(--navy);
+      border-radius: 2px;
+      background: var(--white);
+    }
+
+    @media (max-width: 1100px) {
+      body { overflow: auto; }
+      .board { min-height: auto; height: auto; grid-template-rows: auto auto auto auto; }
+      .axis-wrap { position: static; }
+      .axis-line, .stop.vec::before { display: none; }
+      .stops {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 8px 0 16px;
+      }
+      .stop { min-height: auto; }
+      .dot, .when { position: static; transform: none; margin: 0 0 6px; display: inline-block; vertical-align: middle; }
+      .when { margin-left: 8px; }
+      .bubble {
+        position: static;
+        width: 100%;
+        transform: none;
+        margin-top: 8px;
+      }
+      .bubble::after { display: none; }
+      .bubble .more { display: block; }
+      .topics { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 700px) {
+      .topics { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      @page { size: A3 landscape; margin: 10mm; }
+      html, body { height: auto; background: #fff; }
+      .board { min-height: auto; padding: 0; }
+      .hint { display: none; }
+      .bubble .more { display: block; }
+      .stop .bubble { box-shadow: none; }
+      .agenda { break-before: page; border: 0; padding: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dot { transition: none; }
+    }
+  
+.site-bar{position:sticky;top:0;z-index:200;background:#193A5F;color:#fff;padding:10px 20px;display:flex;align-items:center;gap:8px 18px;flex-wrap:wrap;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.site-bar strong{font-size:16px;font-weight:700;flex:1;min-width:140px}
+.pozn{margin:16px 28px 0;padding:12px 16px;border-left:4px solid #E6A823;background:#fff8e6;border-radius:0 10px 10px 0;font-size:15px;line-height:1.5;color:#1a2533;max-width:1100px}
+/* Veřejná verze: interní osa je stavěná na projektor a rozbalené bubliny se na běžném monitoru
+   překrývají s nadpisem. Na ose proto jen útvary, nadpis a věta; detail vybraného kroku v panelu pod osou. */
+.bubble .who{text-transform:none;letter-spacing:0;font-size:13.5px}
+@media(min-width:1280px){
+  .board{grid-template-rows:auto minmax(58vh,1fr) auto auto auto}
+  .stop.is-on .bubble .more{display:none}
+  /* šířka v násobcích sloupce: sousedé na stejné straně osy jsou od sebe 2 sloupce */
+  .bubble{width:min(320px,165%)}
+  .stop:first-child .bubble{left:0;transform:none;width:min(300px,150%)}
+  .stop:last-child .bubble{left:auto;right:0;transform:none;width:min(300px,150%)}
+  .stop:first-child .bubble::after,.stop:last-child .bubble::after{display:none}
+}
+.detail{background:#fff;border:1.5px solid #193A5F;border-radius:14px;padding:12px 18px 14px;font-size:16px;line-height:1.5;color:#1a2533}
+.detail b{display:block;color:#193A5F;font-size:17px;margin-bottom:4px}
+.detail small{display:block;color:#5a6b80;font-size:13px;margin-top:6px}
+/* Pod 1280 px svislé rozložení – stejná pravidla jako interní verze pod 1100 px. */
+@media(max-width:1279px){
+  .detail{display:none}
+  body{overflow:auto}
+  .board{min-height:auto;height:auto;grid-template-rows:auto auto auto auto}
+  .axis-wrap{position:static}
+  .axis-line,.stop.vec::before{display:none}
+  .stops{position:static;display:flex;flex-direction:column;gap:12px;padding:8px 0 16px}
+  .stop{min-height:auto}
+  .dot,.when{position:static;transform:none;margin:0 0 6px;display:inline-block;vertical-align:middle}
+  .when{margin-left:8px}
+  .bubble{position:static;width:100%;transform:none;margin-top:8px}
+  .bubble::after{display:none}
+  .bubble .more{display:block}
+  .topics{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){.topics{grid-template-columns:1fr}.pozn{margin:12px 16px 0}.site-bar{padding:10px 16px}}
+@media print{.detail{display:none}.stop.is-on .bubble .more{display:block!important}}
+@media print{.site-bar{display:none}.pozn{margin:0 0 8px}}
+
+.menu{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.menu a{color:#fff;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.32);padding:7px 13px;border-radius:9px;font-size:15px;font-weight:700;text-decoration:none;white-space:nowrap;line-height:1.2}
+.menu a:hover,.menu a:focus-visible{background:rgba(255,255,255,.28);color:#fff}
+.menu a[aria-current]{background:#fff;color:#193A5F;border-color:#fff}
+.menu a.gh{background:transparent;border-color:transparent;font-weight:600;color:rgba(255,255,255,.78)}
+@media(max-width:760px){.menu{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px;scrollbar-width:thin}}
+
+  </style>
+</head>
+<body>
+<div class="site-bar"><strong>Stavební zákon 2026</strong><nav class="menu" aria-label="Stránky webu"><a href="index.html#zdroje">Zdroje</a><a href="cistopis.html">Znění zákona</a><a href="index.html#osa">Průběh procesu</a><a href="roadmap.html" aria-current="page">Příprava úřadu</a><a href="index.html#ai">Zeptat se AI</a><a class="gh" href="https://github.com/taiemnik/stavebnizakon">GitHub ↗</a></nav></div>
+<aside class="pozn"><b>Brainstorming témat a dnešní předpoklady, ne metodika.</b> Tuto osu připravil tajemník Městského úřadu Kopřivnice (obec s rozšířenou působností) jako pracovní nástřel harmonogramu a témat pro přechod stavebního úřadu na stát. Termíny, rozdělení práce i záměry odpovídají tomu, co víme a předpokládáme dnes. Všechno se ještě může změnit, i průběžně, jak budou přibývat prováděcí předpisy, metodiky a rozhodnutí. Zveřejněno jako inspirace pro kolegy z jiných obcí a úřadů, které čeká stejný přechod. Závazné jsou zákon a metodiky Ministerstva pro místní rozvoj.</aside>
+  <div class="board">
+    <header>
+      <div>
+        <h1>Příprava úřadu · 2026–2028</h1>
+        <p class="lead">Rozhodný den 31.&nbsp;12.&nbsp;2027 / 1.&nbsp;1.&nbsp;2028: stavební úřad přechází na stát, zaměstnanci ze zákona. Nástřel témat a termínů podle dnešních předpokladů.</p>
+      </div>
+      <div>
+        <div class="pills">
+          <span class="pill">Sněmovna setrvala 9.&nbsp;9.&nbsp;2026 (105:52)</span>
+          <span class="pill">prezident podepsal 17.&nbsp;9.</span>
+          <span class="pill green">odesláno do Sbírky 19.&nbsp;10.</span>
+        </div>
+        <div class="legend" style="margin-top:8px;justify-content:flex-end">
+          <span><i class="l-vec"></i>věcná účinnost · 1.&nbsp;1.&nbsp;2027</span>
+          <span><i class="l-org"></i>organizační příprava</span>
+          <span><i class="l-stav"></i>rozhodný den přechodu</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="axis-wrap">
+      <div class="axis-line" aria-hidden="true"></div>
+
+      <div class="stops" role="list">
+        <button class="stop above is-on" type="button" role="listitem" data-id="1" aria-pressed="true">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="when">září 2026</span>
+          <article class="bubble">
+            <div class="who">právní oddělení · životní prostředí · stavební úřad</div>
+            <h2>Zahájení přípravy</h2>
+            <p>Analýza tisku 272/0. Agendy, které zanikají, přecházejí, nebo zůstávají v jiné právní podobě.</p>
+            <div class="more">Autoritativní text do vyhlášení: senátní tisk 272/0. Čistopis není Sbírka.</div>
+          </article>
+        </button>
+
+        <button class="stop below" type="button" role="listitem" data-id="2" aria-pressed="false">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="when">říjen 2026</span>
+          <article class="bubble">
+            <div class="who">personální oddělení · užší i širší okruh</div>
+            <h2>Jmenovitý přehled</h2>
+            <p>Identifikovat osoby, kterých se změna může týkat, včetně DOSS a územního plánování.</p>
+            <div class="more">Rozhoduje převažující činnost, nikoli název místa v organizačním řádu. Stavební úřad a územní plánování se vedou odděleně. Jde o širší kontext, nikoli o konečné zařazení.</div>
+          </article>
+        </button>
+
+        <button class="stop above" type="button" role="listitem" data-id="3" aria-pressed="false">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="when">prosinec 2026</span>
+          <article class="bubble">
+            <div class="who">Věcná připravenost k 1.&nbsp;1.&nbsp;2027</div>
+            <h2>Rozhodovací praxe</h2>
+            <p>Stanovit rozhodovací praxi k 1.&nbsp;1.&nbsp;2027: vlastní ÚP v samostatné působnosti; JES jen u vyhrazených staveb.</p>
+            <div class="more">Společné jednání 15.&nbsp;12. Školení Olomouc: ÚP 1.&nbsp;12., SÚ 2.&nbsp;12. Právní oddělení ověří rizika žadatelů (fikce, odchýlení od ÚPD, plánovací smlouvy, dodatečné povolení) a od kdy u obecního SÚ platí ZS&nbsp;→&nbsp;vyjádření. Obecní stavební úřad a JES u běžných staveb v ORP se k tomuto dni nemění.</div>
+          </article>
+        </button>
+
+        <button class="stop below vec" type="button" role="listitem" data-id="4" aria-pressed="false">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="when">1. 1. 2027</span>
+          <article class="bubble">
+            <div class="who">Věcná účinnost</div>
+            <h2>ÚRÚ ČR a územní plán</h2>
+            <p>Vzniká Úřad rozvoje území. Pořizování vlastního ÚP přechází na obec. JES se u vyhrazených staveb (ÚRÚ ČR) nevydává.</p>
+            <div class="more">Zákon č.&nbsp;148/2023 Sb. se ruší 1.&nbsp;1.&nbsp;2028. Obecní stavební úřad v roce 2027 trvá; u běžných staveb v ORP se JES vydává jako dosud. Územní úřad územního plánování se zužuje na agendy, které později převezme URUK. Podle MMR končí příspěvek na přenesenou působnost za územní plánování; příspěvek na výkon státní správy jako celek v roce 2027 trvá a stát z něj ještě hradí stavební úřad. ÚAP odevzdat Úřadu do 30.&nbsp;6.&nbsp;2027.</div>
+          </article>
+        </button>
+
+        <button class="stop above" type="button" role="listitem" data-id="5" aria-pressed="false">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="when">březen 2027</span>
+          <article class="bubble">
+            <div class="who">personální oddělení · užší i širší tým</div>
+            <h2>Personální zařazení</h2>
+            <p>Určit, kdo k 31.&nbsp;12.&nbsp;2027 přechází na stát a kdo zůstává u města. Širší tým počítat teď.</p>
+            <div class="more">Harmonogram opatření do 28.&nbsp;2.&nbsp;2027. Stavební úřad ze zákona na pracoviště v ORP. ÚP má volbu; zákonný přechod směřuje do sídla kraje. V identifikaci jsou i úvazky dotčených orgánů (DOSS) a přestupkové agendy. FTE u sdílených úvazků. ZOZ do 31.&nbsp;12.&nbsp;2027 se započte jako úřednická zkouška. Zaměstnance vyrozumět včas.</div>
+          </article>
+        </button>
+
+        <button class="stop below" type="button" role="listitem" data-id="6" aria-pressed="false">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="when">polovina 2027</span>
+          <article class="bubble">
+            <div class="who">vedení úřadu · rada města</div>
+            <h2>Organizace úřadu</h2>
+            <p>Řešení případných širších organizačních změn v kontextu přechodu stavebního úřadu.</p>
+            <div class="more">Souběžně logistika: přesun lidí, spisů, archivů a vybavení.</div>
+          </article>
+        </button>
+
+        <button class="stop above stav" type="button" role="listitem" data-id="7" aria-pressed="false">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="when">31. 12. 2027 / 1. 1. 2028</span>
+          <article class="bubble">
+            <div class="who">Rozhodný den · URUK</div>
+            <h2>Předání státu</h2>
+            <p>Zánik obecního stavebního úřadu. Vznik URUK a územního pracoviště v ORP. Přechod podle §&nbsp;338 zákoníku práce.</p>
+            <div class="more">Systemizace k 31.&nbsp;12.&nbsp;2027 musí být čitelná. Ruší se zákon o JES. Záměr a dnešní předpoklad: územní pracoviště v budově městského úřadu, odděleně od ostatního provozu. Městu zůstávají agendy v samostatné působnosti a nástroje ochrany slabších účastníků. Informační technologie zajišťuje ÚRÚ. Výpověď toho, kdo přejít nehodlá, do 30.&nbsp;12.&nbsp;2027.</div>
+          </article>
+        </button>
+      </div>
+    </div>
+
+    <section class="agenda" id="seznam" aria-labelledby="seznam-nadpis">
+      <h2 id="seznam-nadpis">Kontrolní seznam témat <span>aby se na nic nezapomnělo · vlastníci v závorce</span></h2>
+      <div class="topics">
+        <article class="topic">
+          <h3>Personální</h3>
+          <ul>
+            <li>tabulka identifikace MMR (režimy A–D, skupiny 1–3)</li>
+            <li>převažující činnost k 31. 12. 2027, FTE u sdílených úvazků</li>
+            <li>SÚ a ÚP odděleně; dotčené orgány (DOSS) = identifikace úvazků</li>
+            <li>jmenovitý přehled X/2026, zařazení přechod / setrvání III/2027</li>
+            <li>agendy, které městu zůstávají v samostatné působnosti</li>
+            <li>přestupkové agendy (stavební zákon, památky, silnice) a úvazky DOSS</li>
+            <li>ZOZ: kdo musí mít; do 31. 12. 2027 = úřednická zkouška; přechodné 3 roky; termíny i I. Q 2028</li>
+            <li>přesun lidí podle mapy zařazení; vyrozumění, výpověď do 30. 12. 2027, platové garance</li>
+            <li>SÚ I./II. typu v obvodu ORP (Příbor)</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Organizační řád</h3>
+          <ul>
+            <li>řešení případných širších organizačních změn v kontextu přechodu stavebního úřadu</li>
+            
+            <li>úprava organizačního řádu a jeho příloh</li>
+            
+            <li>systemizace k rozhodnému dni</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Věcná rozhodovací praxe</h3>
+          <ul>
+            <li>hotovo do 12/2026, účinnost 1. 1. 2027 (ÚP; JES jen vyhrazené stavby)</li>
+            <li>zákon o JES se ruší 1. 1. 2028; u obecního SÚ v roce 2027 JES jako dosud</li>
+            <li>ZS → vyjádření a integrace DOSS u obecního SÚ: termín ověří právní oddělení</li>
+            <li>fikce, odvolání, dodatečné povolení, výjimka z odstranění</li>
+            <li>kapacita odboru životního prostředí: rok 2027 není skok; 2028 ano (JES, přestupky SZ)</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Územní plánování</h3>
+          <ul>
+            <li>vlastní ÚP v samostatné působnosti od 1. 1. 2027</li>
+            <li>rozhodnutí: pořizovatel města / smlouva / URUK</li>
+            <li>servis okolním obcím jen smlouvou a za úhradu</li>
+            <li>předběžná informace, plánovací smlouvy, odchýlení od ÚPD</li>
+            <li>ÚAP do 30. 6. 2027; jednotný standard ÚPD k 31. 12. 2027</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Logistika</h3>
+          <ul>
+            <li>plán přesunu podle mapy zařazení: kdo kam v budově</li>
+            <li>jedna etapa: lidé, spisy, archiv, nábytek — ať se nerozjedou</li>
+            <li>územní pracoviště v budově (záměr, dnešní předpoklad), odděleně; režim, prostory, nájem</li>
+            <li>nábytek (stoly, židle, skříně) vs. IT v gesci ÚRÚ</li>
+            <li>kapacita po rozšíření na ORP; vstupy, klíče, úklid</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Archiv</h3>
+          <ul>
+            <li>oddělit provozní archiv od technických prostor úřadu, kam stát přístup mít nemá</li>
+            <li>přesun archiválií: co zůstává městu, co jde se státem, kam v budově</li>
+            <li>rozsah metráže; příruční spisovny vs. historický fond</li>
+            <li>dokumentace ke stavbám, která se neskartuje; digitalizace: stav a co se převádí</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Spisová služba</h3>
+          <ul>
+            <li>spisová rozluka etapově 2–3 roky, nejprve živé spisy</li>
+            <li>fyzický přesun spisů podle etap rozluky, ne „až se uvolní sklep“</li>
+            <li>ISSŘ vs. elektronická spisová služba úřadu; jednotná spisová služba státu</li>
+            <li>metodika rozluky a kybernetické bezpečnosti (MMR)</li>
+            
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Informační systémy</h3>
+          <ul>
+            <li>software v implementačním dotazníku; práce v ISSŘ má zůstat</li>
+            <li>předání / oddělení IT: síť, konektivita a technické zázemí pracoviště</li>
+            <li>přístupy, zálohy, kybernetická bezpečnost</li>
+            
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Právo a samospráva</h3>
+          <ul>
+            <li>vnitřní předpisy k 1. 1. 2027 a k 1. 1. 2028</li>
+            <li>kompetence rady / ZM (plánovací smlouvy, odchýlení, referendum)</li>
+            <li>ochrana slabších účastníků nástroji, které městu zůstanou</li>
+            <li>náhrada za snížení hodnoty v území; město jako účastník řízení</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Finance a benefity</h3>
+          <ul>
+            <li>konec příspěvku za přenesenou působnost v ÚP (2027, podle MMR); příspěvek za stavební úřad v roce 2027 trvá</li>
+            <li>rozpočet 2027–2028; nájem a provoz pracoviště</li>
+            <li>stravenky, osobní konto, sick days, dary, tarify (dotazník MMR)</li>
+            
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Komunikace a vzdělávání</h3>
+          <ul>
+            <li>informování úřadu po milnících, ne až v prosinci 2027</li>
+            <li>Olomouc: ÚP 1. 12. 2026, SÚ 2. 12. 2026 (i online)</li>
+            <li>kvalifikace pořizovatele (zkoušky a ZOZ jsou v kartě Personální)</li>
+          </ul>
+        </article>
+        <article class="topic">
+          <h3>Součinnost se státem</h3>
+          <ul>
+            <li>implementační dotazník koordinátorce MMR</li>
+            <li>vyhlášení ve Sbírce; delta proti 272/0</li>
+            <li>výběr ředitele URUK a vedoucího pracoviště (během 2027)</li>
+            <li>bez dohody o jménech — rozhoduje stav systemizace</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <footer class="strip">
+      <div class="principles">
+        <span>Péče o zaměstnance</span>
+        <span>Jmenovitá identifikace</span>
+        <span>Úprava organizačního řádu</span>
+        <span>Samostatná působnost města</span>
+        <span>Přechod ze zákona</span>
+      </div>
+      <p class="hint">Osa nahoře · seznam níže · šipky · tisk na šířku (Ctrl+P, 2 strany)</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var stops = Array.prototype.slice.call(document.querySelectorAll(".stop"));
+      function select(btn) {
+        stops.forEach(function (s) {
+          var on = s === btn;
+          s.classList.toggle("is-on", on);
+          s.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      }
+      stops.forEach(function (btn) {
+        btn.addEventListener("click", function () { select(btn); });
+      });
+      document.addEventListener("keydown", function (e) {
+        var i = stops.findIndex(function (s) { return s.classList.contains("is-on"); });
+        if (i < 0) i = 0;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+          e.preventDefault();
+          select(stops[Math.min(i + 1, stops.length - 1)]);
+        }
+        if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+          e.preventDefault();
+          select(stops[Math.max(i - 1, 0)]);
+        }
+        if (e.key === "Home") { e.preventDefault(); select(stops[0]); }
+        if (e.key === "End") { e.preventDefault(); select(stops[stops.length - 1]); }
+      });
+    })();
+  </script>
+<script>
+(function(){
+  var osa=document.querySelector('.axis-wrap'); if(!osa) return;
+  var panel=document.createElement('section'); panel.className='detail'; panel.setAttribute('aria-live','polite');
+  osa.parentNode.insertBefore(panel, osa.nextSibling);
+  function ukaz(){
+    var s=document.querySelector('.stop.is-on'); if(!s) return;
+    panel.innerHTML='<b>'+s.querySelector('.when').textContent+' · '+s.querySelector('h2').textContent+'</b>'
+      +'<div>'+s.querySelector('.more').innerHTML+'</div><small>Klikněte na jiný krok na ose nebo použijte šipky.</small>';
+  }
+  new MutationObserver(ukaz).observe(document.querySelector('.stops'),{subtree:true,attributes:true,attributeFilter:['class']});
+  ukaz();
+})();
+</script>
+</body>
+</html>

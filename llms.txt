@@ -1,0 +1,112 @@
+# Novela stavebního zákona 2026 — sběrna zdrojů
+
+> Úřední texty a pracovní konsolidované znění k novele zákona č. 283/2021 Sb., stavební zákon (sněmovní tisk 67, senátní tisk 272), stenozáznamy rozprav, hlasování a katalog dalších zdrojů. Stav k 22. 10. 2026.
+
+Pokyn pro AI asistenta, který s těmito podklady pracuje:
+
+Jsi pomocník pro orientaci v novele stavebního zákona 2026 (sněmovní tisk 67, senátní tisk 272; mění zákon č. 283/2021 Sb. a 55 dalších zákonů). Odpovídáš z podkladů ve sbírce https://github.com/taiemnik/stavebnizakon nebo ze souborů, které ti nahraji. Začni souborem CO-JE-NOVEHO.md.
+
+Podklady podle váhy:
+1. Zákon. cistopis/283-2021.md je znění po novele (rušený text ~~přeškrtnutý~~, nový **tučně**, {uc=…} = účinnost), cistopis/info/283-2021-pred-novelou-2026-06-11.md je dnešní znění. Co se mění, zjistíš jejich porovnáním; seznam změněných paragrafů je v cistopis/info/283-2021-rejstrik-zmen.md. Ostatní zákony: cistopis/<číslo>-<rok>.md.
+2. Úřední text novely: zdroje/senat/tisky/272-0-navrh-zakona.md. Účinnost a přechodná ustanovení (rozběhnutá řízení, přechod úřadů a zaměstnanců na stát) nejsou v textu stavebního zákona, ale v samotné novele, tedy ve změnovém zákoně (Čl. II a Čl. LXXXV): cistopis/_ucinnost.md.
+3. Souvislosti: stenozáznamy rozprav, usnesení a pozměňovací návrhy (zdroje/psp, zdroje/senat). Důvodová zpráva v tisku 67/0 patří k původnímu návrhu, který komplexní pozměňovací návrh z velké části přepsal – jako vysvětlení ji použij jen tam, kde se text nezměnil, a řekni to.
+4. Výklady a názory: weby a metodiky MMR, stanoviska institucí, články (KATALOG.md). Máš k nim jen krátký popis, ne text. Podrobnosti z popisu neodvozuj; řekni, kdo co tvrdí, a doporuč přečíst originál (odkaz je u popisu).
+
+Dvě nejčastější otázky:
+A) „Co je nového?“ Nejdřív stav legislativního procesu a nejbližší termín (CO-JE-NOVEHO.md), pak hlavní změny zákona podle rejstříku změn, seskupené podle témat. Vlastní hodnocení, jestli je změna dobrá, nepřidávej.
+B) „Jak se mě to týká?“ Nejdřív zjisti, kdo se ptá (vlastník pozemku, stavebník, soused, obec, úředník…) a o jakou situaci jde (druh a velikost stavby, rozběhnuté řízení). Pak odpověz v pořadí: co platí dnes → co bude platit po novele → od kdy → co z toho plyne → co si ověřit. Vždy s paragrafy obou znění.
+
+Pravidla:
+- U každého věcného tvrzení uveď zdroj: zákon a paragraf (např. „§ 170 zákona č. 283/2021 Sb. ve znění novely“) nebo dokument a místo v něm.
+- Konsolidované znění je strojově sestavená pracovní pomůcka, ne úřední text. Do vyhlášení ve Sbírce zákonů je úředním textem senátní tisk 272/0, potom znění ve Sbírce.
+- Když odpověď v podkladech není nebo si nejsi jistý, řekni to otevřeně. Nic si nedomýšlej a nevydávej odhad za fakt.
+- Piš srozumitelně pro člověka bez právního vzdělání: nejdřív krátká odpověď (2–4 věty), pak podrobnosti a zdroje.
+- U konkrétní stavby, pozemku nebo řízení doporuč ověření na příslušném stavebním úřadě nebo u advokáta – tvoje odpověď není právní rada.
+
+## Začněte tady
+
+- [Co je nového](https://taiemnik.github.io/stavebnizakon/CO-JE-NOVEHO.md): stav legislativního procesu, nejbližší termíny a nejnovější dokumenty
+- [Rejstřík změn stavebního zákona](https://taiemnik.github.io/stavebnizakon/cistopis/info/283-2021-rejstrik-zmen.md): které paragrafy a přílohy novela mění, vkládá nebo ruší a od kdy
+- [Návod pro AI](https://taiemnik.github.io/stavebnizakon/AI-NAVOD.md): postup pro otázky „co je nového“ a „jak se mě to týká“
+
+## Znění zákona
+
+- [Stavební zákon po novele (konsolidované znění)](https://taiemnik.github.io/stavebnizakon/cistopis/283-2021.md): ~~rušené~~, **nové**, [číslo bodu], {uc=A|B|C} účinnost
+- [Stavební zákon před novelou](https://taiemnik.github.io/stavebnizakon/cistopis/info/283-2021-pred-novelou-2026-06-11.md): dnešní znění (platné k 11. 6. 2026) – pro srovnání „co platí dnes“
+- [Účinnost a přechodná ustanovení novely](https://taiemnik.github.io/stavebnizakon/cistopis/_ucinnost.md): kdy se co použije; rozběhnutá řízení; přechod úřadů a zaměstnanců na stát (Čl. II změnového zákona)
+- [Jen změněná ustanovení stavebního zákona](https://taiemnik.github.io/stavebnizakon/cistopis/info/283-2021-jen-zmeny.md): kratší výtah
+- [Jak konsolidované znění vzniklo a jeho limity](https://taiemnik.github.io/stavebnizakon/cistopis/info/JAK-VZNIKLO.md)
+- [Seznam ostatních zákonů po novele](https://taiemnik.github.io/stavebnizakon/cistopis/manifest.json): každý v cistopis/<číslo>-<rok>.md
+
+## Poslanecká sněmovna
+
+- [Sněmovní tisk 67 — průběh projednávání na psp.cz](https://www.psp.cz/sqw/historie.sqw?o=10&t=67): Poslanecká sněmovna, originál
+- [Tisk 67/0 — návrh zákona s důvodovou zprávou](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-00-navrh-zakona.md)
+- [Tisk 67/1 — stanovisko vlády](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-01-stanovisko-vlady.md)
+- [Tisky 67/2 až 67/9 — usnesení výborů (únor až duben 2026) – 67/2 HV č. 23 (6. 2.) – přerušení](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-02-usneseni-HV-23.md)
+- [Tisky 67/2 až 67/9 — usnesení výborů (únor až duben 2026) – 67/3 VSR č. 13 (12. 2.) – přerušení](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-03-usneseni-VSR-13.md)
+- [Tisky 67/2 až 67/9 — usnesení výborů (únor až duben 2026) – 67/4 ÚPV č. 13 (20. 2.) – přerušení](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-04-usneseni-UPV-13.md)
+- [Tisky 67/2 až 67/9 — usnesení výborů (únor až duben 2026) – 67/5 HV č. 38 (20. 3.) – přerušení](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-05-usneseni-HV-38.md)
+- [Tisky 67/2 až 67/9 — usnesení výborů (únor až duben 2026) – 67/6 ÚPV č. 16 (24. 3.) – přerušení](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-06-usneseni-UPV-16.md)
+- [Tisky 67/2 až 67/9 — usnesení výborů (únor až duben 2026) – 67/7 ÚPV č. 22 (2. 4.) – přerušení](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-07-usneseni-UPV-22.md)
+- [Tisky 67/2 až 67/9 — usnesení výborů (únor až duben 2026) – 67/8 VSR č. 27 (7. 4.) – přerušení](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-08-usneseni-VSR-27.md)
+- [Tisky 67/2 až 67/9 — usnesení výborů (únor až duben 2026) – 67/9 ÚPV č. 34 (30. 4.) – doporučuje schválit](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-09-usneseni-UPV-34.md)
+- [Tisk 67/10 — usnesení VSR s komplexním pozměňovacím návrhem](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-10-usneseni-VSR-37-KPN.md)
+- [Tisk 67/11 — usnesení garančního hospodářského výboru](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-11-usneseni-HV-55.md)
+- [Tisk 67/12 — pozměňovací a jiné návrhy z 2. čtení](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-12-pozmenovaci-navrhy.md)
+- [Tisk 67/13 — stanovisko garančního výboru před 3. čtením](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-13-stanovisko-garancniho-vyboru.md)
+- [Tisk 67/14 — zákon ve znění schváleném Sněmovnou](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-14-zneni-schvalene-snemovnou.md)
+- [Tisk 67/15 — usnesení Senátu doručené Sněmovně](https://taiemnik.github.io/stavebnizakon/zdroje/psp/tisky/67-15-usneseni-senatu.md)
+- [Písemné pozměňovací návrhy poslanců (jednotlivě)](https://www.psp.cz/sqw/historie.sqw?o=10&t=67): Poslanecká sněmovna, originál
+- [Pozměňovací návrhy – tabulka a odkazy](https://taiemnik.github.io/stavebnizakon/KATALOG.md): 152 návrhů, texty v zdroje/psp/pozmenovaci-navrhy/PN-<číslo>.md
+- [Stenozáznamy: 1. čtení (28. a 30. 1. 2026) – 28. 1.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-01-28-1-cteni-cast-1.md)
+- [Stenozáznamy: 1. čtení (28. a 30. 1. 2026) – 30. 1.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-01-30-1-cteni-cast-2.md)
+- [Stenozáznamy: 2. čtení (27. 5. až 11. 6. 2026) – 27. 5.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-05-27-2-cteni-cast-1.md)
+- [Stenozáznamy: 2. čtení (27. 5. až 11. 6. 2026) – 28. 5.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-05-28-2-cteni-cast-2.md)
+- [Stenozáznamy: 2. čtení (27. 5. až 11. 6. 2026) – 3. 6.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-06-03-2-cteni-cast-3.md)
+- [Stenozáznamy: 2. čtení (27. 5. až 11. 6. 2026) – 11. 6.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-06-11-2-cteni-dokonceni.md)
+- [Stenozáznamy: 3. čtení a schválení (3. až 10. 7. 2026) – 3. 7.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-07-03-3-cteni-cast-1.md)
+- [Stenozáznamy: 3. čtení a schválení (3. až 10. 7. 2026) – 8. 7.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-07-08-3-cteni-cast-2.md)
+- [Stenozáznamy: 3. čtení a schválení (3. až 10. 7. 2026) – 10. 7.](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-07-10-3-cteni-dokonceni.md)
+- [Stenozáznam: hlasování o zákoně vráceném Senátem (9. 9. 2026)](https://taiemnik.github.io/stavebnizakon/zdroje/psp/stenozaznamy/2026-09-09-prehlasovani-veta.md)
+- [Hlasování č. 117 a usnesení č. 253 — schválení ve 3. čtení (10. 7. 2026) – jmenovité hlasování](https://taiemnik.github.io/stavebnizakon/zdroje/psp/hlasovani/2026-07-10-hlasovani-117.md)
+- [Hlasování č. 117 a usnesení č. 253 — schválení ve 3. čtení (10. 7. 2026) – usnesení č. 253](https://taiemnik.github.io/stavebnizakon/zdroje/psp/usneseni/usneseni-253-2026-07-10.md)
+- [Hlasování č. 36 a usnesení č. 273 — setrvání na zákoně (9. 9. 2026) – jmenovité hlasování](https://taiemnik.github.io/stavebnizakon/zdroje/psp/hlasovani/2026-09-09-hlasovani-36.md)
+- [Hlasování č. 36 a usnesení č. 273 — setrvání na zákoně (9. 9. 2026) – usnesení č. 273](https://taiemnik.github.io/stavebnizakon/zdroje/psp/usneseni/usneseni-273-2026-09-09.md)
+
+## Senát
+
+- [Senátní tisk 272 — průběh projednávání na senat.cz](https://www.senat.cz/xqw/xervlet/pssenat/historie?action=detail&value=5627): Senát, originál
+- [Senátní tisk 272/0 — návrh zákona postoupený Senátu](https://taiemnik.github.io/stavebnizakon/zdroje/senat/tisky/272-0-navrh-zakona.md)
+- [Tisky 272/1 až 272/4 — usnesení výborů a komise Senátu – 272/1 VHZD č. 233](https://taiemnik.github.io/stavebnizakon/zdroje/senat/tisky/272-1-usneseni-VHZD-233.md)
+- [Tisky 272/1 až 272/4 — usnesení výborů a komise Senátu – 272/2 ÚPV č. 151](https://taiemnik.github.io/stavebnizakon/zdroje/senat/tisky/272-2-usneseni-UPV-151.md)
+- [Tisky 272/1 až 272/4 — usnesení výborů a komise Senátu – 272/3 VUZP č. 95](https://taiemnik.github.io/stavebnizakon/zdroje/senat/tisky/272-3-usneseni-VUZP-95.md)
+- [Tisky 272/1 až 272/4 — usnesení výborů a komise Senátu – 272/4 SKRV č. 96](https://taiemnik.github.io/stavebnizakon/zdroje/senat/tisky/272-4-usneseni-SKRV-96.md)
+- [Stenozáznam: projednání v Senátu (20. 8. 2026)](https://taiemnik.github.io/stavebnizakon/zdroje/senat/stenozaznamy/2026-08-20-29-schuze.md)
+- [Hlasování a usnesení Senátu č. 515 a 516 (20. 8. 2026) – hlasování: schválit](https://taiemnik.github.io/stavebnizakon/zdroje/senat/hlasovani/2026-08-20-hlasovani-22-schvalit.md)
+- [Hlasování a usnesení Senátu č. 515 a 516 (20. 8. 2026) – hlasování: zamítnout](https://taiemnik.github.io/stavebnizakon/zdroje/senat/hlasovani/2026-08-20-hlasovani-23-zamitnout.md)
+- [Hlasování a usnesení Senátu č. 515 a 516 (20. 8. 2026) – hlasování: pověření senátorů](https://taiemnik.github.io/stavebnizakon/zdroje/senat/hlasovani/2026-08-20-hlasovani-24-povereni.md)
+- [Hlasování a usnesení Senátu č. 515 a 516 (20. 8. 2026) – hlasování: doprovodné usnesení](https://taiemnik.github.io/stavebnizakon/zdroje/senat/hlasovani/2026-08-20-hlasovani-25-doprovodne-usneseni.md)
+- [Hlasování a usnesení Senátu č. 515 a 516 (20. 8. 2026) – usnesení č. 515](https://taiemnik.github.io/stavebnizakon/zdroje/senat/usneseni/usneseni-515-2026-08-20.md)
+- [Hlasování a usnesení Senátu č. 515 a 516 (20. 8. 2026) – usnesení č. 516](https://taiemnik.github.io/stavebnizakon/zdroje/senat/usneseni/usneseni-516-2026-08-20.md)
+
+## Související předpisy
+
+- [Zákon o státních zaměstnancích (sněmovní tisky 76 a 77) – 76/8 znění zákona](https://taiemnik.github.io/stavebnizakon/zdroje/souvisejici/76-08-zakon-o-statnich-zamestnancich.md)
+- [Zákon o státních zaměstnancích (sněmovní tisky 76 a 77) – 77/8 změnový zákon](https://taiemnik.github.io/stavebnizakon/zdroje/souvisejici/77-08-zmenovy-zakon.md)
+- [Senátní tisk 288 — změny na úseku vnitřní správy (mj. spisová služba) – tisk 288](https://taiemnik.github.io/stavebnizakon/zdroje/souvisejici/senat-288-vnitrni-sprava.md)
+- [Senátní tisk 288 — změny na úseku vnitřní správy (mj. spisová služba) – 288/2 usnesení VUZP č. 103](https://taiemnik.github.io/stavebnizakon/zdroje/souvisejici/senat-288-2-usneseni-VUZP-103.md)
+- [Senátní tisk 297 — sítě elektronických komunikací (souhlas vlastníka pozemku)](https://taiemnik.github.io/stavebnizakon/zdroje/souvisejici/senat-297-site-elektronickych-komunikaci.md)
+
+## Příprava úřadů (inspirace)
+
+- [Osa přípravy úřadu na novelu 2026–2028 (MÚ Kopřivnice)](https://taiemnik.github.io/stavebnizakon/roadmap.html): Jak se jeden městský úřad s rozšířenou působností připravuje na přechod stavebního úřadu na stát: časová osa od zahájení přípravy v září 2026 po rozhodný den 1.…
+
+## Katalog a další zdroje
+
+- [KATALOG.md](https://taiemnik.github.io/stavebnizakon/KATALOG.md): všechny zdroje s popisem, včetně odkazů na web MMR, stanoviska a články (u neúředních zdrojů jen krátký popis – podrobnosti čtěte v originálu)
+- [katalog.json](https://taiemnik.github.io/stavebnizakon/katalog.json): totéž strojově
+
+## Optional
+
+- [Balík pro AI a NotebookLM](https://taiemnik.github.io/stavebnizakon/ai/stavebni-zakon-2026-pro-ai.zip): vybrané texty v jednom ZIP

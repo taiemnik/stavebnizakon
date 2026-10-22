@@ -1,0 +1,6 @@
+desktop.ini
+Thumbs.db
+*.gdoc
+*.gsheet
+.env*
+node_modules/
