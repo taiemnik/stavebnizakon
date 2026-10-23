@@ -404,6 +404,16 @@
   .topics{grid-template-columns:1fr 1fr}
 }
 @media(max-width:700px){.topics{grid-template-columns:1fr}.pozn{margin:12px 16px 0}.site-bar{padding:10px 16px}}
+/* Materiály MMR u tématu: sbalené, ať karty témat zůstanou stejně vysoké */
+.topic{scroll-margin-top:70px}
+.topic:target{outline:3px solid #E6A823;outline-offset:2px}
+.mmr-k{margin-top:6px;border-top:1px dashed var(--border);padding-top:6px;font-size:13px}
+.mmr-k summary{cursor:pointer;font-weight:700;color:#1b5f93}
+.mmr-k ul{margin-top:6px}
+.mmr-k li::before{border-radius:50%;border-color:#1b5f93}
+.mmr-k a{color:#1b5f93;text-decoration:none;font-weight:600}
+.mmr-k a:hover{text-decoration:underline}
+.mmr-k small{color:#5a6b80;font-size:11.5px}
 @media print{.detail{display:none}.stop.is-on .bubble .more{display:block!important}}
 @media print{.site-bar{display:none}.pozn{margin:0 0 8px}}
 
@@ -418,7 +428,7 @@
 </head>
 <body>
 <div class="site-bar"><strong>Stavební zákon 2026</strong><nav class="menu" aria-label="Stránky webu"><a href="index.html#zdroje">Zdroje</a><a href="cistopis.html">Znění zákona</a><a href="index.html#osa">Průběh procesu</a><a href="roadmap.html" aria-current="page">Příprava úřadu</a><a href="index.html#ai">Zeptat se AI</a><a class="gh" href="https://github.com/taiemnik/stavebnizakon">GitHub ↗</a></nav></div>
-<aside class="pozn"><b>Brainstorming témat a dnešní předpoklady, ne metodika.</b> Tuto osu připravil tajemník Městského úřadu Kopřivnice (obec s rozšířenou působností) jako pracovní nástřel harmonogramu a témat pro přechod stavebního úřadu na stát. Termíny, rozdělení práce i záměry odpovídají tomu, co víme a předpokládáme dnes. Všechno se ještě může změnit, i průběžně, jak budou přibývat prováděcí předpisy, metodiky a rozhodnutí. Zveřejněno jako inspirace pro kolegy z jiných obcí a úřadů, které čeká stejný přechod. Závazné jsou zákon a metodiky Ministerstva pro místní rozvoj.</aside>
+<aside class="pozn"><b>Brainstorming témat a dnešní předpoklady, ne metodika.</b> Tuto osu připravil tajemník Městského úřadu Kopřivnice (obec s rozšířenou působností) jako pracovní nástřel harmonogramu a témat pro přechod stavebního úřadu na stát. Termíny, rozdělení práce i záměry odpovídají tomu, co víme a předpokládáme dnes. Všechno se ještě může změnit, i průběžně, jak budou přibývat prováděcí předpisy, metodiky a rozhodnutí. Zveřejněno jako inspirace pro kolegy z jiných obcí a úřadů, které čeká stejný přechod. Závazné jsou zákon a metodiky Ministerstva pro místní rozvoj; u každého tématu dole je rozbalovací seznam metodik a materiálů MMR s odkazy na originály.</aside>
   <div class="board">
     <header>
       <div>
@@ -525,7 +535,7 @@
     <section class="agenda" id="seznam" aria-labelledby="seznam-nadpis">
       <h2 id="seznam-nadpis">Kontrolní seznam témat <span>aby se na nic nezapomnělo · vlastníci v závorce</span></h2>
       <div class="topics">
-        <article class="topic">
+        <article class="topic" id="t-personalni">
           <h3>Personální</h3>
           <ul>
             <li>tabulka identifikace MMR (režimy A–D, skupiny 1–3)</li>
@@ -538,8 +548,9 @@
             <li>přesun lidí podle mapy zařazení; vyrozumění, výpověď do 30. 12. 2027, platové garance</li>
             <li>SÚ I./II. typu v obvodu ORP (Příbor)</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (8)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/integrace-agend/" rel="noopener">Integrace agend</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/2mmjrvjt/prezentace_1_co_se_mění_doss.pdf" rel="noopener">Integrace agend, prezentace 1: Co se mění pro váš úřad</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/wredu0em/prezentace_2_identifikace_zamestnanců.pdf" rel="noopener">Integrace agend, prezentace 2 a tabulka: Jak identifikovat zaměstnance</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/nejcastejsi-dotazy/" rel="noopener">Nejčastější otázky a odpovědi k novele stavebního zákona</a> <small>otázky a odpovědi</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/faq-pro-uredniky/" rel="noopener">Nejčastější dotazy úředníků k novele stavebního zákona</a> <small>otázky a odpovědi</small></li><li><a href="https://novystavebnizakon.gov.cz/legislativa/prechodna-ustanoveni/" rel="noopener">Přechodná ustanovení k novele stavebního zákona</a> <small>dokument</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-1-prehledne-informace-a-milniky/" rel="noopener">Newsletter č. 1: Přehledné informace a milníky</a> <small>newsletter</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-6-podpis-prezidenta-skoleni-a-metodika/" rel="noopener">Newsletter č. 6: Podpis prezidenta, školení a metodika</a> <small>newsletter</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-organizacni-rad">
           <h3>Organizační řád</h3>
           <ul>
             <li>řešení případných širších organizačních změn v kontextu přechodu stavebního úřadu</li>
@@ -548,8 +559,9 @@
             
             <li>systemizace k rozhodnému dni</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (3)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/integrace-agend/" rel="noopener">Integrace agend</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/2mmjrvjt/prezentace_1_co_se_mění_doss.pdf" rel="noopener">Integrace agend, prezentace 1: Co se mění pro váš úřad</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/wredu0em/prezentace_2_identifikace_zamestnanců.pdf" rel="noopener">Integrace agend, prezentace 2 a tabulka: Jak identifikovat zaměstnance</a> <small>prezentace</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-vecna-rozhodovaci-praxe">
           <h3>Věcná rozhodovací praxe</h3>
           <ul>
             <li>hotovo do 12/2026, účinnost 1. 1. 2027 (ÚP; JES jen vyhrazené stavby)</li>
@@ -558,8 +570,9 @@
             <li>fikce, odvolání, dodatečné povolení, výjimka z odstranění</li>
             <li>kapacita odboru životního prostředí: rok 2027 není skok; 2028 ano (JES, přestupky SZ)</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (7)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/media/2mmjrvjt/prezentace_1_co_se_mění_doss.pdf" rel="noopener">Integrace agend, prezentace 1: Co se mění pro váš úřad</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/y3keegzx/školení-sú_podzim-2026_15102026.pdf" rel="noopener">Školení k novele na úseku stavebního řádu (podzim 2026)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/o12fcca3/prezentace-kpn-20042026-2.pdf" rel="noopener">Komplexní pozměňovací návrh k tisku 67: prezentace vládní zmocněnkyně</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/legislativa/pravni-otazky-a-odpovedi/" rel="noopener">Právní otázky a odpovědi k novele stavebního zákona</a> <small>otázky a odpovědi</small></li><li><a href="https://novystavebnizakon.gov.cz/legislativa/uplne-zneni-zakona/" rel="noopener">Úplné znění stavebního zákona (pracovní verze MMR)</a> <small>dokument</small></li><li><a href="https://novystavebnizakon.gov.cz/legislativa/prechodna-ustanoveni/" rel="noopener">Přechodná ustanovení k novele stavebního zákona</a> <small>dokument</small></li><li><a href="https://novystavebnizakon.gov.cz/legislativa/zmenovy-zakon/" rel="noopener">Změnový zákon (pracovní verze MMR)</a> <small>dokument</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-uzemni-planovani">
           <h3>Územní plánování</h3>
           <ul>
             <li>vlastní ÚP v samostatné působnosti od 1. 1. 2027</li>
@@ -568,8 +581,9 @@
             <li>předběžná informace, plánovací smlouvy, odchýlení od ÚPD</li>
             <li>ÚAP do 30. 6. 2027; jednotný standard ÚPD k 31. 12. 2027</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (3)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/media/cgmhzb0c/skolení-novely-sz-uzemni-planovani-pardubice-upravena.pdf" rel="noopener">Školení k novele na úseku územního plánování (Pardubice)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/legislativa/prechodna-ustanoveni/" rel="noopener">Přechodná ustanovení k novele stavebního zákona</a> <small>dokument</small></li><li><a href="https://novystavebnizakon.gov.cz/hlavni-zmeny/" rel="noopener">Hlavní změny (pro občany, stavebníky a samosprávy)</a> <small>web</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-logistika">
           <h3>Logistika</h3>
           <ul>
             <li>plán přesunu podle mapy zařazení: kdo kam v budově</li>
@@ -578,8 +592,9 @@
             <li>nábytek (stoly, židle, skříně) vs. IT v gesci ÚRÚ</li>
             <li>kapacita po rozšíření na ORP; vstupy, klíče, úklid</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (5)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/media/s4pfebla/metodika_spisove_rozluky.pdf" rel="noopener">Metodika spisové rozluky (PDF)</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/vvede2sk/mmr_a4_brozura_v4.pdf" rel="noopener">Spisová rozluka 2028: průvodce pro tajemníky obcí se stavebním úřadem</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/ydgl2gg1/přílohy_2_0.zip" rel="noopener">Vzory P1–P14 k metodice spisové rozluky</a> <small>vzory</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-4-dotaznik-prostory-a-setkavani-v-uzemich/" rel="noopener">Newsletter č. 4: Dotazník, prostory a setkávání v územích</a> <small>newsletter</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-6-podpis-prezidenta-skoleni-a-metodika/" rel="noopener">Newsletter č. 6: Podpis prezidenta, školení a metodika</a> <small>newsletter</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-archiv">
           <h3>Archiv</h3>
           <ul>
             <li>oddělit provozní archiv od technických prostor úřadu, kam stát přístup mít nemá</li>
@@ -587,8 +602,9 @@
             <li>rozsah metráže; příruční spisovny vs. historický fond</li>
             <li>dokumentace ke stavbám, která se neskartuje; digitalizace: stav a co se převádí</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (5)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/spisova-rozluka/" rel="noopener">Spisová rozluka</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/s4pfebla/metodika_spisove_rozluky.pdf" rel="noopener">Metodika spisové rozluky (PDF)</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/vvede2sk/mmr_a4_brozura_v4.pdf" rel="noopener">Spisová rozluka 2028: průvodce pro tajemníky obcí se stavebním úřadem</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/ydgl2gg1/přílohy_2_0.zip" rel="noopener">Vzory P1–P14 k metodice spisové rozluky</a> <small>vzory</small></li><li><a href="https://novystavebnizakon.gov.cz/media/xwvlipis/prvotní-informace-metodika-spisové-rozluky-prezentace.pptx" rel="noopener">Metodika spisové rozluky – shrnutí (online setkání s tajemníky)</a> <small>prezentace</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-spisova-sluzba">
           <h3>Spisová služba</h3>
           <ul>
             <li>spisová rozluka etapově 2–3 roky, nejprve živé spisy</li>
@@ -597,8 +613,9 @@
             <li>metodika rozluky a kybernetické bezpečnosti (MMR)</li>
             
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (9)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/spisova-rozluka/" rel="noopener">Spisová rozluka</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/s4pfebla/metodika_spisove_rozluky.pdf" rel="noopener">Metodika spisové rozluky (PDF)</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/vvede2sk/mmr_a4_brozura_v4.pdf" rel="noopener">Spisová rozluka 2028: průvodce pro tajemníky obcí se stavebním úřadem</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/ydgl2gg1/přílohy_2_0.zip" rel="noopener">Vzory P1–P14 k metodice spisové rozluky</a> <small>vzory</small></li><li><a href="https://novystavebnizakon.gov.cz/media/xwvlipis/prvotní-informace-metodika-spisové-rozluky-prezentace.pptx" rel="noopener">Metodika spisové rozluky – shrnutí (online setkání s tajemníky)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/hqmnvyw1/2026-09-08_egovernemnt_pavel-krystof.pdf" rel="noopener">Konference Egovernment v Mikulově: implementace a spisová rozluka</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/nejcastejsi-dotazy/" rel="noopener">Nejčastější otázky a odpovědi k novele stavebního zákona</a> <small>otázky a odpovědi</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-6-podpis-prezidenta-skoleni-a-metodika/" rel="noopener">Newsletter č. 6: Podpis prezidenta, školení a metodika</a> <small>newsletter</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-7-metodika-spisove-rozluky-setkani-s-tajemniky-a-podzimni-skoleni/" rel="noopener">Newsletter č. 7: Metodika spisové rozluky, setkání s tajemníky a podzimní školení</a> <small>newsletter</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-informacni-systemy">
           <h3>Informační systémy</h3>
           <ul>
             <li>software v implementačním dotazníku; práce v ISSŘ má zůstat</li>
@@ -606,8 +623,9 @@
             <li>přístupy, zálohy, kybernetická bezpečnost</li>
             
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (5)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/media/s4pfebla/metodika_spisove_rozluky.pdf" rel="noopener">Metodika spisové rozluky (PDF)</a> <small>metodika</small></li><li><a href="https://novystavebnizakon.gov.cz/media/ydgl2gg1/přílohy_2_0.zip" rel="noopener">Vzory P1–P14 k metodice spisové rozluky</a> <small>vzory</small></li><li><a href="https://novystavebnizakon.gov.cz/media/e4vbsajp/prezentace-mmr_final_nsz_dopis_obce_final.pdf" rel="noopener">Státní stavební správa: prezentace pro obce a kraje (duben 2026)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/hqmnvyw1/2026-09-08_egovernemnt_pavel-krystof.pdf" rel="noopener">Konference Egovernment v Mikulově: implementace a spisová rozluka</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-4-dotaznik-prostory-a-setkavani-v-uzemich/" rel="noopener">Newsletter č. 4: Dotazník, prostory a setkávání v územích</a> <small>newsletter</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-pravo-a-samosprava">
           <h3>Právo a samospráva</h3>
           <ul>
             <li>vnitřní předpisy k 1. 1. 2027 a k 1. 1. 2028</li>
@@ -615,8 +633,9 @@
             <li>ochrana slabších účastníků nástroji, které městu zůstanou</li>
             <li>náhrada za snížení hodnoty v území; město jako účastník řízení</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (4)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/media/cgmhzb0c/skolení-novely-sz-uzemni-planovani-pardubice-upravena.pdf" rel="noopener">Školení k novele na úseku územního plánování (Pardubice)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/o12fcca3/prezentace-kpn-20042026-2.pdf" rel="noopener">Komplexní pozměňovací návrh k tisku 67: prezentace vládní zmocněnkyně</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/legislativa/pravni-otazky-a-odpovedi/" rel="noopener">Právní otázky a odpovědi k novele stavebního zákona</a> <small>otázky a odpovědi</small></li><li><a href="https://novystavebnizakon.gov.cz/hlavni-zmeny/" rel="noopener">Hlavní změny (pro občany, stavebníky a samosprávy)</a> <small>web</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-finance-a-benefity">
           <h3>Finance a benefity</h3>
           <ul>
             <li>konec příspěvku za přenesenou působnost v ÚP (2027, podle MMR); příspěvek za stavební úřad v roce 2027 trvá</li>
@@ -624,16 +643,18 @@
             <li>stravenky, osobní konto, sick days, dary, tarify (dotazník MMR)</li>
             
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (2)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/media/e4vbsajp/prezentace-mmr_final_nsz_dopis_obce_final.pdf" rel="noopener">Státní stavební správa: prezentace pro obce a kraje (duben 2026)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/faq-pro-uredniky/" rel="noopener">Nejčastější dotazy úředníků k novele stavebního zákona</a> <small>otázky a odpovědi</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-komunikace-a-vzdelavani">
           <h3>Komunikace a vzdělávání</h3>
           <ul>
             <li>informování úřadu po milnících, ne až v prosinci 2027</li>
             <li>Olomouc: ÚP 1. 12. 2026, SÚ 2. 12. 2026 (i online)</li>
             <li>kvalifikace pořizovatele (zkoušky a ZOZ jsou v kartě Personální)</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (7)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/materialy-ze-skoleni/" rel="noopener">Materiály ze školení</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/y3keegzx/školení-sú_podzim-2026_15102026.pdf" rel="noopener">Školení k novele na úseku stavebního řádu (podzim 2026)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/cgmhzb0c/skolení-novely-sz-uzemni-planovani-pardubice-upravena.pdf" rel="noopener">Školení k novele na úseku územního plánování (Pardubice)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/terminy-skoleni-a-registrace/" rel="noopener">Termíny školení a registrace</a> <small>web</small></li><li><a href="https://novystavebnizakon.gov.cz/novinky/kde-se-s-nami-potkate/" rel="noopener">Kde se s námi potkáte</a> <small>web</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/" rel="noopener">Newsletter k zavádění nové stavební správy (archiv)</a> <small>newsletter</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-7-metodika-spisove-rozluky-setkani-s-tajemniky-a-podzimni-skoleni/" rel="noopener">Newsletter č. 7: Metodika spisové rozluky, setkání s tajemníky a podzimní školení</a> <small>newsletter</small></li></ul></details>
         </article>
-        <article class="topic">
+        <article class="topic" id="t-soucinnost-se-statem">
           <h3>Součinnost se státem</h3>
           <ul>
             <li>implementační dotazník koordinátorce MMR</li>
@@ -641,6 +662,7 @@
             <li>výběr ředitele URUK a vedoucího pracoviště (během 2027)</li>
             <li>bez dohody o jménech — rozhoduje stav systemizace</li>
           </ul>
+<details class="mmr-k"><summary>Metodiky a materiály MMR (9)</summary><ul><li><a href="https://novystavebnizakon.gov.cz/media/e4vbsajp/prezentace-mmr_final_nsz_dopis_obce_final.pdf" rel="noopener">Státní stavební správa: prezentace pro obce a kraje (duben 2026)</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/media/hqmnvyw1/2026-09-08_egovernemnt_pavel-krystof.pdf" rel="noopener">Konference Egovernment v Mikulově: implementace a spisová rozluka</a> <small>prezentace</small></li><li><a href="https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/vladni-zmocnenkyne/" rel="noopener">Vládní zmocněnkyně: usnesení vlády č. 59/2026 a statut</a> <small>dokument</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/aktualni-harmonogram/" rel="noopener">Harmonogram a milníky</a> <small>web</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/kontakty-podle-tematu/" rel="noopener">Kontakty podle tématu a územní koordinátoři</a> <small>web</small></li><li><a href="https://novystavebnizakon.gov.cz/novinky/kde-se-s-nami-potkate/" rel="noopener">Kde se s námi potkáte</a> <small>web</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/" rel="noopener">Newsletter k zavádění nové stavební správy (archiv)</a> <small>newsletter</small></li><li><a href="https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-4-dotaznik-prostory-a-setkavani-v-uzemich/" rel="noopener">Newsletter č. 4: Dotazník, prostory a setkávání v územích</a> <small>newsletter</small></li><li><a href="https://www.youtube.com/watch?v=a06r_UfeoIg" rel="noopener">Stavíme na faktech, 7. díl: Jak MMR chystá státní stavební správu</a> <small>podcast</small></li></ul></details>
         </article>
       </div>
     </section>

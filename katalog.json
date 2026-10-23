@@ -328,6 +328,7 @@
    "url": null,
    "dalsi_odkazy": [],
    "medailonek": "Úplné znění zákona č. 283/2021 Sb. se strojově zapracovanými změnami ze senátního tisku 272/0, tedy ze znění, na kterém Sněmovna 9. 9. 2026 setrvala. Rušený text je přeškrtnutý, nový tučně; u každého ustanovení je číslo novelizačního bodu a barevně den účinnosti. Dalších 55 zákonů obsahuje jen ustanovení, kterých se novela dotýká. Není to úřední text – ověřte v originálu a po vyhlášení ve Sbírce zákonů.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -349,6 +350,7 @@
    "url": null,
    "dalsi_odkazy": [],
    "medailonek": "Výtah z konsolidovaného znění zákona č. 283/2021 Sb.: jen paragrafy, které novela mění, ruší nebo nově vkládá, se stejným vyznačením změn. Hodí se pro rychlé čtení toho, co je jinak, a pro AI asistenty s menším kontextem.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -370,6 +372,7 @@
    "url": null,
    "dalsi_odkazy": [],
    "medailonek": "Seznam paragrafů a příloh stavebního zákona, které novela mění, nově vkládá nebo ruší – po částech a hlavách, s nadpisem, druhem změny, účinností a počtem novelizačních bodů. Strojově sestavený z konsolidovaného znění; slouží k rychlé orientaci v tom, co je nového, a jako mapa pro AI asistenty. Nic nehodnotí.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -384,6 +387,7 @@
    "url": null,
    "dalsi_odkazy": [],
    "medailonek": "Čl. LXXXV (účinnost) a přechodná ustanovení ze senátního tisku 272/0. Nejsou součástí textu stavebního zákona, ale určují, co se kdy použije: obecně 1. 1. 2027, část ustanovení prvním dnem měsíce po vyhlášení a část až 1. 1. 2028, a jak se dokončí rozběhnutá řízení.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -405,6 +409,7 @@
    "url": "https://e-sbirka.gov.cz/sb/2021/283",
    "dalsi_odkazy": [],
    "medailonek": "Znění zákona č. 283/2021 Sb., jak platí dnes, převzaté z e-Sbírky ke dni 11. 6. 2026. Je to základ, na který se novela aplikovala; hodí se k porovnání „dnes vs. po novele“. Aktuální úřední znění je vždy na e-Sbírce.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -426,6 +431,7 @@
    "url": null,
    "dalsi_odkazy": [],
    "medailonek": "Popis postupu (e-Sbírka + strojové zapracování 1 624 novelizačních bodů ze senátního tisku 272/0), výsledky kontroly proti pracovnímu znění MMR a seznam bodů, které se zapracovat nepodařilo – hlavně zásahy do tabulek. Číst před tím, než se na znění spolehnete.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -459,6 +465,7 @@
    "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=67",
    "dalsi_odkazy": [],
    "medailonek": "Úřední přehled všech kroků legislativního procesu: předložení, čtení, výbory, Senát, přehlasování veta, prezident a Sbírka. U každého kroku odkazy na dokumenty, hlasování a stenozáznamy. Nejlepší místo, kde ověřit aktuální stav.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -473,6 +480,7 @@
    "url": "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=67&ct1=0",
    "dalsi_odkazy": [],
    "medailonek": "Poslanecký návrh novely, který 12. 12. 2025 předložila skupina deseti poslanců (první podepsaný Andrej Babiš). Obsahuje paragrafové znění, důvodovou zprávu a platné znění dotčených zákonů s vyznačením navrhovaných změn. Výchozí text, k němuž se vztahují všechny pozdější pozměňovací návrhy.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -500,6 +508,7 @@
    "url": "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=67&ct1=1",
    "dalsi_odkazy": [],
    "medailonek": "Stanovisko vlády k poslaneckému návrhu ze 16. 12. 2025: vláda s návrhem vyslovila souhlas.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -527,6 +536,7 @@
    "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=67",
    "dalsi_odkazy": [],
    "medailonek": "Osm usnesení výborů z prvních měsíců projednávání. Hospodářský výbor (garanční), výbor pro veřejnou správu a regionální rozvoj a ústavně-právní výbor projednávání opakovaně přerušovaly (67/2–67/8); ústavně-právní výbor 30. 4. 2026 doporučil návrh schválit (67/9).",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -646,6 +656,7 @@
    "url": "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=67&ct1=10",
    "dalsi_odkazy": [],
    "medailonek": "Usnesení výboru pro veřejnou správu a regionální rozvoj č. 37 ze 6. schůze 30. 4. 2026 (tisk rozeslán 4. 5. 2026), k němuž je připojen komplexní pozměňovací návrh. Ten návrh z velké části přepsal; znění schválené Sněmovnou z něj vychází. Důvodová zpráva v tisku 67/0 se proto k mnoha ustanovením už nevztahuje.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -673,6 +684,7 @@
    "url": "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=67&ct1=11",
    "dalsi_odkazy": [],
    "medailonek": "Usnesení hospodářského výboru č. 55 ze 7. 5. 2026, kterým garanční výbor doporučil Sněmovně pozměňovací návrhy.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -700,6 +712,7 @@
    "url": "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=67&ct1=12",
    "dalsi_odkazy": [],
    "medailonek": "Souhrn všech pozměňovacích a jiných návrhů podaných ve 2. čtení 11. 6. 2026, zpracovaný jako tisk 67/12 a rozeslaný 18. 6. 2026. O těchto návrzích se hlasovalo ve 3. čtení.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -727,6 +740,7 @@
    "url": "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=67&ct1=13",
    "dalsi_odkazy": [],
    "medailonek": "Usnesení hospodářského výboru č. 86 z 25. 6. 2026 se stanoviskem k jednotlivým pozměňovacím návrhům z tisku 67/12 a s doporučeným postupem hlasování (doručeno 30. 6. 2026).",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -754,6 +768,7 @@
    "url": "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=67&ct1=14",
    "dalsi_odkazy": [],
    "medailonek": "Znění zákona, jak ho Sněmovna schválila 10. 7. 2026 a postoupila Senátu (rozesláno poslancům 24. 8. 2026 po zamítnutí v Senátu). Právě o tomto znění Sněmovna 9. 9. 2026 hlasovala a na něm setrvala; obsahově odpovídá senátnímu tisku 272/0.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -782,6 +797,7 @@
    "url": "https://www.psp.cz/sqw/text/tiskt.sqw?o=10&ct=67&ct1=15",
    "dalsi_odkazy": [],
    "medailonek": "Dokument Senátu o zamítnutí návrhu zákona, rozeslaný poslancům 24. 8. 2026 jako tisk 67/15.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -809,6 +825,7 @@
    "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=67",
    "dalsi_odkazy": [],
    "medailonek": "Jednotlivé pozměňovací návrhy, které poslanci k tisku 67 podali v systému Sněmovny – od akceleračních oblastí pro bydlení přes přístupnost staveb až po vzdálenosti větrných elektráren. Každý návrh v původním formátu DOCX a jako text; v tabulce je předkladatel, popis a datum. Které návrhy prošly, ukazuje hlasování ve 3. čtení a výsledné znění 67/14.",
+   "temata": [],
    "kopie": true,
    "soubory": [],
    "polozky": [
@@ -2813,6 +2830,7 @@
    "url": "https://www.psp.cz/eknih/2025ps/stenprot/005schuz/index.htm",
    "dalsi_odkazy": [],
    "medailonek": "Celé 1. čtení na 5. schůzi ve dvou částech: úvodní slovo ministryně pro místní rozvoj Zuzany Mrázové, zpravodajská zpráva, obecná rozprava s vystoupeními koalice i opozice a hlasování o přikázání návrhu výborům.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -2840,6 +2858,7 @@
    "url": "https://www.psp.cz/eknih/2025ps/stenprot/020schuz/index.htm",
    "dalsi_odkazy": [],
    "medailonek": "Druhé čtení ve čtyřech částech: tři dny na 20. schůzi (27. 5., 28. 5. a 3. 6.) a dokončení na 23. schůzi 11. 6. 2026. V obecné a podrobné rozpravě poslanci přednášejí a odůvodňují pozměňovací návrhy, které pak tvoří tisk 67/12.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -2879,6 +2898,7 @@
    "url": "https://www.psp.cz/eknih/2025ps/stenprot/024schuz/index.htm",
    "dalsi_odkazy": [],
    "medailonek": "Třetí čtení ve třech částech: 3. a 8. 7. na 24. schůzi a dokončení 10. 7. 2026 na 27. schůzi, včetně hlasování o jednotlivých pozměňovacích návrzích a o návrhu jako celku (hlasování č. 117). Ministryně v rozpravě mimo jiné citovala dopisy podnikatelských svazů na podporu novely.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -2912,6 +2932,7 @@
    "url": "https://www.psp.cz/eknih/2025ps/stenprot/030schuz/bqbs/b05800101.htm",
    "dalsi_odkazy": [],
    "medailonek": "Rozprava na 30. schůzi o zákoně, který Senát zamítl, včetně vystoupení senátorů a hlasování č. 36, jímž Sněmovna na zákoně setrvala.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -2933,6 +2954,7 @@
    "url": "https://www.psp.cz/sqw/hlasy.sqw?G=88252",
    "dalsi_odkazy": [],
    "medailonek": "Jmenovité hlasování o návrhu zákona jako celku: přítomno 170 poslanců, potřeba 86, pro 88, proti 79. K tomu usnesení Sněmovny č. 253, kterým s návrhem vyslovila souhlas.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -2967,6 +2989,7 @@
    "url": "https://www.psp.cz/sqw/hlasy.sqw?G=88454",
    "dalsi_odkazy": [],
    "medailonek": "Jmenovité hlasování o zákoně vráceném Senátem: přítomno 168 poslanců, potřeba 101 (nadpoloviční většina všech poslanců), pro 105, proti 52. K tomu usnesení Sněmovny č. 273.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -3001,6 +3024,7 @@
    "url": "https://www.senat.cz/xqw/xervlet/pssenat/historie?action=detail&value=5627",
    "dalsi_odkazy": [],
    "medailonek": "Úřední přehled projednávání v Senátu s odkazy na tisky, usnesení výborů, hlasování a stenozáznam.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3015,6 +3039,7 @@
    "url": "https://www.senat.cz/xqw/webdav/pssenat/original/120818/101499",
    "dalsi_odkazy": [],
    "medailonek": "Znění zákona, jak ho Sněmovna schválila a 23. 7. 2026 postoupila Senátu (259 stran). Je zapsané jako novelizační pokyny („v § … se slova … nahrazují …“), ne jako úplné znění; souvislý text najdete v konsolidovaném znění výše. Do vyhlášení ve Sbírce je to referenční úřední text novely.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -3042,6 +3067,7 @@
    "url": "https://www.senat.cz/xqw/xervlet/pssenat/historie?action=detail&value=5627",
    "dalsi_odkazy": [],
    "medailonek": "Všechny čtyři orgány Senátu, které návrh projednaly, doporučily ho zamítnout: výbor pro hospodářství, zemědělství a dopravu (garanční), ústavně-právní výbor, výbor pro územní rozvoj, veřejnou správu a životní prostředí (všechny 12. 8. 2026) a Stálá komise pro rozvoj venkova (18. 8. 2026).",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -3109,6 +3135,7 @@
    "url": "https://www.senat.cz/xqw/xervlet/pssenat/hlasovani?action=steno&O=15&IS=7963&D=20.08.2026",
    "dalsi_odkazy": [],
    "medailonek": "Celá rozprava k tisku 272 na 29. schůzi Senátu: úvodní slovo předkladatelů, zpravodajské zprávy výborů, vystoupení senátorů a hlasování. Neautorizovaný stenozáznam, vyříznutý jen tento bod schůze.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -3130,6 +3157,7 @@
    "url": "https://www.senat.cz/xqw/xervlet/pssenat/hlasa?O=15&S=29&T=272",
    "dalsi_odkazy": [],
    "medailonek": "Čtyři jmenovitá hlasování: návrh schválit neprošel (10 pro, 55 proti), návrh zamítnout prošel (55 pro, 7 proti, 66 přítomných), dále pověření senátorů odůvodněním ve Sněmovně a doprovodné usnesení. Usnesením č. 515 Senát návrh zamítl, doprovodným usnesením č. 516 vyzval Sněmovnu, aby zamítnutí nepřehlasovala.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -3195,6 +3223,7 @@
    "url": null,
    "dalsi_odkazy": [],
    "medailonek": "Jak se jeden městský úřad s rozšířenou působností připravuje na přechod stavebního úřadu na stát: časová osa od zahájení přípravy v září 2026 po rozhodný den 1. 1. 2028 a kontrolní seznam témat – personál, organizace úřadu, rozhodovací praxe, územní plánování, logistika, archiv, spisová služba, IT, finance a komunikace. Je to brainstorming témat a dnešní předpoklady, které se mohou změnit, ne metodika; zveřejněno jako inspirace pro kolegy z jiných úřadů.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3209,6 +3238,7 @@
    "url": "https://www.psp.cz/sqw/historie.sqw?o=10&t=76",
    "dalsi_odkazy": [],
    "medailonek": "Nový zákon o právních poměrech státních zaměstnanců (tisk 76) a změnový zákon k němu (tisk 77). Souvisí s novelou, protože zaměstnanci stavební správy, kteří přejdou do soustavy úřadů rozvoje území, budou státními zaměstnanci. Prezident zákony 17. 9. 2026 vrátil, Sněmovna na nich 14. 10. 2026 setrvala; k 19. 10. nebyly ve Sbírce.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -3256,6 +3286,7 @@
    "url": "https://www.senat.cz/xqw/xervlet/pssenat/historie?action=detail&value=288",
    "dalsi_odkazy": [],
    "medailonek": "Návrh zákona, kterým se mění některé zákony na úseku vnitřní správy (navazuje na sněmovní tisk 187), mimo jiné v oblasti spisové služby, z níž vychází předávání spisů stavebních úřadů. Výbor pro územní rozvoj, veřejnou správu a životní prostředí 8. 10. 2026 doporučil schválit; lhůta Senátu do 24. 10. 2026.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -3297,6 +3328,7 @@
    "url": "https://www.senat.cz/xqw/xervlet/pssenat/historie?action=detail&value=297",
    "dalsi_odkazy": [],
    "medailonek": "Zákony související s rychlejším budováním vysokorychlostních sítí (navazuje na sněmovní tisk 56). Pro vlastníky pozemků je důležitá změna § 104a zákona o elektronických komunikacích: nedoložení souhlasu vlastníka pozemku nebrání povolení záměru sítě. Lhůta Senátu do 29. 10. 2026.",
+   "temata": [],
    "kopie": true,
    "soubory": [
     {
@@ -3325,6 +3357,7 @@
    "url": "https://novystavebnizakon.gov.cz/",
    "dalsi_odkazy": [],
    "medailonek": "Informační web Ministerstva pro místní rozvoj k velké novele stavebního zákona. Je určen veřejnosti, stavebníkům, samosprávám i úředníkům. Najdete na něm přehled hlavních změn, legislativní texty, otázky a odpovědi, aktuality a samostatnou sekci pro úředníky s metodikami, newslettery a materiály ze školení. Původní sekce Stavební zákon 2026 na mmr.gov.cz sem trvale přesměrovává.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3339,6 +3372,25 @@
    "url": "https://novystavebnizakon.gov.cz/hlavni-zmeny/",
    "dalsi_odkazy": [],
    "medailonek": "Část webu MMR určená veřejnosti, která popisuje dopady novely zvlášť pro občany, stavebníky a samosprávy. Podstránka pro občany shrnuje například vyšší limity pro drobné stavby a opěrné zdi, delší přípojky v režimu drobných staveb, jednodušší dělení pozemků a osvobození od poplatku, když úřad nedodrží zákonnou lhůtu.",
+   "temata": [
+    "Územní plánování",
+    "Právo a samospráva"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-snadne-cteni",
+   "sekce": "mmr",
+   "typ": "web",
+   "nazev": "Snadné čtení: novela jednoduchým jazykem",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/hlavni-zmeny/snadne-cteni/",
+   "dalsi_odkazy": [],
+   "medailonek": "Stránka MMR, která obsah webu shrnuje krátkými větami podle pravidel Snadného čtení (Easy to read). Vysvětluje, o čem novela je, co se mění pro stavebníky, pro koho je důležitá, kdo ji zavádí a co se stane v letech 2026 až 2029. Hodí se pro lidi, kterým by úřední text nic neřekl.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3353,6 +3405,10 @@
    "url": "https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/nejcastejsi-dotazy/",
    "dalsi_odkazy": [],
    "medailonek": "Rozsáhlý přehled otázek a odpovědí MMR k novele, členěný podle cílových skupin: občan, stavebník, úředník, obec a kraj a systémové otázky implementace. Pokrývá mimo jiné drobné stavby, práva sousedů, černé stavby, lhůty a fikce, kolaudaci, archeologický výzkum, přechod zaměstnanců na stát, spisovou službu a data územně analytických podkladů.",
+   "temata": [
+    "Personální",
+    "Spisová služba"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3367,6 +3423,9 @@
    "url": "https://novystavebnizakon.gov.cz/legislativa/uplne-zneni-zakona/",
    "dalsi_odkazy": [],
    "medailonek": "Pracovní úplné znění zákona č. 283/2021 Sb. ve znění novely, které MMR zveřejňuje jako interaktivní stránku; lze zobrazit nové znění, dosavadní znění nebo obojí s vyznačenými změnami. Ministerstvo text označuje za neoficiální pracovní verzi bez legislativní a jazykové korektury; závazné je znění vyhlášené ve Sbírce zákonů.",
+   "temata": [
+    "Věcná rozhodovací praxe"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3381,6 +3440,11 @@
    "url": "https://novystavebnizakon.gov.cz/legislativa/prechodna-ustanoveni/",
    "dalsi_odkazy": [],
    "medailonek": "Výtah přechodných ustanovení novely, který MMR zveřejnilo jako pracovní text (webová stránka a PDF ze 14. 9. 2026). Podle MMR upravují zejména vznik Úřadu rozvoje území k 1. 1. 2027, jeho krajských pracovišť k 1. 1. 2028 a zánik krajských a obecních stavebních úřadů k 31. 12. 2027, přechod zaměstnanců a spisů, dokončení rozpracovaných řízení a platnost prováděcích předpisů.",
+   "temata": [
+    "Věcná rozhodovací praxe",
+    "Personální",
+    "Územní plánování"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3395,6 +3459,9 @@
    "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/aktualni-harmonogram/",
    "dalsi_odkazy": [],
    "medailonek": "Přehled hlavních milníků zavádění nové stavební správy podle MMR: příprava v roce 2026, vznik Úřadu rozvoje území k 1. 1. 2027, nová struktura s krajskou úrovní a sítí zhruba 205 územních pracovišť od 1. 1. 2028, stabilizace v letech 2028 až 2029 a přechod na novou verzi digitalizace stavebního řízení (DSŘ 2.0) v letech 2030 až 2031.",
+   "temata": [
+    "Součinnost se státem"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3409,6 +3476,10 @@
    "url": "https://novystavebnizakon.gov.cz/legislativa/pravni-otazky-a-odpovedi/",
    "dalsi_odkazy": [],
    "medailonek": "Rubrika MMR, v níž ministerstvo na samostatných stránkách rozebírá konkrétní tvrzení o novele z parlamentní a veřejné debaty a označuje je jako nepřesná nebo nesprávná. Okruhy: povolování, odvolání a soudní ochrana, územní plánování, černé stavby, projektová dokumentace, Úřad rozvoje území, plánovací smlouvy a ochrana veřejných zájmů.",
+   "temata": [
+    "Právo a samospráva",
+    "Věcná rozhodovací praxe"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3423,6 +3494,22 @@
    "url": "https://novystavebnizakon.gov.cz/novinky/tiskove-zpravy-a-aktuality/upresneni-vybranych-vyroku-ze-senatni-rozpravy-k-novele-stavebniho-zakona-1-cast/",
    "dalsi_odkazy": [],
    "medailonek": "Série šesti aktualit MMR z 28. 8. až 30. 9. 2026, v nichž ministerstvo reaguje na vybraná tvrzení ze senátní rozpravy a vykládá je podle navrženého znění. Díly se týkají například povolování velkých bytových staveb, lhůt a fikce povolení, odvolání, odchylek od územního plánu, černých staveb, soudního přezkumu nebo turistických cest v lesích. Jde o výklad ministerstva, ne o závazný text. Odkaz vede na 1. část, další jsou v rubrice aktualit.",
+   "temata": [],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-hodnoceni-expertu",
+   "sekce": "mmr",
+   "typ": "web",
+   "nazev": "Experti hodnotí nový stavební zákon (výběr MMR)",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/hodnoceni-expertu/",
+   "dalsi_odkazy": [],
+   "medailonek": "Výběr vyjádření k novele, který sestavilo MMR: krátká shrnutí výroků zástupců developerů, bank, poradenských firem, Hospodářské komory, České komory architektů, Svazu měst a obcí, Svazu energetiky a dalších, většinou ze Summitu dostupného bydlení 2026, u každého se zdrojem. Jde o výběr ministerstva, ne o přehled všech názorů; celá stanoviska komor, svazů a ombudsmana jsou v sekci Stanoviska institucí.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3439,6 +3526,7 @@
     "https://mmr.gov.cz/cs/pro-media/stavime-na-faktech-podcast-mmr"
    ],
    "medailonek": "Playlist podcastu Ministerstva pro místní rozvoj na YouTube. Podcast vysvětluje veřejnosti témata resortu – stavební právo, bydlení, evropské fondy, regionální rozvoj a cestovní ruch – a vychází zhruba jednou za čtrnáct dní. Novele stavebního zákona se věnují hlavně díly uvedené níže; přehled dílů s hosty je i na stránce podcastu na mmr.gov.cz.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3453,6 +3541,7 @@
    "url": "https://www.youtube.com/watch?v=8EIVjJofOzU",
    "dalsi_odkazy": [],
    "medailonek": "Úvodní díl podcastu (28 minut). Ministryně Zuzana Mrázová představuje agendu resortu a mluví o bydlení, regionech, evropských fondech a o změnách stavebního zákona; novela je jedním z několika témat.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3467,6 +3556,7 @@
    "url": "https://www.youtube.com/watch?v=5HetLcCmbZU",
    "dalsi_odkazy": [],
    "medailonek": "Díl věnovaný novele (23 minut). Ministryně a vládní zmocněnkyně vysvětlují, co je Úřad rozvoje území a jak má fungovat vyřízení stavby na jednom místě, a reagují na rozšířená tvrzení o dopadech novely. Pohled ministerstva.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3481,6 +3571,7 @@
    "url": "https://www.youtube.com/watch?v=jl9PJBbeKNE",
    "dalsi_odkazy": [],
    "medailonek": "Letní díl (22 minut), v němž ministryně bilancuje první půlrok ve funkci; mluví mimo jiné o dostupném bydlení a o tom, co má přinést novela stavebního zákona.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3495,6 +3586,7 @@
    "url": "https://www.youtube.com/watch?v=X0igVPErb0U",
    "dalsi_odkazy": [],
    "medailonek": "Mimořádný díl po senátním projednání (42 minut). Moderátorka předkládá vybrané výroky senátorů a ministryně s vládní zmocněnkyní k nim uvádějí pohled ministerstva, mimo jiné k fikci souhlasu a ochraně přírody. Písemnou obdobu tvoří série MMR „Upřesnění vybraných výroků ze senátní rozpravy“.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3509,6 +3601,9 @@
    "url": "https://www.youtube.com/watch?v=a06r_UfeoIg",
    "dalsi_odkazy": [],
    "medailonek": "Náměstek Pavel Kryštof popisuje přípravu státní stavební správy (15 minut): harmonogram (Úřad rozvoje území od roku 2027, územní pracoviště a plný start od 1. 1. 2028), strukturu úřadu a síť pracovišť a přechod zhruba 5 500 zaměstnanců stavebních úřadů a dotčených orgánů.",
+   "temata": [
+    "Součinnost se státem"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3523,6 +3618,9 @@
    "url": "https://novystavebnizakon.gov.cz/legislativa/zmenovy-zakon/",
    "dalsi_odkazy": [],
    "medailonek": "Interaktivní pracovní text MMR se změnovou částí novely, tedy s platnými zněními dalších zákonů, do nichž novela zasahuje, s vyznačenými změnami. Podle stránky jde o 54 dotčených zákonů; ke stažení je i zdrojový dokument DOCX. Stránka upozorňuje, že jde o pracovní a nezávazný text.",
+   "temata": [
+    "Věcná rozhodovací praxe"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3537,6 +3635,7 @@
    "url": "https://novystavebnizakon.gov.cz/legislativa/duvodova-zprava/",
    "dalsi_odkazy": [],
    "medailonek": "Pracovní text odůvodnění komplexního pozměňovacího návrhu k novele, který MMR zveřejňuje jako prohledávatelnou stránku. Obsahuje obecnou část s hodnocením stavu, principy reformy a dopady, odůvodnění přechodných ustanovení a zvláštní část po jednotlivých ustanoveních. Ministerstvo text označuje za nezávazný a bez legislativní korektury.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3551,6 +3650,7 @@
    "url": "https://novystavebnizakon.gov.cz/novinky/dokumenty-ke-stazeni/",
    "dalsi_odkazy": [],
    "medailonek": "Seznam souborů ke stažení na webu MMR k novele. Obsahuje PDF s úplným zněním stavebního zákona s vyznačením změn, se změnovým zákonem (platná znění dotčených zákonů), s odůvodněním pozměňovacího návrhu a s přechodnými ustanoveními. Dále tu je prezentace MMR o státní stavební správě pro obce a kraje (duben 2026) a usnesení vlády se statutem vládní zmocněnkyně (leden 2026). Soubory nesou data od 26. 1. do 14. 9. 2026.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3565,6 +3665,29 @@
    "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/faq-pro-uredniky/",
    "dalsi_odkazy": [],
    "medailonek": "Výběr dotazů z praxe úřadů s odpověďmi MMR, určený zaměstnancům stavebních úřadů a dotčených orgánů. Je rozdělen do okruhů personální otázky, spisová rozluka a IT systémy, hmotné a procesní právo, financování a obecné.",
+   "temata": [
+    "Personální",
+    "Finance a benefity"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-kontakty-podle-tematu",
+   "sekce": "mmr",
+   "typ": "web",
+   "nazev": "Kontakty podle tématu a územní koordinátoři",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/kontakty-podle-tematu/",
+   "dalsi_odkazy": [
+    "https://novystavebnizakon.gov.cz/kontakt/"
+   ],
+   "medailonek": "Rozcestník MMR, kam s dotazem. Implementace státní stavební správy (vznik úřadu, přechod zaměstnanců, prostory a vybavení pracovišť), stavební řád a územní plánování mají na ministerstvu vlastní společné e-mailové schránky. Personální, majetkové a organizační otázky konkrétního úřadu řeší územní koordinátoři MMR, každý kraj má svého; jejich kontakty a mapa jsou na stránce Kontakt.",
+   "temata": [
+    "Součinnost se státem"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3579,6 +3702,46 @@
    "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/",
    "dalsi_odkazy": [],
    "medailonek": "Archiv newsletteru MMR pro tajemníky úřadů a vedoucí stavebních úřadů. K 21. 10. 2026 obsahuje sedm čísel vydaných mezi 18. 6. a 8. 10. 2026. Témata zahrnují harmonogram přechodu, přechod zaměstnanců, školení, dotazníky k prostorám, integraci agend a spisovou rozluku.",
+   "temata": [
+    "Komunikace a vzdělávání",
+    "Součinnost se státem"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-newsletter-1",
+   "sekce": "mmr",
+   "typ": "newsletter",
+   "nazev": "Newsletter č. 1: Přehledné informace a milníky",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": "2026-06-18",
+   "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-1-prehledne-informace-a-milniky/",
+   "dalsi_odkazy": [],
+   "medailonek": "První číslo newsletteru MMR pro úředníky. Shrnuje milníky (Úřad rozvoje území od 1. 1. 2027, krajské úřady rozvoje území a územní pracoviště od 1. 1. 2028) a tři modelové situace přechodu zaměstnanců: převažuje stavební agenda, nepřevažuje, nebo je práce rozdělená zhruba napůl. Uvádí, že při přechodu je garantována výše dosavadního platu.",
+   "temata": [
+    "Personální"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-newsletter-4",
+   "sekce": "mmr",
+   "typ": "newsletter",
+   "nazev": "Newsletter č. 4: Dotazník, prostory a setkávání v územích",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": "2026-08-04",
+   "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-4-dotaznik-prostory-a-setkavani-v-uzemich/",
+   "dalsi_odkazy": [],
+   "medailonek": "Čtvrté číslo newsletteru MMR. Žádá tajemníky o vyplnění dotazníku do 13. 8. 2026 jako podkladu pro plánování lidí a prostor a popisuje tři varianty zajištění prostor územních pracovišť (stávající, rozšířené, externí). K ICT uvádí oddělenou konektivitu od úřadu samosprávy, žádné servery na pracovištích, stavební úpravy jen výjimečně a další práci ve stávajících agendových systémech.",
+   "temata": [
+    "Logistika",
+    "Informační systémy",
+    "Součinnost se státem"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3593,6 +3756,11 @@
    "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-6-podpis-prezidenta-skoleni-a-metodika/",
    "dalsi_odkazy": [],
    "medailonek": "Šesté číslo newsletteru MMR pro tajemníky a vedoucí stavebních úřadů. Informuje o podpisu novely prezidentem 17. 9. 2026 a o regionálních školeních v říjnu, žádá úřady o tabulky k integraci agend dotčených orgánů a ohlašuje metodiku spisové rozluky.",
+   "temata": [
+    "Personální",
+    "Logistika",
+    "Spisová služba"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3607,6 +3775,10 @@
    "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-7-metodika-spisove-rozluky-setkani-s-tajemniky-a-podzimni-skoleni/",
    "dalsi_odkazy": [],
    "medailonek": "Sedmé číslo newsletteru MMR. Představuje metodiku spisové rozluky (předání agendy a dokumentů obecních a krajských stavebních úřadů Úřadu rozvoje území k 1. 1. 2028), ohlašuje pravidelná online setkání s tajemníky, pilotní dotazníkové šetření a další regionální školení.",
+   "temata": [
+    "Spisová služba",
+    "Komunikace a vzdělávání"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3621,6 +3793,10 @@
    "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/spisova-rozluka/",
    "dalsi_odkazy": [],
    "medailonek": "Stránka MMR pro obce a kraje k předání agend a spisů stavebních úřadů Úřadu rozvoje území k 1. 1. 2028. Shrnuje odpovědnost obce, klíčové termíny, kroky rozluky a časté chyby; ke stažení nabízí metodiku, průvodce, vzory a formuláře P1 až P14 a prezentaci z online setkání s tajemníky z 15. 10. 2026. Metodiku stránka označuje za návrh, termíny i vzory se mohou ještě změnit.",
+   "temata": [
+    "Spisová služba",
+    "Archiv"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3635,6 +3811,71 @@
    "url": "https://novystavebnizakon.gov.cz/media/s4pfebla/metodika_spisove_rozluky.pdf",
    "dalsi_odkazy": [],
    "medailonek": "Metodický dokument MMR k provedení spisové rozluky, když agenda stavebních úřadů obcí a krajů přechází na Úřad rozvoje území. Je určen obcím a krajům, které předávají nevyřízené i vyřízené dokumenty, evidence a další podklady. Navazují na něj vzory P1 až P14 zveřejněné na stránce Spisová rozluka.",
+   "temata": [
+    "Spisová služba",
+    "Archiv",
+    "Logistika",
+    "Informační systémy"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-pruvodce-spisova-rozluka",
+   "sekce": "mmr",
+   "typ": "metodika",
+   "nazev": "Spisová rozluka 2028: průvodce pro tajemníky obcí se stavebním úřadem",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/media/vvede2sk/mmr_a4_brozura_v4.pdf",
+   "dalsi_odkazy": [],
+   "medailonek": "Dvanáctistránkový průvodce k metodice spisové rozluky (říjen 2026), který MMR doporučuje přečíst jako první. Vysvětluje tři směry předání spisů, deset zásad, odpovědnost obce a role, které musí obsadit, devět fází F0–F8 se třemi podmínkami postupu, práci se vzory P1–P5 a rámcový harmonogram vlny 2028: plán rozluky archivu ve 2. čtvrtletí 2027, zkušební datový balíček ve 3.–4. čtvrtletí 2027, živé spisy k 1. 1. 2028. Končí častými otázkami a kontrolními otázkami pro tajemníka.",
+   "temata": [
+    "Spisová služba",
+    "Archiv",
+    "Logistika"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-vzory-spisova-rozluka",
+   "sekce": "mmr",
+   "typ": "vzory",
+   "nazev": "Vzory P1–P14 k metodice spisové rozluky",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/media/ydgl2gg1/přílohy_2_0.zip",
+   "dalsi_odkazy": [
+    "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/spisova-rozluka/"
+   ],
+   "medailonek": "Všechny vzory k metodice v jednom ZIP (Word a Excel; jednotlivě jsou ke stažení na stránce Spisová rozluka). Plán provádění rozluky (P1), předávací seznamy nevyřízených a vyřízených dokumentů (P2, P3), seznam zápůjček a ztrát (P4), katalog evidencí a identifikační analýza (P5), dokumenty nad rámec rozluky (P6), protokol o předání úředních razítek (P7), harmonogram svozu a přepravní list (P8a, P8b), protokoly, soupis vad a průvodní dokumentace dávky (P9a–P9f), kontrolní checklisty (P10), minimální datový rozsah exportu (P11), převodník spisových znaků (P12), riziková matice (P13) a seznam dotčených orgánů (P14). Podle průvodce jsou vzory P1–P5 závazné a jejich číselníky uzavřené.",
+   "temata": [
+    "Spisová služba",
+    "Archiv",
+    "Logistika",
+    "Informační systémy"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-spisova-rozluka-shrnuti",
+   "sekce": "mmr",
+   "typ": "prezentace",
+   "nazev": "Metodika spisové rozluky – shrnutí (online setkání s tajemníky)",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": "2026-10-15",
+   "url": "https://novystavebnizakon.gov.cz/media/xwvlipis/prvotní-informace-metodika-spisové-rozluky-prezentace.pptx",
+   "dalsi_odkazy": [],
+   "medailonek": "Osm snímků Tomáše Bezoušky z MMR z půlhodinového online setkání s tajemníky (PowerPoint). Shrnují § 68a archivního zákona, deset zásad rozluky, rozdělení spisového materiálu podle stavu vyřízení a skartačních lhůt, co připravit v evidenčních pomůckách, fáze rozluky s podmínkami postupu a postup přípravy obce od inventury spisové služby po realizaci.",
+   "temata": [
+    "Spisová služba",
+    "Archiv"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3649,6 +3890,53 @@
    "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/integrace-agend/",
    "dalsi_odkazy": [],
    "medailonek": "Stránka MMR o začlenění agend dotčených orgánů státní správy do nové stavební správy. Popisuje, jak se posuzuje převažující činnost zaměstnance a jak se zaměstnanci řadí do skupin; pro obce s rozšířenou působností a krajské úřady nabízí prezentace a pracovní tabulku k identifikaci zaměstnanců pro přechod na Úřad rozvoje území.",
+   "temata": [
+    "Personální",
+    "Organizační řád"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-integrace-agend-prezentace-1",
+   "sekce": "mmr",
+   "typ": "prezentace",
+   "nazev": "Integrace agend, prezentace 1: Co se mění pro váš úřad",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/media/2mmjrvjt/prezentace_1_co_se_mění_doss.pdf",
+   "dalsi_odkazy": [
+    "https://novystavebnizakon.gov.cz/media/wxkhp14i/prezentace_1_co_se_mění_doss_ku.pdf"
+   ],
+   "medailonek": "Devět snímků MMR pro tajemníky obcí s rozšířenou působností (zvlášť je verze pro krajské úřady). Popisuje novou soustavu (Úřad rozvoje území, 14 krajských úřadů rozvoje území, 205 územních pracovišť) a řadí agendy dotčených orgánů do čtyř režimů: A plná integrace do stavebního úřadu, B integrace s odborným vyjádřením, C zrušené procesní formy (například koordinované závazné stanovisko a JES) a D zachovaný samostatný režim (například kulturní památky nebo zvláště chráněná území kategorie I). Končí postupem, jak odhadnout počet lidí budoucího územního pracoviště a prověřit prostory.",
+   "temata": [
+    "Personální",
+    "Organizační řád",
+    "Věcná rozhodovací praxe"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-integrace-agend-identifikace",
+   "sekce": "mmr",
+   "typ": "prezentace",
+   "nazev": "Integrace agend, prezentace 2 a tabulka: Jak identifikovat zaměstnance",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/media/wredu0em/prezentace_2_identifikace_zamestnanců.pdf",
+   "dalsi_odkazy": [
+    "https://novystavebnizakon.gov.cz/media/5qoc2xxt/tabulka_identifikace_zaměstnanců.xlsx",
+    "https://novystavebnizakon.gov.cz/media/sfelty5x/prezentace_2_identifikace_zamestnanců_ku.pdf",
+    "https://novystavebnizakon.gov.cz/media/1pipqvya/tabulka_identifikace_zaměstnanců_ku.xlsx"
+   ],
+   "medailonek": "Návod MMR pro tajemníky, kdo k 1. 1. 2028 přejde na úřad rozvoje území kraje: sedm snímků a pracovní tabulka v Excelu, obojí i ve verzi pro krajské úřady. Rozhoduje převažující činnost ke 31. 12. 2027, ne název pozice. Zaměstnanci se v pěti krocích řadí do tří skupin (přechází, posoudit podle podílu, zůstává u obce); prezentace řeší i sporné situace, například sdílenou administrativu nebo agendu rozdělenou mezi více lidí. Shrnuje zákonné garance (plat nejméně na dosavadní úrovni, bez zkušební doby) a upozorňuje, že kdo přechod odmítne, musí dát výpověď a odstupné nedostane. Tabulka se vyplňuje bez jmen a sčítá úvazky po skupinách; stav k projednávání v Senátu.",
+   "temata": [
+    "Personální",
+    "Organizační řád"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3663,6 +3951,160 @@
    "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/materialy-ze-skoleni/",
    "dalsi_odkazy": [],
    "medailonek": "Stránka MMR s prezentacemi z podzimních regionálních školení k novele pro úředníky. V době ověření tu byly prezentace k novele na úseku stavebního řádu (15. 10. 2026) a na úseku územního plánování (12. 10. 2026).",
+   "temata": [
+    "Komunikace a vzdělávání"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-skoleni-stavebni-rad-2026",
+   "sekce": "mmr",
+   "typ": "prezentace",
+   "nazev": "Školení k novele na úseku stavebního řádu (podzim 2026)",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": "2026-10-15",
+   "url": "https://novystavebnizakon.gov.cz/media/y3keegzx/školení-sú_podzim-2026_15102026.pdf",
+   "dalsi_odkazy": [],
+   "medailonek": "Prezentace Odboru stavebního řádu MMR z regionálních školení pro úředníky (verze z 15. 10. 2026, 248 snímků). Prochází účinnost a přechodná ustanovení, soustavu stavební správy a kvalifikační požadavky, ochranu veřejných zájmů a dotčené orgány, druhy staveb, dokumentaci, řízení o povolení a zrychlené řízení, kolaudaci, odstraňování staveb a dodatečné povolení, přestupky a opravné prostředky.",
+   "temata": [
+    "Věcná rozhodovací praxe",
+    "Komunikace a vzdělávání"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-skoleni-uzemni-planovani-2026",
+   "sekce": "mmr",
+   "typ": "prezentace",
+   "nazev": "Školení k novele na úseku územního plánování (Pardubice)",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": "2026-10-12",
+   "url": "https://novystavebnizakon.gov.cz/media/cgmhzb0c/skolení-novely-sz-uzemni-planovani-pardubice-upravena.pdf",
+   "dalsi_odkazy": [],
+   "medailonek": "Prezentace odborů územního plánování a implementace státní stavební správy MMR ze školení v Pardubicích (upravená verze, 208 snímků). Zásadní změny, pořizování a nástroje územního plánování, zastavitelné území, územní opatření, plánovací smlouvy, náhrady za změnu v území, NGÚP a soudní přezkum, změny příloh a jiných zákonů a podrobně přechodná ustanovení, včetně těch k úředníkům v území.",
+   "temata": [
+    "Územní plánování",
+    "Právo a samospráva",
+    "Komunikace a vzdělávání"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-terminy-skoleni",
+   "sekce": "mmr",
+   "typ": "web",
+   "nazev": "Termíny školení a registrace",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/terminy-skoleni-a-registrace/",
+   "dalsi_odkazy": [],
+   "medailonek": "Přehled bezplatných regionálních školení MMR k novele pro úředníky stavebních úřadů, dotčených orgánů a další pracovníky obcí a krajů, vždy zvlášť pro územní plánování a stavební řád. Běží od 7. 10. do 3. 12. 2026 po dvojicích krajů, online i prezenčně; u termínů je místo a odkaz na registraci.",
+   "temata": [
+    "Komunikace a vzdělávání"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-kde-se-potkame",
+   "sekce": "mmr",
+   "typ": "web",
+   "nazev": "Kde se s námi potkáte",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/novinky/kde-se-s-nami-potkate/",
+   "dalsi_odkazy": [],
+   "medailonek": "Kalendář akcí, na kterých vystupují zástupci MMR: školení, setkání s tajemníky v krajích, porady a konference. U každé akce je místo, čas a krátký popis; uzavřené akce jsou označené, u otevřených je uvedeno, kde se přihlásit.",
+   "temata": [
+    "Komunikace a vzdělávání",
+    "Součinnost se státem"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-vladni-zmocnenkyne",
+   "sekce": "mmr",
+   "typ": "dokument",
+   "nazev": "Vládní zmocněnkyně: usnesení vlády č. 59/2026 a statut",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": "2026-01-26",
+   "url": "https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/vladni-zmocnenkyne/",
+   "dalsi_odkazy": [
+    "https://novystavebnizakon.gov.cz/media/e4vbsajo/usneseni_2026_59.pdf",
+    "https://novystavebnizakon.gov.cz/media/e4vbsajx/priloha_usneseni_2026_59_1.pdf"
+   ],
+   "medailonek": "Vláda 26. 1. 2026 usnesením č. 59 vytvořila funkci vládního zmocněnce pro implementaci stavebního práva a jmenovala do ní Hanu Landovou. Podle statutu zmocněnec není správním orgánem; koordinuje implementaci novely mezi resorty, kraji a obcemi, sleduje praxi povolování, spolupracuje s Úřadem rozvoje území na sjednocení rozhodovací praxe a se samosprávami, komorami a investory. Karta odkazuje i přímo na usnesení a statut.",
+   "temata": [
+    "Součinnost se státem"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-prezentace-obce-kraje-2026-04",
+   "sekce": "mmr",
+   "typ": "prezentace",
+   "nazev": "Státní stavební správa: prezentace pro obce a kraje (duben 2026)",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": null,
+   "url": "https://novystavebnizakon.gov.cz/media/e4vbsajp/prezentace-mmr_final_nsz_dopis_obce_final.pdf",
+   "dalsi_odkazy": [],
+   "medailonek": "Šestnáct snímků MMR z dubna 2026: důvody a principy novely, přínosy pro samosprávy a pro stavební řízení, harmonogram legislativy a čtyři fáze implementace do poloviny roku 2031, expertní skupiny projektu, plán digitalizace (Portál stavebníka a ISSŘ v udržovacím režimu do konce roku 2030, DSŘ 2.0 v roce 2031) a pět snímků otázek a odpovědí, mimo jiné k přechodu úředníků, nákladům reorganizace a detašovaným pracovištím. Odráží stav návrhu k dubnu 2026.",
+   "temata": [
+    "Součinnost se státem",
+    "Informační systémy",
+    "Finance a benefity"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-prezentace-kpn-2026-04-20",
+   "sekce": "mmr",
+   "typ": "prezentace",
+   "nazev": "Komplexní pozměňovací návrh k tisku 67: prezentace vládní zmocněnkyně",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": "2026-04-20",
+   "url": "https://novystavebnizakon.gov.cz/media/o12fcca3/prezentace-kpn-20042026-2.pdf",
+   "dalsi_odkazy": [],
+   "medailonek": "Prezentace Hany Landové ke komplexnímu pozměňovacímu návrhu z dubna 2026 (21 snímků). Hlavní teze, nové základní zásady, integrace veřejných zájmů do stavebního úřadu, co návrh znamená pro kraj, obec a stavebníky, a modelové případy: soubor bytových domů, nemocnice, rodinný dům v ochranném pásmu památkové zóny, změna záměru, kolaudace a náhradní výstavba po povodni.",
+   "temata": [
+    "Věcná rozhodovací praxe",
+    "Právo a samospráva"
+   ],
+   "kopie": false,
+   "soubory": []
+  },
+  {
+   "id": "mmr-egovernment-2026-09",
+   "sekce": "mmr",
+   "typ": "prezentace",
+   "nazev": "Konference Egovernment v Mikulově: implementace a spisová rozluka",
+   "vydavatel": "Ministerstvo pro místní rozvoj",
+   "autor": null,
+   "datum": "2026-09-08",
+   "url": "https://novystavebnizakon.gov.cz/media/hqmnvyw1/2026-09-08_egovernemnt_pavel-krystof.pdf",
+   "dalsi_odkazy": [
+    "https://novystavebnizakon.gov.cz/media/xumh1dis/2026-09-08_egovernemnt_tomas-bezouska.pdf",
+    "https://novystavebnizakon.gov.cz/novinky/tiskove-zpravy-a-aktuality/transformace-stavebni-spravy-na-konferenci-e-governement-v-mikulove/"
+   ],
+   "medailonek": "Dvě prezentace MMR z konference magazínu Egovernment. Náměstek Pavel Kryštof shrnuje novou soustavu úřadů rozvoje území, integraci dotčených orgánů a dopady na informační systémy: Portál stavebníka, ISSŘ a NGÚP přecházejí od 1. 1. 2027 na Úřad rozvoje území a pro agendové systémy stavebních úřadů (například VITA, VERA) se připravuje koncepce migrace, která má vyjít během roku 2026. Tomáš Bezouška představuje spisovou rozluku podle § 68a archivního zákona, zásady metodiky a postup přípravy obce.",
+   "temata": [
+    "Informační systémy",
+    "Spisová služba",
+    "Součinnost se státem"
+   ],
    "kopie": false,
    "soubory": []
   },
@@ -3677,6 +4119,7 @@
    "url": "https://www.mmr.gov.cz/cs/ministerstvo/stavebni-pravo/stavebni-zakon-2026/otazky-a-odpovedi",
    "dalsi_odkazy": [],
    "medailonek": "Starší soubor zhruba 45 otázek a odpovědí MMR k tehdy projednávané novele, naposledy aktualizovaný 20. dubna 2026. Týká se důvodů novely, principu jednoho řízení a jednoho úřadu, postavení obcí a krajů, digitalizace, ochrany přírody a památek, práv sousedů a veřejnosti, černých staveb a přechodných ustanovení. Odpovědi odrážejí stav návrhu k dubnu 2026; novější FAQ je na webu novystavebnizakon.gov.cz.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3691,6 +4134,7 @@
    "url": "https://mmr.gov.cz/cs/ostatni/web/novinky/novy-informacni-rozcestnik-ke-stavebnimu-zakonu",
    "dalsi_odkazy": [],
    "medailonek": "Tisková zpráva MMR, kterou ministerstvo oznámilo spuštění samostatného informačního webu k novele stavebního zákona.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3708,6 +4152,7 @@
     "https://www.ochrance.cz/aktualne/ombudsman_vyzyva_poslance_aby_alespon_oni_prodiskutovali_s_odbornou_verejnosti_novelu_stavebniho_zakona/"
    ],
    "medailonek": "Veřejný ochránce práv zaslal v lednu 2026 připomínky k tisku 67 členům hospodářského, ústavně-právního a výboru pro veřejnou správu. Upozorňuje na oslabení ochrany veřejných zájmů (příroda, zdraví, památky včetně nárazníkových zón UNESCO), na fikce souhlasu dotčených orgánů, slabší nástroje proti černým stavbám, volnější pravidla pro hluk a přístupnost a na omezení opravných prostředků u největších staveb. Už 18. 12. 2025 vyzval poslance, aby návrh projednali s odbornou veřejností.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3724,6 +4169,7 @@
     "https://www.ckait.cz/sites/default/files/2026-02/2026_02_05_CKAIT-%20PRAVNI%20ANALYZA%20NSZ%20%20TISK%2067_0..pdf"
    ],
    "medailonek": "Tisková zpráva ČKAIT po prvním čtení. Komora uvádí 13 kritických či sporných bodů, mezi nimi uvolnění pravidel pro velké bytové stavby nad 10 000 m², snížení technických požadavků, projektování některých staveb bez autorizace a přechod na státní stavební správu bez personální analýzy a přechodných ustanovení. Požaduje stažení návrhu a komplexní pozměňovací návrh připravený s odbornou praxí; přiložena je právní analýza.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3740,6 +4186,7 @@
     "https://www.ckait.cz/sites/default/files/2026-03/Prohla%CC%81s%CC%8Ceni%CC%81%20C%CC%8CKAIT%20%20k%20tisku%2067_0.pdf"
    ],
    "medailonek": "ČKAIT předala 5. 3. 2026 hospodářskému výboru a vládě prohlášení, dopis a vlastní pozměňovací návrh k tisku 67/0. Kritizuje obejití připomínkového řízení, chybějící analýzu dopadů a přechodná ustanovení, projektování jednoduchých staveb bez autorizace, kritérium ekonomické přiměřenosti u technických požadavků a účast autorizovaných inspektorů na kolaudaci.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3757,6 +4204,7 @@
     "https://www.cka.cz/svet-architektury/aktualne/novinky/cka-a-ckait-vydavaji-spolecne-prohlaseni-k-projednavane-novele-stavebniho-zakona"
    ],
    "medailonek": "Společné memorandum obou komor, které podle textu zastupují přes 36 tisíc autorizovaných osob. Komory nezpochybňují cíl zjednodušit procesy, ale nesouhlasí s cestou poslaneckého návrhu bez připomínkového řízení a s chybějícími přechodnými ustanoveními. Uvádějí dvanáct výhrad k paragrafovému znění (například projektování jednoduchých staveb bez autorizace, ekonomická přiměřenost, přístupnost staveb, role autorizovaných inspektorů) a nabízejí součinnost při úpravách.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3771,6 +4219,7 @@
    "url": "https://www.ckait.cz/rekodifikace-stavebniho-prava-novy-stavebni-zakon-a-jeho-novely",
    "dalsi_odkazy": [],
    "medailonek": "Rozcestník ČKAIT s dokumenty komory z celého projednávání: pozměňovací návrh ke komplexnímu pozměňovacímu návrhu, vyhodnocení připomínek z 28. 5. 2026, doporučení hospodářskému výboru z 25. 6. 2026, dopis poslaneckým klubům ze 3. 7. 2026 a texty senátního tisku 272 a schválené novely. Podle ČKAIT se do schváleného textu promítl jen jeden z jejích návrhů.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3787,6 +4236,7 @@
     "https://www.cka.cz/sluzby/legislativa/navrh-stavebni-zakon"
    ],
    "medailonek": "ČKA v lednu 2026 podpořila návrh jako celek jako možný krok ke zlepšení právního rámce pro správu území: vítá sjednocenou státní stavební správu, integraci dotčených orgánů a částečné zlepšení územního plánování. Nesouhlasí ale s cestou poslaneckého návrhu bez připomínkování a pochybuje o personálním zajištění přechodu; zásadní připomínky se týkají autorizovaných architektů. V březnu se připojila ke kritickému memorandu s ČKAIT.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3801,6 +4251,7 @@
    "url": "https://www.cka.cz/svet-architektury/aktualne/novinky/senat-projednava-rozsahlou-novelu-stavebniho-zakona",
    "dalsi_odkazy": [],
    "medailonek": "Přehledový článek ČKA před projednáním v Senátu se změnami důležitými pro architekty. Jako přínos uvádí širší prostor pro alternativní technická řešení, zakotvení kvality vystavěného prostředí a roli obecního či krajského architekta; jako rizika posílení odpovědnosti projektantů, centralizaci stavební správy, fikci povolení, kratší přezkumné lhůty a volnější pravidla pro hluk. Nejde o formální stanovisko komory.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3817,6 +4268,7 @@
     "https://www.smscr.cz/legislativa/verejna-sprava/stavebni-zakon/"
    ],
    "medailonek": "Východiska SMS ČR k tisku 67. Podle sdružení nejde o technickou novelu, ale o dvě reformy bez řádného připomínkového řízení. Nesouhlasí se zrušením smíšeného modelu (asi 650 stavebních úřadů má nahradit zhruba 205 pracovišť), se slučováním dotčených orgánů ani s přesunem územního plánování bez ověření kapacit menších obcí. Doporučuje nejprve digitalizovat řízení.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3834,6 +4286,7 @@
     "https://www.smscr.cz/legislativa/verejna-sprava/stavebni-zakon/70-duvodu-proc-nehlasovat-pro-nynejsi-podobu-novely-stavebniho-zakona-sms-cr-vyzyva-obce-aby-se-obratily-na-sve-zakonodarce-5315cs.html"
    ],
    "medailonek": "SMS ČR doporučilo zásadní přepracování novely a návrat do standardního legislativního procesu. Výhrady se týkají chybějícího hodnocení dopadů a nákladů, neřešené digitalizace, oslabení územního plánování, rozšíření fikcí souhlasu a možnosti dodatečně legalizovat černé stavby; sdružení se opírá o průzkum mezi asi 900 obcemi. 23. 6. 2026 navázalo seznamem 70 argumentů pro poslance a senátory.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3848,6 +4301,7 @@
    "url": "https://www.smscr.cz/media-a-sms-cr/tiskove-zpravy/narust-cernych-staveb-a-deformovany-legislativni-proces-schvalena-novela-stavebniho-zakona-ma-zasadni-nedostatky-5352cs.html",
    "dalsi_odkazy": [],
    "medailonek": "Reakce SMS ČR na schválení ve Sněmovně. Sdružení lituje, že neprošly návrhy na vypuštění dodatečné legalizace černých staveb a pomoc obcím s digitální technickou mapou, nesouhlasí s čistě státní stavební správou a kritizuje obejití připomínkového řízení, Legislativní rady vlády a hodnocení dopadů. Kladně hodnotí vynětí výdejních boxů z režimu drobných staveb.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3864,6 +4318,7 @@
     "https://www.smscr.cz/evt_file.php?file=8603"
    ],
    "medailonek": "Stanovisko SMS ČR k senátnímu tisku 272 před hlasováním Senátu. Sdružení podporuje rychlejší řízení, ale varuje před zánikem obecních a krajských stavebních úřadů k 31. 12. 2027, před krátkými lhůtami a právními fikcemi včetně vzniku povolení při nečinnosti úřadu a před povolováním záměrů odchylných od územního plánu. Přiloženy jsou podrobné výhrady k paragrafovému znění.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3880,6 +4335,7 @@
     "https://www.smocr.cz/cs/novinky/a/frantisek-lukl-jednal-na-uradu-vlady-o-novele-stavebniho-zakona-klicovym-tematem-jsou-dopady-na-uzemi-a-pripravenost-zmen"
    ],
    "medailonek": "SMO ČR poslal premiérovi dopis s připomínkami. Vítá cíl zjednodušit a zrychlit povolování i to, že rozvoj obcí má být výslovně veřejným zájmem; zároveň varuje před oslabením smíšeného modelu veřejné správy, vysokými náklady přechodu, nejasnou digitalizací a odchodem kvalifikovaných úředníků. O rizicích pak jednal s premiérem (27. 3.) a na Úřadu vlády (13. 4. 2026).",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3894,6 +4350,7 @@
    "url": "https://www.smocr.cz/cs/media/tiskove-zpravy/a/dostupne-bydleni-ano-nekvalitni-bydleni-ne",
    "dalsi_odkazy": [],
    "medailonek": "Tisková zpráva SMO ČR před mimořádným jednáním předsednictva 11. 6. 2026. Svaz podporuje cesty k dostupnějšímu bydlení, ale odmítá obcházení standardů s odkazem na ekonomickou neefektivitu a odchylky od územně plánovací dokumentace; nesouhlasí ani s tím, aby u plánovacích smluv nahrazoval vůli obce soud, se širším dodatečným povolováním staveb a s převodem stavebních úřadů včetně zaměstnanců.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3910,6 +4367,7 @@
     "https://www.tajemnici.cz/holicky-jdeme-do-tmy-prechodne-obdobi-je-jednim-z-nejvetsich-rizik-novely-stavebniho-zakona"
    ],
    "medailonek": "Předsednictvo sdružení tajemníků uznává cíl urychlit stavební řízení, ale upozorňuje na rizika centralizace: zásah do spojeného modelu veřejné správy, chybějící hodnocení dopadů, neřešenou digitalizaci, spisovou službu a archivy a odchod zkušených úředníků. Požaduje změny podložené daty a reálným harmonogramem a nabízí spolupráci; předseda Jan Holický v červnu 2026 označil za hlavní riziko přechodné období.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3926,6 +4384,7 @@
     "https://www.zastarouprahu.cz/otevreny-dopis-poslancum-ps-pcr-a-clenum-vlady-cr-ve-veci-zasadniho-ohrozeni-kulturniho-dedictvi-navrzenou-novelou-stavebniho-zakona-a-souvisejicich-predpisu/aktualita-312/"
    ],
    "medailonek": "Třináct představitelů vysokých škol a odborných institucí z dějin umění, architektury a památkové péče vyzvalo poslance a vládu, aby novelu odmítli. Varují před oslabením odborné role Národního památkového ústavu v památkových rezervacích a zónách včetně území UNESCO, před desetidenní lhůtou pro odborná vyjádření a ztrátou závaznosti stanovisek, před povinností přeprohlásit ochranná pásma do konce roku 2028 a před přesunem nákladů archeologického výzkumu na obce a kraje.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3940,6 +4399,7 @@
    "url": "https://denikreferendum.cz/clanek/239245-otevreny-dopis-architektek-a-architektu-k-novele-stavebniho-zakona",
    "dalsi_odkazy": [],
    "medailonek": "Dopis zhruba dvou stovek architektek, architektů a příbuzných profesí senátorům před hlasováním o tisku 272 s žádostí o zamítnutí. Podle signatářů novela oslabuje územní plánování a ochranu zdraví, krajiny a památek, přesouvá rozhodování o odchylkách na neveřejně jednající rady obcí, neřeší personální příčiny délky řízení a ruší zákonné ukotvení dostupného nájemního bydlení. Nejde o stanovisko instituce.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3954,6 +4414,7 @@
    "url": "https://arnika.org/o-nas/tiskove-zpravy/kritici-novely-stavebniho-zakona-zakon-nelze-opravit-nahrava-developerum-na-ukor-prirody-pamatek-i-prav-obcanu",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva o protestu na Staroměstském náměstí před hlasováním Sněmovny, kde vystoupili mimo jiné zástupci Arniky, Zeleného kruhu, STUŽ a fakult Univerzity Karlovy. Kritici vytýkají, že novela prohlašuje velké stavby s převahou bydlení za veřejný zájem, omezuje procesní práva sousedů a veřejnosti, ohrožuje národní parky a městskou zeleň a zásadně mění památkovou péči.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3970,6 +4431,7 @@
     "https://zelenykruh.cz/senat-zamitl-novelu-stavebniho-zakona-navrh-je-vecne-spatne-snemovna-by-mela-zamitnuti-respektovat/"
    ],
    "medailonek": "Po podpisu zákona vyzvaly Zelený kruh, Arnika a Hnutí DUHA senátory, aby se obrátili na Ústavní soud. Vytýkají přípravu bez připomínkového řízení a hodnocení dopadů, nadřazení práva stavět jiným veřejným zájmům, zkrácení lhůt pro žaloby, zásah do samosprávy u plánovacích smluv, zrychlené řízení bez odvolání u projektů nad 10 000 m² a slabší ochranu zemědělské půdy.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -3986,6 +4448,7 @@
     "https://www.komora.cz/blog/tiskove-zpravy/prezident-hk-cr-zdenek-zajicek-stavebnictvi-za-dvacet-let-vyrazne-zaostalo-za-ekonomikou-po-novele-musi-prijit-dalsi-zmeny/"
    ],
    "medailonek": "Hospodářská komora po definitivním schválení vítá sjednocení povolování pod jednotnou státní stavební správu a jasnou odpovědnost za průběh řízení. Prezident HK ČR Zdeněk Zajíček považuje schválení za nutnou, ale ne postačující podmínku: rozhodne udržení zkušených úředníků a funkční digitalizace. V navazující zprávě z 16. 9. 2026 komora žádá další kroky, například motivovat obce k výstavbě.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4002,6 +4465,7 @@
     "https://www.sps.cz/stanovisko-sps-k-prvnimu-cteni-novely-stavebniho-zakona/"
    ],
    "medailonek": "SPS vítá model „1 úřad – 1 řízení – 1 razítko“, přechod stavebních úřadů pod stát a přesun územního plánování do samostatné působnosti obcí. Prezident svazu Jiří Nouza zdůrazňuje, že rozhodne kvalita zavedení do praxe; svaz žádá pečlivě připravený přechod, stabilní personál a podporu obcí při pořizování územních plánů. Novelu podpořil už k prvnímu čtení.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4018,6 +4482,7 @@
     "https://www.wedevelop.cz/2026/03/09/probehlo-setkani-stakeholderu-k-novele-stavebniho-zakona/"
    ],
    "medailonek": "Asociace developerů vidí ve schválení ve Sněmovně signál změny přístupu k výstavbě, ale zdůrazňuje, že zákon sám bydlení nevytvoří a úspěch se pozná podle kratších povolovacích procesů a menší nejistoty investorů. Na jednání na Úřadu vlády v březnu 2026 prosazovala princip jednoho úřadu a jednoho rozhodnutí, oddělení územního plánování od povolování a posílení kapacit stavebních úřadů.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4034,6 +4499,7 @@
     "https://www.spcr.cz/pripominky-k-navrhu-novely-stavebniho-zakona-2026"
    ],
    "medailonek": "SP ČR novelu dlouhodobě podporuje jako krok k rychlejšímu a předvídatelnějšímu povolování. Podle svazu se do komplexního pozměňovacího návrhu promítla řada jeho připomínek, například větší zapojení investorů do územního plánování, delší platnost povolení pro dopravní a technickou infrastrukturu a prodloužení platnosti stanoviska EIA. Za klíčovou považuje kvalitní implementaci a včasné prováděcí předpisy.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4048,6 +4514,7 @@
    "url": "https://advokatnidenik.cz/2026/01/30/odbornici-stavebni-zakon-muze-pomoci-s-vystavbou-ale-i-ohrozit-charakter-mest/",
    "dalsi_odkazy": [],
    "medailonek": "Přehled reakcí odborníků po prvním čtení. Zástupci stavebnictví a Asociace nájemního bydlení novelu spíše vítají, ale upozorňují, že bez kapacit úřadů, digitalizace a jednotného výkladu výstavbu sama nezrychlí. Český národní komitét ICOMOS varuje, že zrušení ochranného pásma obcí a přesun památkové péče na stavební úřady mohou poškodit památkový ráz měst.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4062,6 +4529,7 @@
    "url": "https://www.fbadvokati.cz/cs/clanky/10320-novela-stavebniho-zakona-2026-10-nbsp-hlavnich-zmen-ktere-navrh-prinasi",
    "dalsi_odkazy": [],
    "medailonek": "Přehled advokátní kanceláře v deseti bodech: jednotná státní stavební správa s Úřadem rozvoje území, role obcí v územním plánování, plánovací smlouvy, lhůty v řízení, zvláštní režim zastavitelného území a změny dalších zákonů. Text vznikl k původnímu návrhu a průběžně se aktualizuje; některé body se mohou týkat původního znění.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4076,6 +4544,7 @@
    "url": "https://www.ceska-justice.cz/2026/01/novela-stavebniho-zakona-je-horsi-nez-zpackana-digitaliza-spalek/",
    "dalsi_odkazy": [],
    "medailonek": "Rozhovor s předsedou ČKAIT Robertem Špalkem po prvním čtení. Špalek nevěří, že novela urychlí bytovou výstavbu, a upozorňuje na nerovné zacházení s velkými a malými záměry, oslabení územního plánování a možné vyvlastňování; kladně hodnotí odklad digitalizace a zrušení jednotného environmentálního stanoviska. Článek přináší jen jeho pohled.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4090,6 +4559,7 @@
    "url": "https://www.ceska-justice.cz/2026/02/novela-stavebniho-zakona-namitky-sousedu/",
    "dalsi_odkazy": [],
    "medailonek": "Rozhovor s advokátem Vojtěchem Faltusem o tom, jak novela mění postavení sousedů staveb a jejich námitky a co znamená přesun rozhodování o velkých stavbách na centrální státní úřad. Faltus čeká, že soudy budou povolení častěji rušit. Popisuje návrh ve stavu ze začátku února 2026, před pozměňovacími návrhy.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4104,6 +4574,7 @@
    "url": "https://ekonomickydenik.cz/levnejsi-byty-novela-stavebniho-zakona/",
    "dalsi_odkazy": [],
    "medailonek": "Článek zkoumá, zda novela rozhýbe bytovou výstavbu. Developeři (Trigema, Skanska Reality, Central Group) ji považují za užitečnou hlavně kvůli přesunu povolování velkých projektů na centrální úřad, první efekty ale čekají kolem let 2028–2029 a hlavní brzdy vidí mimo zákon. Článek přináší pohled developerů.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4118,6 +4589,7 @@
    "url": "https://ekonomickydenik.cz/landova-obvinuje-inzenyry-sireni-dezinformaci-stavebnictvi/",
    "dalsi_odkazy": [],
    "medailonek": "Rozhovor s vládní zmocněnkyní pro zavádění stavebního zákona Hanou Landovou, která novelu hájí. Vysvětluje rychlejší územní plánování, centralizované povolování a hranici 10 000 m² pro bytové projekty ve veřejném zájmu a odmítá kritiku ČKAIT a části právníků. Článek přináší hlavně její pohled.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4132,6 +4604,7 @@
    "url": "https://www.ceska-justice.cz/2026/05/cerne-stavby-pro-koho-ministryne-pise-zakon/",
    "dalsi_odkazy": [],
    "medailonek": "Článek o sporném ustanovení, podle něhož úřad nemusí nařídit odstranění černé stavby, pokud by to bylo zjevně nepřiměřené. Vládní zmocněnkyně Hana Landová ho vysvětluje jako řešení hlavně pro formální chyby úřadů; poslanci, advokáti a zástupkyně ostravského magistrátu se obávají faktické legalizace nepovolených staveb. Stav k květnu 2026.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4146,6 +4619,7 @@
    "url": "https://www.e15.cz/byznys/reality-a-stavebnictvi/postavit-mensi-domek-sklenik-ci-plot-bude-jednodussi-nekdy-postaci-jen-souhlas-souseda-1433457",
    "dalsi_odkazy": [],
    "medailonek": "Vysvětlující článek o zjednodušeném povolování drobných a nesporných staveb – zahradních domků, skleníků, plotů nebo menších domů: rychlé povolení staveb bez zásahu do práv sousedů, role souhlasu souseda, vyšší limit pro drobné stavby a zápis do katastru. Popisuje návrh k 10. 6. 2026, konečné znění se může lišit.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4160,6 +4634,7 @@
    "url": "https://ct24.ceskatelevize.cz/clanek/domaci/mrazova-veri-ze-novela-stavebniho-zakona-projde-a-centralni-urad-vznikne-od-ledna-374437",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva z Interview ČT24 s ministryní Zuzanou Mrázovou: první etapa včetně centrálního úřadu má začít v lednu 2027. Článek uvádí podporu Hospodářské komory a Svazu průmyslu a dopravy i výhrady komor architektů a inženýrů, obcí a ekologů.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4174,6 +4649,7 @@
    "url": "https://www.seznamzpravy.cz/clanek/ekonomika-byznys-rozhovory-lex-developer-to-neni-novela-ulevi-i-drobnym-stavitelum-rika-zmocnenkyne-308174",
    "dalsi_odkazy": [],
    "medailonek": "Rozhovor s vládní zmocněnkyní Hanou Landovou v době projednávání ve Sněmovně. Odmítá, že jde o zákon jen pro velké developery, a obhajuje výjimku, kdy by se některé nepovolené stavby nemusely bourat, hlavně u kupců v dobré víře.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4188,6 +4664,7 @@
    "url": "https://ct24.ceskatelevize.cz/clanek/domaci/poslanci-se-vraci-ke-schvalovani-stavebni-novely-375425",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva o schválení ve Sněmovně se shrnutím hlavních bodů (státní stavební správa pod Úřadem rozvoje území, jedno sloučené řízení). Uvádí argumenty koalice a ministryně o zrychlení výstavby i výhrady opozice k ochraně památek, přírody a práv obcí a sousedů; přidává hlasy podnikatelských svazů a organizace Arnika.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4202,6 +4679,7 @@
    "url": "https://www.seznamzpravy.cz/clanek/ekonomika-byznys-reality-poslanci-schvalili-novelu-stavebniho-zakona-310653",
    "dalsi_odkazy": [],
    "medailonek": "Vysvětlující článek ze dne schválení ve Sněmovně: od kdy má novela platit, jak se bude měnit stavební správa, princip jednoho úřadu a jednoho rozhodnutí, zrychlené řízení, fikce souhlasu, role obcí v územním plánování a omezení odvolání. Vedle kritiky opozice přináší hodnocení Svazu podnikatelů ve stavebnictví, developera Central Group a Asociace pro rozvoj trhu nemovitostí.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4216,6 +4694,7 @@
    "url": "https://www.asb-portal.cz/aktualne/neprehledna-a-nesrozumitelna-novela-stavebniho-zakona-narazila-v-senatu",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva ČTK z jednání senátních výborů, které doporučily novelu zamítnout. Senátoři Miroslav Plevný (STAN) a Petr Fiala (KDU-ČSL) kritizují nepřehlednost textu a cestu poslaneckého návrhu; místopředseda vlády Karel Havlíček (ANO) novelu hájí jako nutnou.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4230,6 +4709,7 @@
    "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/ekologove-vyzvali-senat-aby-zamitl-novelu-stavebniho-zakona",
    "dalsi_odkazy": [],
    "medailonek": "Převzatá zpráva ČTK o výzvě asociace Zelený kruh, aby Senát novelu zamítl. Zástupkyně Zeleného kruhu a Arniky se obávají oslabení ochrany přírody, památek a zdraví i horší možnosti bránit se rozhodnutím úřadů a kritizují cestu poslaneckého návrhu bez připomínkového řízení.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4244,6 +4724,7 @@
    "url": "https://ekonomickydenik.cz/neopravitelny-zakon-senatori-stavebni-pravo/",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva ČTK před srpnovým hlasováním Senátu, který se po doporučení výborů chystal novelu zamítnout; zmiňuje i postoj senátorů k zákonu o státních zaměstnancích a k obnovení EET. Hlavním hlasem je předseda Senátu Miloš Vystrčil (ODS).",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4258,6 +4739,7 @@
    "url": "https://www.ceskenoviny.cz/zpravy/spornou-stavebni-novelu-senat-zamitl-kritici-ji-oznacovali-za-paskvil/2863051",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva ČTK o zamítnutí v Senátu. Shrnuje výhrady senátorů z několika klubů (zvýhodnění developerů, oslabení obcí) i obhajobu ministryně Zuzany Mrázové, podle níž novela zjednoduší povolování staveb, a zmiňuje úvahy části senátorů o podání k Ústavnímu soudu.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4272,6 +4754,7 @@
    "url": "https://ct24.ceskatelevize.cz/clanek/domaci/ohledne-prinosu-novely-stavebniho-zakona-se-zastupce-developeru-a-architektka-neshodnou-376805",
    "dalsi_odkazy": [],
    "medailonek": "Dva pohledy proti sobě. Zdeněk Soudný z Asociace developerů vidí v novele šanci vyřešit potíže stavebních úřadů a stabilizovat prostředí pro výstavbu; architektka Anna Vinklárková z Arniky varuje před oslabením ochrany památek, přírody a samospráv a pochybuje, že rychlejší povolování zlevní bydlení.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4286,6 +4769,7 @@
    "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-snemovna-prehlasovala-senat-a-schvalila-koalicni-novelu-stavebniho-zakona-315017",
    "dalsi_odkazy": [],
    "medailonek": "Agenturní zpráva o přehlasování Senátu. Novelu hájí ministryně Zuzana Mrázová, kriticky se vyjadřují předseda senátního hospodářského výboru Miroslav Plevný a bývalý ministr Ivan Bartoš. Pozor: počty hlasů v článku se o jeden liší od úředního záznamu hlasování č. 36 (105 pro, 52 proti).",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4300,6 +4784,7 @@
    "url": "https://ekonomickydenik.cz/obce-veto-stavebni-zakon/",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva o výzvě Sdružení místních samospráv, aby prezident novelu vetoval. Sdružení vychází z šetření mezi téměř 900 obcemi a kritizuje centralizaci stavebních úřadů, ztrátu odborníků a krátké lhůty s fikcí souhlasu; článek uvádí i argument koalice o rychlejším povolování.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4314,6 +4799,7 @@
    "url": "https://www.respekt.cz/informacni-servis/prezident-ma-pochyby-presto-podepsal-spornou-koalicni-novelu-stavebniho-zakona-2026-09-17-12-32",
    "dalsi_odkazy": [],
    "medailonek": "Krátká zpráva o podpisu prezidentem Petrem Pavlem. Prezident podle ní měl výhrady, například k dodatečnému povolování černých staveb a k ochraně zemědělské půdy, ale rozhodl se dát zákonu šanci.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4328,6 +4814,7 @@
    "url": "https://www.sme-union.cz/prezident-podepsal-velkou-novelu-stavebniho-zakona-jedno-razitko-u-haly-nebo-dilny-prijde-az-v-roce-2028/",
    "dalsi_odkazy": [],
    "medailonek": "Vysvětlující text podnikatelského svazu pro menší firmy: co platí v roce 2027 a co až od roku 2028, kdy začne sloučené povolení u běžných hal, dílen a provozoven. Radí žádosti neodkládat a připomíná, že vydaná povolení zůstávají v platnosti. Termíny ověřte v textu zákona.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4342,6 +4829,7 @@
    "url": "https://www.aqeacademy.cz/novela-stavebniho-zakona-2026-je-podepsana-co-ted-ceka-uredniky-stavebnich-uradu/",
    "dalsi_odkazy": [],
    "medailonek": "Text lektora vzdělávací firmy pro úředníky stavebních úřadů: úřady rozvoje území, jedno řízení a jedno razítko, fikce povolení a omezení odvolání; upozorňuje na nejistotu v přechodném období. Propagační text, končí nabídkou placeného kurzu.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4356,6 +4844,7 @@
    "url": "https://www.bezrealitky.cz/blog/novela-stavebniho-zakona-2026-prehledne",
    "dalsi_odkazy": [],
    "medailonek": "Přehled realitního portálu po podpisu zákona: průběh schvalování, účinnost ve třech vlnách a pro běžné stavebníky hlavně změny u drobných staveb, jako jsou zahradní domky, a kratší lhůty pro námitky sousedů. Komerční blog; limity a lhůty ověřte v textu zákona.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4370,6 +4859,7 @@
    "url": "https://cesky.radio.cz/senatori-chteji-navrhnout-ustavnimu-soudu-zruseni-stavebni-novely-v-listopadu-8898649",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva o záměru senátorského klubu Starostů podat v listopadu k Ústavnímu soudu návrh na zrušení celé novely. Předseda klubu Jan Sobotka tvrdí, že novela zvýhodňuje velké developery; předseda klubu ODS a TOP 09 Zdeněk Nytra říká, že se klub připojí podle obsahu návrhu.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4384,6 +4874,7 @@
    "url": "https://www.tyden.cz/spor-o-stavebni-zakon-nekonci-starostove-chteji-novelu-zrusit-u-ustavniho-soudu",
    "dalsi_odkazy": [],
    "medailonek": "Agenturní zpráva o záměru senátorů za Starosty napadnout novelu u Ústavního soudu: zvýhodnění velkých developerů, možný střet s ochranou přírody a chybějící posouzení dopadů; s reakcí klubu ODS a TOP 09.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4398,6 +4889,7 @@
    "url": "https://www.hrot24.cz/clanek/nova-statni-stavebni-sprava-nedostatek-uredniku-4000-mist-H3cst",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva ČTK o tom, kolik úředníků nová státní stavební správa potřebuje. Ministryně Zuzana Mrázová popisuje převody zaměstnanců a náborovou kampaň; článek cituje i jarní průzkum odborů, podle něhož většina dotázaných zaměstnanců stavebních úřadů přejít nechce.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4412,6 +4904,7 @@
    "url": "https://www.hyponamiru.cz/novy-stavebni-zakon-od-ledna-2027-co-se-meni-pro-stavebniky/",
    "dalsi_odkazy": [],
    "medailonek": "Vysvětlující článek pro běžné stavebníky: co se od roku 2027 mění a co zůstává (například povolení k rodinnému domu), postupný náběh nové soustavy úřadů, pravidla pro rozběhnutá řízení a použití hotové projektové dokumentace. Komerční web zprostředkovatele hypoték; termíny ověřte v textu zákona.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   },
@@ -4426,6 +4919,7 @@
    "url": "https://stavba.tzb-info.cz/stavebni-pravo-stavebni-rizeni-a-stavebni-zakony/30477-stavebni-zakon-po-velke-novele-klicove-zmeny-a-dopady-do-praxe",
    "dalsi_odkazy": [],
    "medailonek": "Zpráva z odborného semináře VIDA conference (8. 10. 2026): postupná účinnost v několika etapách, fixace právního stavu ke dni podání žádosti, fikce souhlasu, zjednodušené změny územních plánů a úpravy pro energetické stavby. Mluví zástupce MMR a advokáti; text obsahuje propagační prvky.",
+   "temata": [],
    "kopie": false,
    "soubory": []
   }

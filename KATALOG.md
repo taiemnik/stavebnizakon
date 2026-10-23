@@ -551,7 +551,16 @@ Informační web Ministerstva pro místní rozvoj k velké novele stavebního z�
 
 Část webu MMR určená veřejnosti, která popisuje dopady novely zvlášť pro občany, stavebníky a samosprávy. Podstránka pro občany shrnuje například vyšší limity pro drobné stavby a opěrné zdi, delší přípojky v režimu drobných staveb, jednodušší dělení pozemků a osvobození od poplatku, když úřad nedodrží zákonnou lhůtu.
 
+- Téma přípravy úřadu: Územní plánování, Právo a samospráva
 - Originál: https://novystavebnizakon.gov.cz/hlavni-zmeny/
+
+### Snadné čtení: novela jednoduchým jazykem
+
+*web · Ministerstvo pro místní rozvoj*
+
+Stránka MMR, která obsah webu shrnuje krátkými větami podle pravidel Snadného čtení (Easy to read). Vysvětluje, o čem novela je, co se mění pro stavebníky, pro koho je důležitá, kdo ji zavádí a co se stane v letech 2026 až 2029. Hodí se pro lidi, kterým by úřední text nic neřekl.
+
+- Originál: https://novystavebnizakon.gov.cz/hlavni-zmeny/snadne-cteni/
 
 ### Nejčastější otázky a odpovědi k novele stavebního zákona
 
@@ -559,6 +568,7 @@ Informační web Ministerstva pro místní rozvoj k velké novele stavebního z�
 
 Rozsáhlý přehled otázek a odpovědí MMR k novele, členěný podle cílových skupin: občan, stavebník, úředník, obec a kraj a systémové otázky implementace. Pokrývá mimo jiné drobné stavby, práva sousedů, černé stavby, lhůty a fikce, kolaudaci, archeologický výzkum, přechod zaměstnanců na stát, spisovou službu a data územně analytických podkladů.
 
+- Téma přípravy úřadu: Personální, Spisová služba
 - Originál: https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/nejcastejsi-dotazy/
 
 ### Úplné znění stavebního zákona (pracovní verze MMR)
@@ -567,6 +577,7 @@ Rozsáhlý přehled otázek a odpovědí MMR k novele, členěný podle cílový
 
 Pracovní úplné znění zákona č. 283/2021 Sb. ve znění novely, které MMR zveřejňuje jako interaktivní stránku; lze zobrazit nové znění, dosavadní znění nebo obojí s vyznačenými změnami. Ministerstvo text označuje za neoficiální pracovní verzi bez legislativní a jazykové korektury; závazné je znění vyhlášené ve Sbírce zákonů.
 
+- Téma přípravy úřadu: Věcná rozhodovací praxe
 - Originál: https://novystavebnizakon.gov.cz/legislativa/uplne-zneni-zakona/
 
 ### Přechodná ustanovení k novele stavebního zákona
@@ -575,6 +586,7 @@ Pracovní úplné znění zákona č. 283/2021 Sb. ve znění novely, které MMR
 
 Výtah přechodných ustanovení novely, který MMR zveřejnilo jako pracovní text (webová stránka a PDF ze 14. 9. 2026). Podle MMR upravují zejména vznik Úřadu rozvoje území k 1. 1. 2027, jeho krajských pracovišť k 1. 1. 2028 a zánik krajských a obecních stavebních úřadů k 31. 12. 2027, přechod zaměstnanců a spisů, dokončení rozpracovaných řízení a platnost prováděcích předpisů.
 
+- Téma přípravy úřadu: Věcná rozhodovací praxe, Personální, Územní plánování
 - Originál: https://novystavebnizakon.gov.cz/legislativa/prechodna-ustanoveni/
 
 ### Harmonogram a milníky
@@ -583,6 +595,7 @@ Výtah přechodných ustanovení novely, který MMR zveřejnilo jako pracovní t
 
 Přehled hlavních milníků zavádění nové stavební správy podle MMR: příprava v roce 2026, vznik Úřadu rozvoje území k 1. 1. 2027, nová struktura s krajskou úrovní a sítí zhruba 205 územních pracovišť od 1. 1. 2028, stabilizace v letech 2028 až 2029 a přechod na novou verzi digitalizace stavebního řízení (DSŘ 2.0) v letech 2030 až 2031.
 
+- Téma přípravy úřadu: Součinnost se státem
 - Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/aktualni-harmonogram/
 
 ### Právní otázky a odpovědi k novele stavebního zákona
@@ -591,6 +604,7 @@ Přehled hlavních milníků zavádění nové stavební správy podle MMR: př�
 
 Rubrika MMR, v níž ministerstvo na samostatných stránkách rozebírá konkrétní tvrzení o novele z parlamentní a veřejné debaty a označuje je jako nepřesná nebo nesprávná. Okruhy: povolování, odvolání a soudní ochrana, územní plánování, černé stavby, projektová dokumentace, Úřad rozvoje území, plánovací smlouvy a ochrana veřejných zájmů.
 
+- Téma přípravy úřadu: Právo a samospráva, Věcná rozhodovací praxe
 - Originál: https://novystavebnizakon.gov.cz/legislativa/pravni-otazky-a-odpovedi/
 
 ### Upřesnění vybraných výroků ze senátní rozpravy (série 6 dílů)
@@ -600,6 +614,14 @@ Rubrika MMR, v níž ministerstvo na samostatných stránkách rozebírá konkr�
 Série šesti aktualit MMR z 28. 8. až 30. 9. 2026, v nichž ministerstvo reaguje na vybraná tvrzení ze senátní rozpravy a vykládá je podle navrženého znění. Díly se týkají například povolování velkých bytových staveb, lhůt a fikce povolení, odvolání, odchylek od územního plánu, černých staveb, soudního přezkumu nebo turistických cest v lesích. Jde o výklad ministerstva, ne o závazný text. Odkaz vede na 1. část, další jsou v rubrice aktualit.
 
 - Originál: https://novystavebnizakon.gov.cz/novinky/tiskove-zpravy-a-aktuality/upresneni-vybranych-vyroku-ze-senatni-rozpravy-k-novele-stavebniho-zakona-1-cast/
+
+### Experti hodnotí nový stavební zákon (výběr MMR)
+
+*web · Ministerstvo pro místní rozvoj*
+
+Výběr vyjádření k novele, který sestavilo MMR: krátká shrnutí výroků zástupců developerů, bank, poradenských firem, Hospodářské komory, České komory architektů, Svazu měst a obcí, Svazu energetiky a dalších, většinou ze Summitu dostupného bydlení 2026, u každého se zdrojem. Jde o výběr ministerstva, ne o přehled všech názorů; celá stanoviska komor, svazů a ombudsmana jsou v sekci Stanoviska institucí.
+
+- Originál: https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/hodnoceni-expertu/
 
 ### Stavíme na faktech – podcast MMR (všechny díly)
 
@@ -648,6 +670,7 @@ Mimořádný díl po senátním projednání (42 minut). Moderátorka předklád
 
 Náměstek Pavel Kryštof popisuje přípravu státní stavební správy (15 minut): harmonogram (Úřad rozvoje území od roku 2027, územní pracoviště a plný start od 1. 1. 2028), strukturu úřadu a síť pracovišť a přechod zhruba 5 500 zaměstnanců stavebních úřadů a dotčených orgánů.
 
+- Téma přípravy úřadu: Součinnost se státem
 - Originál: https://www.youtube.com/watch?v=a06r_UfeoIg
 
 ### Změnový zákon (pracovní verze MMR)
@@ -656,6 +679,7 @@ Náměstek Pavel Kryštof popisuje přípravu státní stavební správy (15 min
 
 Interaktivní pracovní text MMR se změnovou částí novely, tedy s platnými zněními dalších zákonů, do nichž novela zasahuje, s vyznačenými změnami. Podle stránky jde o 54 dotčených zákonů; ke stažení je i zdrojový dokument DOCX. Stránka upozorňuje, že jde o pracovní a nezávazný text.
 
+- Téma přípravy úřadu: Věcná rozhodovací praxe
 - Originál: https://novystavebnizakon.gov.cz/legislativa/zmenovy-zakon/
 
 ### Důvodová zpráva k pozměňovacímu návrhu (pracovní verze MMR)
@@ -680,7 +704,18 @@ Seznam souborů ke stažení na webu MMR k novele. Obsahuje PDF s úplným zněn
 
 Výběr dotazů z praxe úřadů s odpověďmi MMR, určený zaměstnancům stavebních úřadů a dotčených orgánů. Je rozdělen do okruhů personální otázky, spisová rozluka a IT systémy, hmotné a procesní právo, financování a obecné.
 
+- Téma přípravy úřadu: Personální, Finance a benefity
 - Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/faq-pro-uredniky/
+
+### Kontakty podle tématu a územní koordinátoři
+
+*web · Ministerstvo pro místní rozvoj*
+
+Rozcestník MMR, kam s dotazem. Implementace státní stavební správy (vznik úřadu, přechod zaměstnanců, prostory a vybavení pracovišť), stavební řád a územní plánování mají na ministerstvu vlastní společné e-mailové schránky. Personální, majetkové a organizační otázky konkrétního úřadu řeší územní koordinátoři MMR, každý kraj má svého; jejich kontakty a mapa jsou na stránce Kontakt.
+
+- Téma přípravy úřadu: Součinnost se státem
+- Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/kontakty-podle-tematu/
+- Kontakt a koordinátoři: https://novystavebnizakon.gov.cz/kontakt/
 
 ### Newsletter k zavádění nové stavební správy (archiv)
 
@@ -688,7 +723,26 @@ Výběr dotazů z praxe úřadů s odpověďmi MMR, určený zaměstnancům stav
 
 Archiv newsletteru MMR pro tajemníky úřadů a vedoucí stavebních úřadů. K 21. 10. 2026 obsahuje sedm čísel vydaných mezi 18. 6. a 8. 10. 2026. Témata zahrnují harmonogram přechodu, přechod zaměstnanců, školení, dotazníky k prostorám, integraci agend a spisovou rozluku.
 
+- Téma přípravy úřadu: Komunikace a vzdělávání, Součinnost se státem
 - Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/
+
+### Newsletter č. 1: Přehledné informace a milníky
+
+*newsletter · Ministerstvo pro místní rozvoj · 18. 6. 2026*
+
+První číslo newsletteru MMR pro úředníky. Shrnuje milníky (Úřad rozvoje území od 1. 1. 2027, krajské úřady rozvoje území a územní pracoviště od 1. 1. 2028) a tři modelové situace přechodu zaměstnanců: převažuje stavební agenda, nepřevažuje, nebo je práce rozdělená zhruba napůl. Uvádí, že při přechodu je garantována výše dosavadního platu.
+
+- Téma přípravy úřadu: Personální
+- Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-1-prehledne-informace-a-milniky/
+
+### Newsletter č. 4: Dotazník, prostory a setkávání v územích
+
+*newsletter · Ministerstvo pro místní rozvoj · 4. 8. 2026*
+
+Čtvrté číslo newsletteru MMR. Žádá tajemníky o vyplnění dotazníku do 13. 8. 2026 jako podkladu pro plánování lidí a prostor a popisuje tři varianty zajištění prostor územních pracovišť (stávající, rozšířené, externí). K ICT uvádí oddělenou konektivitu od úřadu samosprávy, žádné servery na pracovištích, stavební úpravy jen výjimečně a další práci ve stávajících agendových systémech.
+
+- Téma přípravy úřadu: Logistika, Informační systémy, Součinnost se státem
+- Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-4-dotaznik-prostory-a-setkavani-v-uzemich/
 
 ### Newsletter č. 6: Podpis prezidenta, školení a metodika
 
@@ -696,6 +750,7 @@ Archiv newsletteru MMR pro tajemníky úřadů a vedoucí stavebních úřadů. 
 
 Šesté číslo newsletteru MMR pro tajemníky a vedoucí stavebních úřadů. Informuje o podpisu novely prezidentem 17. 9. 2026 a o regionálních školeních v říjnu, žádá úřady o tabulky k integraci agend dotčených orgánů a ohlašuje metodiku spisové rozluky.
 
+- Téma přípravy úřadu: Personální, Logistika, Spisová služba
 - Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-6-podpis-prezidenta-skoleni-a-metodika/
 
 ### Newsletter č. 7: Metodika spisové rozluky, setkání s tajemníky a podzimní školení
@@ -704,6 +759,7 @@ Archiv newsletteru MMR pro tajemníky úřadů a vedoucí stavebních úřadů. 
 
 Sedmé číslo newsletteru MMR. Představuje metodiku spisové rozluky (předání agendy a dokumentů obecních a krajských stavebních úřadů Úřadu rozvoje území k 1. 1. 2028), ohlašuje pravidelná online setkání s tajemníky, pilotní dotazníkové šetření a další regionální školení.
 
+- Téma přípravy úřadu: Spisová služba, Komunikace a vzdělávání
 - Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/implementace/newsletter/cislo-7-metodika-spisove-rozluky-setkani-s-tajemniky-a-podzimni-skoleni/
 
 ### Spisová rozluka
@@ -712,6 +768,7 @@ Sedmé číslo newsletteru MMR. Představuje metodiku spisové rozluky (předán
 
 Stránka MMR pro obce a kraje k předání agend a spisů stavebních úřadů Úřadu rozvoje území k 1. 1. 2028. Shrnuje odpovědnost obce, klíčové termíny, kroky rozluky a časté chyby; ke stažení nabízí metodiku, průvodce, vzory a formuláře P1 až P14 a prezentaci z online setkání s tajemníky z 15. 10. 2026. Metodiku stránka označuje za návrh, termíny i vzory se mohou ještě změnit.
 
+- Téma přípravy úřadu: Spisová služba, Archiv
 - Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/spisova-rozluka/
 
 ### Metodika spisové rozluky (PDF)
@@ -720,7 +777,36 @@ Stránka MMR pro obce a kraje k předání agend a spisů stavebních úřadů �
 
 Metodický dokument MMR k provedení spisové rozluky, když agenda stavebních úřadů obcí a krajů přechází na Úřad rozvoje území. Je určen obcím a krajům, které předávají nevyřízené i vyřízené dokumenty, evidence a další podklady. Navazují na něj vzory P1 až P14 zveřejněné na stránce Spisová rozluka.
 
+- Téma přípravy úřadu: Spisová služba, Archiv, Logistika, Informační systémy
 - Originál: https://novystavebnizakon.gov.cz/media/s4pfebla/metodika_spisove_rozluky.pdf
+
+### Spisová rozluka 2028: průvodce pro tajemníky obcí se stavebním úřadem
+
+*metodika · Ministerstvo pro místní rozvoj*
+
+Dvanáctistránkový průvodce k metodice spisové rozluky (říjen 2026), který MMR doporučuje přečíst jako první. Vysvětluje tři směry předání spisů, deset zásad, odpovědnost obce a role, které musí obsadit, devět fází F0–F8 se třemi podmínkami postupu, práci se vzory P1–P5 a rámcový harmonogram vlny 2028: plán rozluky archivu ve 2. čtvrtletí 2027, zkušební datový balíček ve 3.–4. čtvrtletí 2027, živé spisy k 1. 1. 2028. Končí častými otázkami a kontrolními otázkami pro tajemníka.
+
+- Téma přípravy úřadu: Spisová služba, Archiv, Logistika
+- Originál: https://novystavebnizakon.gov.cz/media/vvede2sk/mmr_a4_brozura_v4.pdf
+
+### Vzory P1–P14 k metodice spisové rozluky
+
+*vzory · Ministerstvo pro místní rozvoj*
+
+Všechny vzory k metodice v jednom ZIP (Word a Excel; jednotlivě jsou ke stažení na stránce Spisová rozluka). Plán provádění rozluky (P1), předávací seznamy nevyřízených a vyřízených dokumentů (P2, P3), seznam zápůjček a ztrát (P4), katalog evidencí a identifikační analýza (P5), dokumenty nad rámec rozluky (P6), protokol o předání úředních razítek (P7), harmonogram svozu a přepravní list (P8a, P8b), protokoly, soupis vad a průvodní dokumentace dávky (P9a–P9f), kontrolní checklisty (P10), minimální datový rozsah exportu (P11), převodník spisových znaků (P12), riziková matice (P13) a seznam dotčených orgánů (P14). Podle průvodce jsou vzory P1–P5 závazné a jejich číselníky uzavřené.
+
+- Téma přípravy úřadu: Spisová služba, Archiv, Logistika, Informační systémy
+- Originál: https://novystavebnizakon.gov.cz/media/ydgl2gg1/přílohy_2_0.zip
+- stránka Spisová rozluka: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/spisova-rozluka/
+
+### Metodika spisové rozluky – shrnutí (online setkání s tajemníky)
+
+*prezentace · Ministerstvo pro místní rozvoj · 15. 10. 2026*
+
+Osm snímků Tomáše Bezoušky z MMR z půlhodinového online setkání s tajemníky (PowerPoint). Shrnují § 68a archivního zákona, deset zásad rozluky, rozdělení spisového materiálu podle stavu vyřízení a skartačních lhůt, co připravit v evidenčních pomůckách, fáze rozluky s podmínkami postupu a postup přípravy obce od inventury spisové služby po realizaci.
+
+- Téma přípravy úřadu: Spisová služba, Archiv
+- Originál: https://novystavebnizakon.gov.cz/media/xwvlipis/prvotní-informace-metodika-spisové-rozluky-prezentace.pptx
 
 ### Integrace agend
 
@@ -728,7 +814,30 @@ Metodický dokument MMR k provedení spisové rozluky, když agenda stavebních 
 
 Stránka MMR o začlenění agend dotčených orgánů státní správy do nové stavební správy. Popisuje, jak se posuzuje převažující činnost zaměstnance a jak se zaměstnanci řadí do skupin; pro obce s rozšířenou působností a krajské úřady nabízí prezentace a pracovní tabulku k identifikaci zaměstnanců pro přechod na Úřad rozvoje území.
 
+- Téma přípravy úřadu: Personální, Organizační řád
 - Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/metodiky-a-materialy/integrace-agend/
+
+### Integrace agend, prezentace 1: Co se mění pro váš úřad
+
+*prezentace · Ministerstvo pro místní rozvoj*
+
+Devět snímků MMR pro tajemníky obcí s rozšířenou působností (zvlášť je verze pro krajské úřady). Popisuje novou soustavu (Úřad rozvoje území, 14 krajských úřadů rozvoje území, 205 územních pracovišť) a řadí agendy dotčených orgánů do čtyř režimů: A plná integrace do stavebního úřadu, B integrace s odborným vyjádřením, C zrušené procesní formy (například koordinované závazné stanovisko a JES) a D zachovaný samostatný režim (například kulturní památky nebo zvláště chráněná území kategorie I). Končí postupem, jak odhadnout počet lidí budoucího územního pracoviště a prověřit prostory.
+
+- Téma přípravy úřadu: Personální, Organizační řád, Věcná rozhodovací praxe
+- Originál: https://novystavebnizakon.gov.cz/media/2mmjrvjt/prezentace_1_co_se_mění_doss.pdf
+- verze pro krajské úřady: https://novystavebnizakon.gov.cz/media/wxkhp14i/prezentace_1_co_se_mění_doss_ku.pdf
+
+### Integrace agend, prezentace 2 a tabulka: Jak identifikovat zaměstnance
+
+*prezentace · Ministerstvo pro místní rozvoj*
+
+Návod MMR pro tajemníky, kdo k 1. 1. 2028 přejde na úřad rozvoje území kraje: sedm snímků a pracovní tabulka v Excelu, obojí i ve verzi pro krajské úřady. Rozhoduje převažující činnost ke 31. 12. 2027, ne název pozice. Zaměstnanci se v pěti krocích řadí do tří skupin (přechází, posoudit podle podílu, zůstává u obce); prezentace řeší i sporné situace, například sdílenou administrativu nebo agendu rozdělenou mezi více lidí. Shrnuje zákonné garance (plat nejméně na dosavadní úrovni, bez zkušební doby) a upozorňuje, že kdo přechod odmítne, musí dát výpověď a odstupné nedostane. Tabulka se vyplňuje bez jmen a sčítá úvazky po skupinách; stav k projednávání v Senátu.
+
+- Téma přípravy úřadu: Personální, Organizační řád
+- Originál: https://novystavebnizakon.gov.cz/media/wredu0em/prezentace_2_identifikace_zamestnanců.pdf
+- tabulka (Excel): https://novystavebnizakon.gov.cz/media/5qoc2xxt/tabulka_identifikace_zaměstnanců.xlsx
+- prezentace pro krajské úřady: https://novystavebnizakon.gov.cz/media/sfelty5x/prezentace_2_identifikace_zamestnanců_ku.pdf
+- tabulka pro krajské úřady: https://novystavebnizakon.gov.cz/media/1pipqvya/tabulka_identifikace_zaměstnanců_ku.xlsx
 
 ### Materiály ze školení
 
@@ -736,7 +845,84 @@ Stránka MMR o začlenění agend dotčených orgánů státní správy do nové
 
 Stránka MMR s prezentacemi z podzimních regionálních školení k novele pro úředníky. V době ověření tu byly prezentace k novele na úseku stavebního řádu (15. 10. 2026) a na úseku územního plánování (12. 10. 2026).
 
+- Téma přípravy úřadu: Komunikace a vzdělávání
 - Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/materialy-ze-skoleni/
+
+### Školení k novele na úseku stavebního řádu (podzim 2026)
+
+*prezentace · Ministerstvo pro místní rozvoj · 15. 10. 2026*
+
+Prezentace Odboru stavebního řádu MMR z regionálních školení pro úředníky (verze z 15. 10. 2026, 248 snímků). Prochází účinnost a přechodná ustanovení, soustavu stavební správy a kvalifikační požadavky, ochranu veřejných zájmů a dotčené orgány, druhy staveb, dokumentaci, řízení o povolení a zrychlené řízení, kolaudaci, odstraňování staveb a dodatečné povolení, přestupky a opravné prostředky.
+
+- Téma přípravy úřadu: Věcná rozhodovací praxe, Komunikace a vzdělávání
+- Originál: https://novystavebnizakon.gov.cz/media/y3keegzx/školení-sú_podzim-2026_15102026.pdf
+
+### Školení k novele na úseku územního plánování (Pardubice)
+
+*prezentace · Ministerstvo pro místní rozvoj · 12. 10. 2026*
+
+Prezentace odborů územního plánování a implementace státní stavební správy MMR ze školení v Pardubicích (upravená verze, 208 snímků). Zásadní změny, pořizování a nástroje územního plánování, zastavitelné území, územní opatření, plánovací smlouvy, náhrady za změnu v území, NGÚP a soudní přezkum, změny příloh a jiných zákonů a podrobně přechodná ustanovení, včetně těch k úředníkům v území.
+
+- Téma přípravy úřadu: Územní plánování, Právo a samospráva, Komunikace a vzdělávání
+- Originál: https://novystavebnizakon.gov.cz/media/cgmhzb0c/skolení-novely-sz-uzemni-planovani-pardubice-upravena.pdf
+
+### Termíny školení a registrace
+
+*web · Ministerstvo pro místní rozvoj*
+
+Přehled bezplatných regionálních školení MMR k novele pro úředníky stavebních úřadů, dotčených orgánů a další pracovníky obcí a krajů, vždy zvlášť pro územní plánování a stavební řád. Běží od 7. 10. do 3. 12. 2026 po dvojicích krajů, online i prezenčně; u termínů je místo a odkaz na registraci.
+
+- Téma přípravy úřadu: Komunikace a vzdělávání
+- Originál: https://novystavebnizakon.gov.cz/sekce-pro-uredniky/poradna/terminy-skoleni-a-registrace/
+
+### Kde se s námi potkáte
+
+*web · Ministerstvo pro místní rozvoj*
+
+Kalendář akcí, na kterých vystupují zástupci MMR: školení, setkání s tajemníky v krajích, porady a konference. U každé akce je místo, čas a krátký popis; uzavřené akce jsou označené, u otevřených je uvedeno, kde se přihlásit.
+
+- Téma přípravy úřadu: Komunikace a vzdělávání, Součinnost se státem
+- Originál: https://novystavebnizakon.gov.cz/novinky/kde-se-s-nami-potkate/
+
+### Vládní zmocněnkyně: usnesení vlády č. 59/2026 a statut
+
+*dokument · Ministerstvo pro místní rozvoj · 26. 1. 2026*
+
+Vláda 26. 1. 2026 usnesením č. 59 vytvořila funkci vládního zmocněnce pro implementaci stavebního práva a jmenovala do ní Hanu Landovou. Podle statutu zmocněnec není správním orgánem; koordinuje implementaci novely mezi resorty, kraji a obcemi, sleduje praxi povolování, spolupracuje s Úřadem rozvoje území na sjednocení rozhodovací praxe a se samosprávami, komorami a investory. Karta odkazuje i přímo na usnesení a statut.
+
+- Téma přípravy úřadu: Součinnost se státem
+- Originál: https://novystavebnizakon.gov.cz/transformace-stavebni-spravy/vladni-zmocnenkyne/
+- usnesení vlády (PDF): https://novystavebnizakon.gov.cz/media/e4vbsajo/usneseni_2026_59.pdf
+- statut (PDF): https://novystavebnizakon.gov.cz/media/e4vbsajx/priloha_usneseni_2026_59_1.pdf
+
+### Státní stavební správa: prezentace pro obce a kraje (duben 2026)
+
+*prezentace · Ministerstvo pro místní rozvoj*
+
+Šestnáct snímků MMR z dubna 2026: důvody a principy novely, přínosy pro samosprávy a pro stavební řízení, harmonogram legislativy a čtyři fáze implementace do poloviny roku 2031, expertní skupiny projektu, plán digitalizace (Portál stavebníka a ISSŘ v udržovacím režimu do konce roku 2030, DSŘ 2.0 v roce 2031) a pět snímků otázek a odpovědí, mimo jiné k přechodu úředníků, nákladům reorganizace a detašovaným pracovištím. Odráží stav návrhu k dubnu 2026.
+
+- Téma přípravy úřadu: Součinnost se státem, Informační systémy, Finance a benefity
+- Originál: https://novystavebnizakon.gov.cz/media/e4vbsajp/prezentace-mmr_final_nsz_dopis_obce_final.pdf
+
+### Komplexní pozměňovací návrh k tisku 67: prezentace vládní zmocněnkyně
+
+*prezentace · Ministerstvo pro místní rozvoj · 20. 4. 2026*
+
+Prezentace Hany Landové ke komplexnímu pozměňovacímu návrhu z dubna 2026 (21 snímků). Hlavní teze, nové základní zásady, integrace veřejných zájmů do stavebního úřadu, co návrh znamená pro kraj, obec a stavebníky, a modelové případy: soubor bytových domů, nemocnice, rodinný dům v ochranném pásmu památkové zóny, změna záměru, kolaudace a náhradní výstavba po povodni.
+
+- Téma přípravy úřadu: Věcná rozhodovací praxe, Právo a samospráva
+- Originál: https://novystavebnizakon.gov.cz/media/o12fcca3/prezentace-kpn-20042026-2.pdf
+
+### Konference Egovernment v Mikulově: implementace a spisová rozluka
+
+*prezentace · Ministerstvo pro místní rozvoj · 8. 9. 2026*
+
+Dvě prezentace MMR z konference magazínu Egovernment. Náměstek Pavel Kryštof shrnuje novou soustavu úřadů rozvoje území, integraci dotčených orgánů a dopady na informační systémy: Portál stavebníka, ISSŘ a NGÚP přecházejí od 1. 1. 2027 na Úřad rozvoje území a pro agendové systémy stavebních úřadů (například VITA, VERA) se připravuje koncepce migrace, která má vyjít během roku 2026. Tomáš Bezouška představuje spisovou rozluku podle § 68a archivního zákona, zásady metodiky a postup přípravy obce.
+
+- Téma přípravy úřadu: Informační systémy, Spisová služba, Součinnost se státem
+- Originál: https://novystavebnizakon.gov.cz/media/hqmnvyw1/2026-09-08_egovernemnt_pavel-krystof.pdf
+- prezentace Tomáše Bezoušky: https://novystavebnizakon.gov.cz/media/xumh1dis/2026-09-08_egovernemnt_tomas-bezouska.pdf
+- zpráva MMR z konference: https://novystavebnizakon.gov.cz/novinky/tiskove-zpravy-a-aktuality/transformace-stavebni-spravy-na-konferenci-e-governement-v-mikulove/
 
 ### Otázky a odpovědi (stav k dubnu 2026)
 
